@@ -1,0 +1,51 @@
+name: update-rates
+
+on:
+  schedule:
+    # 매일 21:00 UTC = 한국 시간 오전 6시
+    - cron: "0 21 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check FSS_API_KEY secret
+        id: check
+        env:
+          FSS_API_KEY: ${{ secrets.FSS_API_KEY }}
+        run: |
+          if [ -z "$FSS_API_KEY" ]; then
+            echo "::notice::FSS_API_KEY secret이 등록되지 않아 이번 실행은 건너뜁니다."
+            echo "리포지토리 Settings > Secrets and variables > Actions 에서"
+            echo "FSS_API_KEY 를 등록하면 다음 실행부터 실데이터로 갱신됩니다."
+            echo "(인증키 발급: https://finlife.fss.or.kr 오픈API 신청)"
+            echo "has_key=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_key=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Fetch latest rates
+        if: steps.check.outputs.has_key == 'true'
+        env:
+          FSS_API_KEY: ${{ secrets.FSS_API_KEY }}
+        run: python3 scripts/fetch_rates.py
+
+      - name: Commit and push if data changed
+        if: steps.check.outputs.has_key == 'true'
+        run: |
+          if git diff --quiet -- _data; then
+            echo "데이터 변경 없음 — 커밋하지 않습니다."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add _data
+            git commit -m "data: 금리 데이터 자동 갱신 ($(TZ=Asia/Seoul date +%Y-%m-%d))"
+            git push
+          fi

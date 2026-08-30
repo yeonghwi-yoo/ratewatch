@@ -1,0 +1,11 @@
+main:
+  - title: "정기예금"
+    url: /deposit/
+  - title: "적금"
+    url: /saving/
+  - title: "가이드"
+    url: /guides/
+  - title: "소개"
+    url: /about/
+  - title: "개인정보처리방침"
+    url: /privacy/

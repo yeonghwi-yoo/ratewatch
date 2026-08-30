@@ -1,0 +1,33 @@
+{% comment %}
+금리 표 렌더링 include
+파라미터:
+  rows  — _data/deposit.json 또는 _data/saving.json 의 bank / savings_bank 배열
+  limit — 표시할 최대 행 수 (생략 시 전체)
+{% endcomment %}
+{% assign row_limit = include.limit | default: 500 %}
+<div class="rate-table-wrap">
+<table>
+  <thead>
+    <tr>
+      <th>순위</th>
+      <th>금융회사</th>
+      <th>상품명</th>
+      <th>기본금리(%)</th>
+      <th>최고우대금리(%)</th>
+      <th>이자계산</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in include.rows limit: row_limit %}
+    <tr>
+      <td>{{ forloop.index }}</td>
+      <td>{{ item.kor_co_nm }}</td>
+      <td>{{ item.fin_prdt_nm }}</td>
+      <td>{{ item.intr_rate }}</td>
+      <td><strong>{{ item.intr_rate2 }}</strong></td>
+      <td>{{ item.intr_rate_type_nm }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>

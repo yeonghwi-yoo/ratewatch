@@ -1,0 +1,140 @@
+{
+  "is_sample": true,
+  "generated_at": "2026-08-30T06:00:00+09:00",
+  "dcls_month": "202608",
+  "save_trm": "12",
+  "bank": [
+    {
+      "dcls_month": "202608",
+      "kor_co_nm": "샘플은행A",
+      "fin_prdt_cd": "SMPL-D-001",
+      "fin_prdt_nm": "샘플 정기예금 1호",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 2.6,
+      "intr_rate2": 3.15,
+      "spcl_cnd": "비대면 가입 및 자동이체 등록 시 우대",
+      "join_way": "스마트폰",
+      "max_limit": 100000000
+    },
+    {
+      "dcls_month": "202608",
+      "kor_co_nm": "샘플은행B",
+      "fin_prdt_cd": "SMPL-D-002",
+      "fin_prdt_nm": "샘플 e-정기예금",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 2.55,
+      "intr_rate2": 3.05,
+      "spcl_cnd": "첫 거래 고객 우대",
+      "join_way": "인터넷,스마트폰",
+      "max_limit": null
+    },
+    {
+      "dcls_month": "202608",
+      "kor_co_nm": "샘플은행C",
+      "fin_prdt_cd": "SMPL-D-003",
+      "fin_prdt_nm": "샘플 플러스예금",
+      "intr_rate_type_nm": "복리",
+      "save_trm": "12",
+      "intr_rate": 2.5,
+      "intr_rate2": 2.95,
+      "spcl_cnd": "급여이체 실적 보유 시 우대",
+      "join_way": "영업점,인터넷,스마트폰",
+      "max_limit": null
+    },
+    {
+      "dcls_month": "202608",
+      "kor_co_nm": "샘플은행D",
+      "fin_prdt_cd": "SMPL-D-004",
+      "fin_prdt_nm": "샘플 정기예금 그린",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 2.45,
+      "intr_rate2": 2.85,
+      "spcl_cnd": "우대조건 없음",
+      "join_way": "영업점",
+      "max_limit": 50000000
+    },
+    {
+      "dcls_month": "202608",
+      "kor_co_nm": "샘플은행E",
+      "fin_prdt_cd": "SMPL-D-005",
+      "fin_prdt_nm": "샘플 두배예금",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 2.4,
+      "intr_rate2": 2.8,
+      "spcl_cnd": "카드 이용 실적 보유 시 우대",
+      "join_way": "스마트폰",
+      "max_limit": null
+    }
+  ],
+  "savings_bank": [
+    {
+      "dcls_month": "202608",
+      "kor_co_nm": "샘플저축은행가",
+      "fin_prdt_cd": "SMPL-SD-001",
+      "fin_prdt_nm": "샘플 회전정기예금",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 3.3,
+      "intr_rate2": 3.6,
+      "spcl_cnd": "비대면 가입 시 우대",
+      "join_way": "인터넷,스마트폰",
+      "max_limit": null
+    },
+    {
+      "dcls_month": "202608",
+      "kor_co_nm": "샘플저축은행나",
+      "fin_prdt_cd": "SMPL-SD-002",
+      "fin_prdt_nm": "샘플 e-회전예금",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 3.25,
+      "intr_rate2": 3.5,
+      "spcl_cnd": "우대조건 없음",
+      "join_way": "인터넷",
+      "max_limit": null
+    },
+    {
+      "dcls_month": "202608",
+      "kor_co_nm": "샘플저축은행다",
+      "fin_prdt_cd": "SMPL-SD-003",
+      "fin_prdt_nm": "샘플 정기예금",
+      "intr_rate_type_nm": "복리",
+      "save_trm": "12",
+      "intr_rate": 3.2,
+      "intr_rate2": 3.45,
+      "spcl_cnd": "모바일 앱 가입 시 우대",
+      "join_way": "스마트폰",
+      "max_limit": 100000000
+    },
+    {
+      "dcls_month": "202608",
+      "kor_co_nm": "샘플저축은행라",
+      "fin_prdt_cd": "SMPL-SD-004",
+      "fin_prdt_nm": "샘플 스마트예금",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 3.15,
+      "intr_rate2": 3.4,
+      "spcl_cnd": "신규 고객 우대",
+      "join_way": "스마트폰",
+      "max_limit": null
+    },
+    {
+      "dcls_month": "202608",
+      "kor_co_nm": "샘플저축은행마",
+      "fin_prdt_cd": "SMPL-SD-005",
+      "fin_prdt_nm": "샘플 비대면정기예금",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 3.1,
+      "intr_rate2": 3.35,
+      "spcl_cnd": "우대조건 없음",
+      "join_way": "인터넷,스마트폰",
+      "max_limit": null
+    }
+  ]
+}

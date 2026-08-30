@@ -1,0 +1,15 @@
+{% comment %}
+금리 표 하단 공통 고지문. 파라미터: data — site.data.deposit 또는 site.data.saving
+{% endcomment %}
+{% if include.data.is_sample %}
+<div class="sample-notice">
+  ⚠️ 현재 표시된 금리는 <strong>샘플 데이터</strong>입니다. 금융감독원 오픈API 인증키(FSS_API_KEY)를
+  리포지토리 Secret으로 등록하면 매일 아침 실제 공시 데이터로 자동 전환됩니다.
+</div>
+{% endif %}
+<p class="rate-notice">
+  ※ 본 데이터는 금융감독원 <a href="https://finlife.fss.or.kr/" target="_blank" rel="noopener">금융상품통합비교공시(금융상품 한눈에)</a>
+  기준이며, 실제 가입 조건·금리는 각 금융회사에서 반드시 확인하시기 바랍니다.
+  금리는 12개월(1년) 만기 기준, 최고우대금리 순으로 정렬됩니다.
+  (공시월: {{ include.data.dcls_month | slice: 0, 4 }}년 {{ include.data.dcls_month | slice: 4, 2 }}월)
+</p>
