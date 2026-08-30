@@ -16,13 +16,11 @@ search: true
 
 # GitHub Pages 허용 플러그인만 사용
 plugins:
+  - jekyll-remote-theme
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-paginate
-
-paginate: 10
-paginate_path: /page:num/
 
 timezone: Asia/Seoul
 
