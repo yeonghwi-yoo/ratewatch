@@ -48,4 +48,7 @@ jobs:
             git add _data
             git commit -m "data: 금리 데이터 자동 갱신 ($(TZ=Asia/Seoul date +%Y-%m-%d))"
             git push
+            # GITHUB_TOKEN 푸시는 다른 워크플로(sync-to-pages)를 트리거하지 않으므로
+            # 배포 브랜치(gh-pages)도 여기서 직접 갱신한다
+            git push origin HEAD:gh-pages --force
           fi

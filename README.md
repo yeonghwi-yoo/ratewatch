@@ -24,7 +24,7 @@
 ├── index.md                     # 홈 (TOP5)
 ├── scripts/fetch_rates.py       # 금감원 오픈API → _data/*.json 갱신 스크립트
 └── .github/workflows/
-    ├── pages.yml                # main 푸시 시 Pages 빌드·배포 (공식 Jekyll 빌더)
+    ├── pages.yml                # main → gh-pages 미러링 (배포 트리거)
     └── update-rates.yml         # 매일 21:00 UTC(KST 06:00) 자동 갱신
 ```
 
@@ -54,9 +54,16 @@ bundle init && bundle add github-pages --group jekyll_plugins
 bundle exec jekyll serve --baseurl /ratewatch
 ```
 
-배포는 `pages build and deployment` 워크플로(`.github/workflows/pages.yml`)가 담당합니다.
-기본 브랜치 빌드와 동일한 공식 빌더(`actions/jekyll-build-pages`)를 사용하므로
-빌드 결과는 GitHub Pages 기본 빌드와 같습니다. main에 푸시하면 자동으로 재배포됩니다.
+### 배포 방식
+
+- 개발·콘텐츠 작업은 모두 **main** 브랜치에서 합니다.
+- main에 푸시하면 `sync-to-pages` 워크플로가 main을 배포 브랜치 **gh-pages**로 미러링하고,
+  GitHub Pages가 gh-pages를 소스로 기본 Jekyll 빌드(`pages build and deployment`)를 실행해
+  사이트를 배포합니다. gh-pages에는 직접 커밋하지 마세요.
+- 이렇게 구성한 이유: 브랜치 방식 Pages 활성화는 저장소 관리자 권한이 필요해
+  워크플로 토큰으로 설정할 수 없고, gh-pages 브랜치 생성 시 Pages가 자동 활성화되는
+  동작을 이용했습니다. 원하면 Settings → Pages에서 소스를 main으로 바꾸고
+  `pages.yml`(sync-to-pages)을 삭제해 단순화할 수 있습니다.
 
 ## 애드센스 체크리스트
 
