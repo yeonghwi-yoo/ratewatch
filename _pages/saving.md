@@ -3,8 +3,6 @@ title: "적금 금리 비교"
 permalink: /saving/
 layout: single
 author_profile: false
-sidebar:
-  nav: "main"
 toc: true
 toc_label: "바로가기"
 ---

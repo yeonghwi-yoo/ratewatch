@@ -1,13 +1,13 @@
-# 레이트워치 — 예·적금 금리 비교 사이트
+# 예적금연구소 — 예·적금 금리 비교 사이트
 # GitHub Pages 프로젝트 사이트 (https://yeonghwi-yoo.github.io/ratewatch/)
 
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 
 locale: "ko-KR"
-title: "레이트워치"
-subtitle: "예·적금 금리 비교"
-name: "레이트워치"
-description: "매일 갱신되는 예·적금 금리 비교"
+title: "예적금연구소"
+subtitle: "매일 갱신되는 금리 비교"
+name: "예적금연구소"
+description: "매일 갱신되는 예·적금 금리 비교와 청년·정부지원 금융상품 가이드"
 url: "https://yeonghwi-yoo.github.io"
 baseurl: "/ratewatch"
 repository: "yeonghwi-yoo/ratewatch"
@@ -53,8 +53,6 @@ defaults:
       related: true
       toc: true
       toc_sticky: true
-      sidebar:
-        nav: "main"
   # _pages
   - scope:
       path: "_pages"

@@ -1,43 +1,63 @@
 ---
 layout: single
-title: "오늘의 예·적금 금리 TOP5"
+title: "오늘의 예·적금 금리 비교 — 은행·저축은행 TOP5"
 author_profile: false
-sidebar:
-  nav: "main"
+classes:
+  - wide
+  - home
 ---
 
-**레이트워치**는 금융감독원 「금융상품통합비교공시(금융상품 한눈에)」 오픈API 데이터를
-매일 아침 자동으로 받아 은행·저축은행의 정기예금·적금 금리를 비교해 보여주는 사이트입니다.
-아래 표는 12개월(1년) 만기 기준 최고우대금리 상위 5개 상품입니다.
+<div class="hero" markdown="0">
+  <h1>오늘의 예·적금 금리,<br><span class="accent">한눈에</span> 비교하세요</h1>
+  <p>금융감독원 공시 데이터를 매일 아침 자동으로 받아 은행·저축은행의 정기예금·적금 금리를 비교합니다.</p>
+  <div class="hero-chips">
+    <span class="chip chip--blue">공시월 {{ site.data.deposit.dcls_month | slice: 0, 4 }}.{{ site.data.deposit.dcls_month | slice: 4, 2 }}</span>
+    <span class="chip">12개월 만기 기준</span>
+    <span class="chip">최고우대금리순</span>
+    <span class="chip">매일 오전 6시 갱신</span>
+  </div>
+</div>
 
-## 🏦 은행 정기예금 TOP5
+<div class="section-head" markdown="0">
+  <h2>은행 정기예금 TOP5</h2>
+  <a class="more-link" href="{{ '/deposit/' | relative_url }}">전체 보기 →</a>
+</div>
 
 {% include rate-table.html rows=site.data.deposit.bank limit=5 %}
 
-## 🏦 저축은행 정기예금 TOP5
+<div class="section-head" markdown="0">
+  <h2>저축은행 정기예금 TOP5</h2>
+  <a class="more-link" href="{{ '/deposit/' | relative_url }}">전체 보기 →</a>
+</div>
 
 {% include rate-table.html rows=site.data.deposit.savings_bank limit=5 %}
 
-[👉 정기예금 전체 금리 비교 보기]({{ "/deposit/" | relative_url }})
-
-## 💰 은행 적금 TOP5
+<div class="section-head" markdown="0">
+  <h2>은행 적금 TOP5</h2>
+  <a class="more-link" href="{{ '/saving/' | relative_url }}">전체 보기 →</a>
+</div>
 
 {% include rate-table.html rows=site.data.saving.bank limit=5 %}
 
-## 💰 저축은행 적금 TOP5
+<div class="section-head" markdown="0">
+  <h2>저축은행 적금 TOP5</h2>
+  <a class="more-link" href="{{ '/saving/' | relative_url }}">전체 보기 →</a>
+</div>
 
 {% include rate-table.html rows=site.data.saving.savings_bank limit=5 %}
 
-[👉 적금 전체 금리 비교 보기]({{ "/saving/" | relative_url }})
-
 {% include rate-notice.html data=site.data.deposit %}
 
----
+<div class="section-head" markdown="0">
+  <h2>금융 가이드</h2>
+  <a class="more-link" href="{{ '/guides/' | relative_url }}">전체 보기 →</a>
+</div>
 
-## 📚 금융 가이드
-
-- [신용점수 올리는 방법 — 실제 평가에 반영되는 것만 정리]({{ "/guides/credit-score/" | relative_url }})
-- [예금자보호 제도 정확히 이해하기 — 저축은행 고금리, 안전할까]({{ "/guides/deposit-insurance/" | relative_url }})
-- [정기예금 vs 파킹통장 vs CMA — 구조부터 다른 세 가지 통장]({{ "/guides/deposit-parking-cma/" | relative_url }})
-
-<small>본 사이트의 모든 정보는 참고용이며 투자·금융 자문이 아닙니다.</small>
+<div class="guide-cards" markdown="0">
+  {% for post in site.posts limit: 6 %}
+  <a class="guide-card" href="{{ post.url | relative_url }}">
+    <div class="guide-card__title">{{ post.title }}</div>
+    <div class="guide-card__desc">{{ post.excerpt | strip_html | truncate: 80 }}</div>
+  </a>
+  {% endfor %}
+</div>
