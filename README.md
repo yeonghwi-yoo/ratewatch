@@ -23,7 +23,9 @@
 ├── _posts/                      # 금융 가이드 글
 ├── index.md                     # 홈 (TOP5)
 ├── scripts/fetch_rates.py       # 금감원 오픈API → _data/*.json 갱신 스크립트
-└── .github/workflows/update-rates.yml  # 매일 21:00 UTC(KST 06:00) 자동 갱신
+└── .github/workflows/
+    ├── pages.yml                # main 푸시 시 Pages 빌드·배포 (공식 Jekyll 빌더)
+    └── update-rates.yml         # 매일 21:00 UTC(KST 06:00) 자동 갱신
 ```
 
 `_data/*.json` 은 처음에는 **샘플 데이터**로 커밋되어 있으며(`is_sample: true`),
@@ -52,7 +54,9 @@ bundle init && bundle add github-pages --group jekyll_plugins
 bundle exec jekyll serve --baseurl /ratewatch
 ```
 
-GitHub Pages 기본 빌드를 사용하므로 별도 빌드 CI는 필요 없습니다.
+배포는 `pages build and deployment` 워크플로(`.github/workflows/pages.yml`)가 담당합니다.
+기본 브랜치 빌드와 동일한 공식 빌더(`actions/jekyll-build-pages`)를 사용하므로
+빌드 결과는 GitHub Pages 기본 빌드와 같습니다. main에 푸시하면 자동으로 재배포됩니다.
 
 ## 애드센스 체크리스트
 
