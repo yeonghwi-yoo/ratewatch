@@ -1,6 +1,6 @@
 {
   "is_sample": false,
-  "generated_at": "2026-08-31T08:20:21+09:00",
+  "generated_at": "2026-09-01T09:30:44+09:00",
   "dcls_month": "202608",
   "save_trm": "12",
   "bank": [
@@ -375,8 +375,8 @@
       "fin_prdt_nm": "NH직장인월복리적금",
       "intr_rate_type_nm": "복리",
       "save_trm": "12",
-      "intr_rate": 2.98,
-      "intr_rate2": 3.78,
+      "intr_rate": 2.99,
+      "intr_rate2": 3.79,
       "spcl_cnd": "1. 급여입금실적 보유 고객 중\n - 가입기간 중 3개월 이상 급여이체시 : 0.3%p\n - 주택청약종합저축 또는 펀드가입 : 0.2%p\n - NH채움카드 결제실적 1백만원 이상 : 0.2%p\n2. 인터넷(스마트)뱅킹 또는 올원뱅크로 가입 : 0.1%p",
       "join_way": "영업점,인터넷,스마트폰",
       "max_limit": 3000000,
@@ -496,6 +496,20 @@
     },
     {
       "dcls_month": "202608",
+      "kor_co_nm": "한국산업은행",
+      "fin_prdt_cd": "03700",
+      "fin_prdt_nm": "KDB 자유적금",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 3.47,
+      "intr_rate2": 3.47,
+      "spcl_cnd": "해당없음",
+      "join_way": "영업점,인터넷,스마트폰",
+      "max_limit": 5000000,
+      "rsrv_type_nm": "자유적립식"
+    },
+    {
+      "dcls_month": "202608",
       "kor_co_nm": "국민은행",
       "fin_prdt_cd": "010200100084",
       "fin_prdt_nm": "KB맑은하늘적금",
@@ -506,20 +520,6 @@
       "spcl_cnd": "맑은하늘을 위한 미션별 제공조건을 달성하는 경우 각 미션별 우대이율 제공\n - 1년제 최고 연 0.8%p, 2년제 최고 연 0.9%p, 3년제 최고 연 1.0%p\n① 종이통장 줄이기 미션: 연 0.1%p\n② 종이서식 줄이기 미션: 연 0.2%p\n③ 대중교통 미션: 1년제 연 0.4%p, 2년제 연 0.5%p, 3년제 연 0.6%p\n④ 퀴즈미션: 연 0.1%p",
       "join_way": "영업점,인터넷,스마트폰",
       "max_limit": null,
-      "rsrv_type_nm": "자유적립식"
-    },
-    {
-      "dcls_month": "202608",
-      "kor_co_nm": "한국산업은행",
-      "fin_prdt_cd": "03700",
-      "fin_prdt_nm": "KDB 자유적금",
-      "intr_rate_type_nm": "단리",
-      "save_trm": "12",
-      "intr_rate": 3.41,
-      "intr_rate2": 3.41,
-      "spcl_cnd": "해당없음",
-      "join_way": "영업점,인터넷,스마트폰",
-      "max_limit": 5000000,
       "rsrv_type_nm": "자유적립식"
     },
     {
@@ -543,8 +543,8 @@
       "fin_prdt_nm": "KDB 기업정기적금",
       "intr_rate_type_nm": "단리",
       "save_trm": "12",
-      "intr_rate": 3.21,
-      "intr_rate2": 3.21,
+      "intr_rate": 3.27,
+      "intr_rate2": 3.27,
       "spcl_cnd": "해당없음",
       "join_way": "영업점,인터넷",
       "max_limit": null,
