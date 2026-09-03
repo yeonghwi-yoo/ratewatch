@@ -1,6 +1,6 @@
 {
   "is_sample": false,
-  "generated_at": "2026-09-03T08:12:53+09:00",
+  "generated_at": "2026-09-04T08:10:21+09:00",
   "dcls_month": "202608",
   "save_trm": "12",
   "bank": [
@@ -202,6 +202,20 @@
     },
     {
       "dcls_month": "202608",
+      "kor_co_nm": "신한은행",
+      "fin_prdt_cd": "230-0119-85",
+      "fin_prdt_nm": "신한 알.쏠 적금",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 2.9,
+      "intr_rate2": 4.2,
+      "spcl_cnd": "※가산금리 최고 연 1.30%\n- 소득이체 : 연 0.6%\n- 카드이용 : 연 0.3%\n- 오픈뱅킹 : 연 0.6%\n- 청약보유 : 연 0.3%\n- 마케팅동의 : 연 0.1%\n※ 우대금리 항목별 자세한 적용 조건은 상품설명서 참조",
+      "join_way": "영업점,스마트폰",
+      "max_limit": 3000000,
+      "rsrv_type_nm": "자유적립식"
+    },
+    {
+      "dcls_month": "202608",
       "kor_co_nm": "주식회사 케이뱅크",
       "fin_prdt_cd": "01012000210000000000",
       "fin_prdt_nm": "주거래우대 자유적금",
@@ -269,20 +283,6 @@
       "join_way": "영업점,인터넷,스마트폰",
       "max_limit": 1000000,
       "rsrv_type_nm": "정액적립식"
-    },
-    {
-      "dcls_month": "202608",
-      "kor_co_nm": "신한은행",
-      "fin_prdt_cd": "230-0119-85",
-      "fin_prdt_nm": "신한 알.쏠 적금",
-      "intr_rate_type_nm": "단리",
-      "save_trm": "12",
-      "intr_rate": 2.65,
-      "intr_rate2": 3.95,
-      "spcl_cnd": "※가산금리 최고 연 1.30%\n- 소득이체 : 연 0.6%\n- 카드이용 : 연 0.3%\n- 오픈뱅킹 : 연 0.6%\n- 청약보유 : 연 0.3%\n- 마케팅동의 : 연 0.1%\n※ 우대금리 항목별 자세한 적용 조건은 상품설명서 참조",
-      "join_way": "영업점,스마트폰",
-      "max_limit": 3000000,
-      "rsrv_type_nm": "자유적립식"
     },
     {
       "dcls_month": "202608",
