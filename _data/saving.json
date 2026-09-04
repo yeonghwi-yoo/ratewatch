@@ -1,6 +1,6 @@
 {
   "is_sample": false,
-  "generated_at": "2026-09-04T08:10:21+09:00",
+  "generated_at": "2026-09-05T07:56:37+09:00",
   "dcls_month": "202608",
   "save_trm": "12",
   "bank": [
@@ -375,8 +375,8 @@
       "fin_prdt_nm": "NH직장인월복리적금",
       "intr_rate_type_nm": "복리",
       "save_trm": "12",
-      "intr_rate": 3.01,
-      "intr_rate2": 3.81,
+      "intr_rate": 3.02,
+      "intr_rate2": 3.82,
       "spcl_cnd": "1. 급여입금실적 보유 고객 중\n - 가입기간 중 3개월 이상 급여이체시 : 0.3%p\n - 주택청약종합저축 또는 펀드가입 : 0.2%p\n - NH채움카드 결제실적 1백만원 이상 : 0.2%p\n2. 인터넷(스마트)뱅킹 또는 올원뱅크로 가입 : 0.1%p",
       "join_way": "영업점,인터넷,스마트폰",
       "max_limit": 3000000,
@@ -2388,7 +2388,7 @@
     },
     {
       "dcls_month": "202608",
-      "kor_co_nm": "더블저축은행",
+      "kor_co_nm": "라인저축은행",
       "fin_prdt_cd": "310011",
       "fin_prdt_nm": "정기적금",
       "intr_rate_type_nm": "단리",
@@ -2402,7 +2402,7 @@
     },
     {
       "dcls_month": "202608",
-      "kor_co_nm": "더블저축은행",
+      "kor_co_nm": "라인저축은행",
       "fin_prdt_cd": "310012",
       "fin_prdt_nm": "정기적금(인터넷뱅킹,비대면)",
       "intr_rate_type_nm": "단리",

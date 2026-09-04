@@ -1,6 +1,6 @@
 {
   "is_sample": false,
-  "generated_at": "2026-09-04T08:10:12+09:00",
+  "generated_at": "2026-09-05T07:56:29+09:00",
   "dcls_month": "202608",
   "save_trm": "12",
   "bank": [
@@ -115,8 +115,8 @@
       "fin_prdt_nm": "굿스타트예금",
       "intr_rate_type_nm": "단리",
       "save_trm": "12",
-      "intr_rate": 3.22,
-      "intr_rate2": 3.72,
+      "intr_rate": 3.24,
+      "intr_rate2": 3.74,
       "spcl_cnd": "▶ 최고우대금리 0.5% \n ① 첫예금거래 : 0.4% -최근1년동안 정기예금 계좌 신규 또는 해지이력이 없는경우\n ② 개인(신용)정보 수집이용동의 : 0.1% -만기일전일까지 유지시",
       "join_way": "스마트폰",
       "max_limit": 100000000
@@ -128,8 +128,8 @@
       "fin_prdt_nm": "미즈월복리정기예금",
       "intr_rate_type_nm": "복리",
       "save_trm": "12",
-      "intr_rate": 3.42,
-      "intr_rate2": 3.62,
+      "intr_rate": 3.44,
+      "intr_rate2": 3.64,
       "spcl_cnd": "▶ 최고우대금리 0.2% \n ① 요구불평잔 : 0.2% -300만원이상 0.1%, 500만원이상 0.2%\n ② 신용(체크)카드결제실적 : 0.1% -전월결제금 300만원이상 0.05%, 500만원이상 0.1%",
       "join_way": "영업점,인터넷,스마트폰,기타",
       "max_limit": 50000000
@@ -245,8 +245,8 @@
       "fin_prdt_nm": "스마트모아Dream정기예금",
       "intr_rate_type_nm": "단리",
       "save_trm": "12",
-      "intr_rate": 3.32,
-      "intr_rate2": 3.52,
+      "intr_rate": 3.34,
+      "intr_rate2": 3.54,
       "spcl_cnd": "▶ 1년미만, 1천만원이상 0.10%p\n▶ 1년이상, 1천만원이상 0.20%p",
       "join_way": "인터넷,스마트폰",
       "max_limit": null
@@ -258,8 +258,8 @@
       "fin_prdt_nm": "IBK굴리기통장(정기예금)",
       "intr_rate_type_nm": "단리",
       "save_trm": "12",
-      "intr_rate": 3.45,
-      "intr_rate2": 3.45,
+      "intr_rate": 3.46,
+      "intr_rate2": 3.46,
       "spcl_cnd": "없음",
       "join_way": "영업점,스마트폰",
       "max_limit": 300000000
@@ -284,8 +284,8 @@
       "fin_prdt_nm": "IBK더굴리기통장(실세금리정기예금)",
       "intr_rate_type_nm": "단리",
       "save_trm": "12",
-      "intr_rate": 3.3,
-      "intr_rate2": 3.3,
+      "intr_rate": 3.31,
+      "intr_rate2": 3.31,
       "spcl_cnd": "없음",
       "join_way": "인터넷,스마트폰",
       "max_limit": null
@@ -554,6 +554,45 @@
     },
     {
       "dcls_month": "202608",
+      "kor_co_nm": "참저축은행",
+      "fin_prdt_cd": "C614009",
+      "fin_prdt_nm": "회전정기예금",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 4.02,
+      "intr_rate2": 4.02,
+      "spcl_cnd": "없음",
+      "join_way": "영업점",
+      "max_limit": null
+    },
+    {
+      "dcls_month": "202608",
+      "kor_co_nm": "참저축은행",
+      "fin_prdt_cd": "C614010",
+      "fin_prdt_nm": "e- 회전정기예금",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 4.02,
+      "intr_rate2": 4.02,
+      "spcl_cnd": "없음",
+      "join_way": "인터넷,스마트폰",
+      "max_limit": null
+    },
+    {
+      "dcls_month": "202608",
+      "kor_co_nm": "참저축은행",
+      "fin_prdt_cd": "C614011",
+      "fin_prdt_nm": "비대면 회전정기예금",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 4.02,
+      "intr_rate2": 4.02,
+      "spcl_cnd": "없음",
+      "join_way": "스마트폰",
+      "max_limit": 100000000
+    },
+    {
+      "dcls_month": "202608",
       "kor_co_nm": "HB저축은행",
       "fin_prdt_cd": "240018",
       "fin_prdt_nm": "e-정기예금",
@@ -616,6 +655,19 @@
       "spcl_cnd": "* 가입시점 우대금리 조건 충족시 최대 0.1%p 가산 적용(계약기간 24개월 이내)\n- 계좌별 가입금액 10억원 이상 : 0.1%p(최초 계약기간 한정)\n- 우수고객 : 0.1%p(거래기간 3년 이상, 직전 2년 평잔 10억원 이상인 고객. 단, 대출관련 예금 등 제외)",
       "join_way": "영업점,인터넷,스마트폰",
       "max_limit": null
+    },
+    {
+      "dcls_month": "202608",
+      "kor_co_nm": "국제저축은행",
+      "fin_prdt_cd": "KJ0004A",
+      "fin_prdt_nm": "꿈 찾아 정기예금(비대면)",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 4.0,
+      "intr_rate2": 4.0,
+      "spcl_cnd": "없음",
+      "join_way": "스마트폰",
+      "max_limit": 100000000
     },
     {
       "dcls_month": "202608",
@@ -749,6 +801,45 @@
     },
     {
       "dcls_month": "202608",
+      "kor_co_nm": "참저축은행",
+      "fin_prdt_cd": "C614001",
+      "fin_prdt_nm": "정기예금",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 4.0,
+      "intr_rate2": 4.0,
+      "spcl_cnd": "없음",
+      "join_way": "영업점",
+      "max_limit": null
+    },
+    {
+      "dcls_month": "202608",
+      "kor_co_nm": "참저축은행",
+      "fin_prdt_cd": "C614002",
+      "fin_prdt_nm": "e-정기예금",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 4.0,
+      "intr_rate2": 4.0,
+      "spcl_cnd": "없음",
+      "join_way": "인터넷,스마트폰",
+      "max_limit": null
+    },
+    {
+      "dcls_month": "202608",
+      "kor_co_nm": "참저축은행",
+      "fin_prdt_cd": "C614003",
+      "fin_prdt_nm": "비대면정기예금",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 4.0,
+      "intr_rate2": 4.0,
+      "spcl_cnd": "없음",
+      "join_way": "스마트폰",
+      "max_limit": 100000000
+    },
+    {
+      "dcls_month": "202608",
       "kor_co_nm": "JT저축은행",
       "fin_prdt_cd": "240050",
       "fin_prdt_nm": "정기예금",
@@ -811,32 +902,6 @@
       "spcl_cnd": "없음",
       "join_way": "인터넷,스마트폰",
       "max_limit": 1000000000
-    },
-    {
-      "dcls_month": "202608",
-      "kor_co_nm": "참저축은행",
-      "fin_prdt_cd": "C614010",
-      "fin_prdt_nm": "e- 회전정기예금",
-      "intr_rate_type_nm": "단리",
-      "save_trm": "12",
-      "intr_rate": 3.97,
-      "intr_rate2": 3.97,
-      "spcl_cnd": "없음",
-      "join_way": "인터넷,스마트폰",
-      "max_limit": null
-    },
-    {
-      "dcls_month": "202608",
-      "kor_co_nm": "참저축은행",
-      "fin_prdt_cd": "C614011",
-      "fin_prdt_nm": "비대면 회전정기예금",
-      "intr_rate_type_nm": "단리",
-      "save_trm": "12",
-      "intr_rate": 3.97,
-      "intr_rate2": 3.97,
-      "spcl_cnd": "없음",
-      "join_way": "스마트폰",
-      "max_limit": 100000000
     },
     {
       "dcls_month": "202608",
@@ -1009,32 +1074,6 @@
     },
     {
       "dcls_month": "202608",
-      "kor_co_nm": "참저축은행",
-      "fin_prdt_cd": "C614002",
-      "fin_prdt_nm": "e-정기예금",
-      "intr_rate_type_nm": "단리",
-      "save_trm": "12",
-      "intr_rate": 3.95,
-      "intr_rate2": 3.95,
-      "spcl_cnd": "없음",
-      "join_way": "인터넷,스마트폰",
-      "max_limit": null
-    },
-    {
-      "dcls_month": "202608",
-      "kor_co_nm": "참저축은행",
-      "fin_prdt_cd": "C614003",
-      "fin_prdt_nm": "비대면정기예금",
-      "intr_rate_type_nm": "단리",
-      "save_trm": "12",
-      "intr_rate": 3.95,
-      "intr_rate2": 3.95,
-      "spcl_cnd": "없음",
-      "join_way": "스마트폰",
-      "max_limit": 100000000
-    },
-    {
-      "dcls_month": "202608",
       "kor_co_nm": "에스앤티저축은행",
       "fin_prdt_cd": "240014",
       "fin_prdt_nm": "정기예금",
@@ -1069,19 +1108,6 @@
       "intr_rate": 3.92,
       "intr_rate2": 3.92,
       "spcl_cnd": "해당없음",
-      "join_way": "영업점",
-      "max_limit": null
-    },
-    {
-      "dcls_month": "202608",
-      "kor_co_nm": "참저축은행",
-      "fin_prdt_cd": "C614009",
-      "fin_prdt_nm": "회전정기예금",
-      "intr_rate_type_nm": "단리",
-      "save_trm": "12",
-      "intr_rate": 3.92,
-      "intr_rate2": 3.92,
-      "spcl_cnd": "없음",
       "join_way": "영업점",
       "max_limit": null
     },
@@ -1620,7 +1646,7 @@
     },
     {
       "dcls_month": "202608",
-      "kor_co_nm": "더블저축은행",
+      "kor_co_nm": "라인저축은행",
       "fin_prdt_cd": "240001",
       "fin_prdt_nm": "정기예금",
       "intr_rate_type_nm": "단리",
@@ -1633,7 +1659,7 @@
     },
     {
       "dcls_month": "202608",
-      "kor_co_nm": "더블저축은행",
+      "kor_co_nm": "라인저축은행",
       "fin_prdt_cd": "241003",
       "fin_prdt_nm": "정기예금(인터넷뱅킹,스마트뱅킹)",
       "intr_rate_type_nm": "단리",
@@ -1656,19 +1682,6 @@
       "spcl_cnd": "없음",
       "join_way": "인터넷,스마트폰",
       "max_limit": 10000000000
-    },
-    {
-      "dcls_month": "202608",
-      "kor_co_nm": "참저축은행",
-      "fin_prdt_cd": "C614001",
-      "fin_prdt_nm": "정기예금",
-      "intr_rate_type_nm": "단리",
-      "save_trm": "12",
-      "intr_rate": 3.9,
-      "intr_rate2": 3.9,
-      "spcl_cnd": "없음",
-      "join_way": "영업점",
-      "max_limit": null
     },
     {
       "dcls_month": "202608",
@@ -2189,19 +2202,6 @@
       "spcl_cnd": "없음",
       "join_way": "인터넷,스마트폰",
       "max_limit": null
-    },
-    {
-      "dcls_month": "202608",
-      "kor_co_nm": "국제저축은행",
-      "fin_prdt_cd": "KJ0004A",
-      "fin_prdt_nm": "꿈 찾아 정기예금(비대면)",
-      "intr_rate_type_nm": "단리",
-      "save_trm": "12",
-      "intr_rate": 3.8,
-      "intr_rate2": 3.8,
-      "spcl_cnd": "없음",
-      "join_way": "스마트폰",
-      "max_limit": 100000000
     },
     {
       "dcls_month": "202608",
