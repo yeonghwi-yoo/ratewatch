@@ -1,5 +1,5 @@
 # 예적금연구소 — 예·적금 금리 비교 사이트
-# 커스텀 도메인: https://savinglab.org (리포: yeonghwi-yoo/ratewatch, CNAME 파일로 연결)
+# 커스텀 도메인: https://savinglab.org (루트 CNAME 파일로 연결)
 
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 
@@ -10,9 +10,13 @@ name: "예적금연구소"
 description: "매일 갱신되는 예·적금 금리 비교와 청년·정부지원 금융상품 가이드"
 url: "https://savinglab.org"
 baseurl: ""
-repository: "yeonghwi-yoo/ratewatch"
 
 search: true
+
+# 피드·메타용 사이트 저자 정보 (익명 운영: 사이트명·문의 메일만)
+author:
+  name: "예적금연구소"
+  email: "contact@savinglab.org"
 
 # GitHub Pages 허용 플러그인만 사용
 plugins:

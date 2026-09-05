@@ -41,8 +41,9 @@ author_profile: false
 
 ## 5. 개인정보 보호책임 및 문의
 
-본 방침에 대한 문의는 [GitHub 리포지토리](https://github.com/yeonghwi-yoo/ratewatch) 이슈를 통해
-접수할 수 있습니다.
+본 방침 및 개인정보 처리에 관한 문의는 아래 이메일로 접수할 수 있습니다.
+
+- 이메일: [contact@savinglab.org](mailto:contact@savinglab.org)
 
 ## 6. 방침의 변경
 

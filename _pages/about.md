@@ -25,5 +25,6 @@ author_profile: false
 
 ## 문의
 
-사이트 개선 제안이나 오류 제보는 [GitHub 리포지토리](https://github.com/yeonghwi-yoo/ratewatch)의
-이슈로 남겨주세요.
+사이트 개선 제안, 오류 제보, 제휴·광고 문의는 아래 이메일로 보내주세요.
+
+- 이메일: [contact@savinglab.org](mailto:contact@savinglab.org)
