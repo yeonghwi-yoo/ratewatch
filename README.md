@@ -4,7 +4,7 @@
 금융감독원 「금융상품통합비교공시(금융상품 한눈에)」 오픈API 데이터를 GitHub Actions가
 매일 받아 GitHub Pages(Jekyll)로 자동 배포합니다.
 
-- 배포 주소: <https://yeonghwi-yoo.github.io/ratewatch/>
+- 배포 주소: <https://savinglab.org/> (커스텀 도메인, 루트 `CNAME` 파일로 연결 · 옛 주소 yeonghwi-yoo.github.io/ratewatch 는 자동 리다이렉트)
 - 테마: [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes) 4.26.2 (remote_theme)
 
 ## 구조
@@ -51,7 +51,7 @@ API 키를 등록하면 다음 자동 실행부터 실데이터로 교체됩니�
 ```bash
 gem install bundler jekyll
 bundle init && bundle add github-pages --group jekyll_plugins
-bundle exec jekyll serve --baseurl /ratewatch
+bundle exec jekyll serve
 ```
 
 ### 배포 방식
@@ -72,7 +72,7 @@ bundle exec jekyll serve --baseurl /ratewatch
 - [ ] `_includes/head/custom.html` 의 애드센스 스크립트 주석 해제 후
       `ca-pub-XXXXXXXXXXXXXXXX` 를 본인 게시자 ID로 교체
 - [ ] [Google Search Console](https://search.google.com/search-console) 등록 +
-      사이트맵 제출(`/ratewatch/sitemap.xml`), 소유 확인 메타 태그는 `head/custom.html` 주석 해제
+      사이트맵 제출(`https://savinglab.org/sitemap.xml`), 소유 확인 메타 태그는 `head/custom.html` 주석 해제
 - [ ] [네이버 서치어드바이저](https://searchadvisor.naver.com) 등록(메타 태그 동일 위치)
 - [ ] 애드센스 가입 → 사이트 추가 → 심사 요청 → 승인 후 광고 코드 활성화
 - [ ] `ads.txt` 필요 시 루트에 추가 (승인 후 애드센스가 안내하는 내용대로)
