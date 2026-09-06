@@ -9,15 +9,15 @@
 <table>
   <thead>
     <tr>
-      <th>순위</th>
+      <th class="rank">순위</th>
       <th>금융회사</th>
       <th>상품명</th>
-      {% if include.show_mrtg %}<th>담보</th>{% endif %}
-      <th>상환방식</th>
-      <th>금리유형</th>
-      <th>최저(%)</th>
-      <th>평균(%)</th>
-      <th>최고(%)</th>
+      {% if include.show_mrtg %}<th class="sub">담보</th>{% endif %}
+      <th class="sub">상환방식</th>
+      <th class="sub">금리유형</th>
+      <th class="num">최저</th>
+      <th class="num">평균</th>
+      <th class="num">최고</th>
     </tr>
   </thead>
   <tbody>
@@ -29,9 +29,9 @@
       {% if include.show_mrtg %}<td class="sub">{{ item.mrtg_type_nm }}</td>{% endif %}
       <td class="sub">{{ item.rpay_type_nm }}</td>
       <td class="sub">{{ item.lend_rate_type_nm }}</td>
-      <td class="num hl"><strong>{% if item.lend_rate_min %}{{ item.lend_rate_min }}{% else %}-{% endif %}</strong></td>
-      <td class="num">{% if item.lend_rate_avg %}{{ item.lend_rate_avg }}{% else %}-{% endif %}</td>
-      <td class="num">{% if item.lend_rate_max %}{{ item.lend_rate_max }}{% else %}-{% endif %}</td>
+      <td class="num hl"><strong>{% include num.html v=item.lend_rate_min %}</strong></td>
+      <td class="num">{% include num.html v=item.lend_rate_avg %}</td>
+      <td class="num">{% include num.html v=item.lend_rate_max %}</td>
     </tr>
     {% endfor %}
   </tbody>

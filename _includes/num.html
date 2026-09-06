@@ -1,0 +1,8 @@
+{%- comment -%} 금리 숫자 포맷: 소수 2자리 고정 + 작은 % 단위. 파라미터 v (숫자), unit (기본 %) {%- endcomment -%}
+{%- assign v = include.v -%}
+{%- if v == nil or v == "" -%}<span class="na">-</span>{%- else -%}
+{%- assign s = v | append: "" -%}{%- assign parts = s | split: "." -%}
+{%- if parts.size == 1 -%}{%- assign out = s | append: ".00" -%}
+{%- elsif parts[1].size == 1 -%}{%- assign out = s | append: "0" -%}
+{%- else -%}{%- assign out = s -%}{%- endif -%}
+{{ out }}<span class="unit">{{ include.unit | default: "%" }}</span>{%- endif -%}
