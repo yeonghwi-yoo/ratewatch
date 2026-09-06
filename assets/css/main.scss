@@ -143,6 +143,25 @@ a { text-decoration: none; }
 /* 대출 표는 열이 많아 글자를 조금 더 줄인다 */
 .rate-table-wrap--loan table { font-size: 0.8em; }
 
+/* 데스크톱: 표마다 열 위치가 달라지지 않도록 고정 열 너비 사용
+   (상품명 열은 너비 미지정 → 남는 공간을 차지) */
+@include breakpoint($medium) {
+  .rate-table-wrap table { table-layout: fixed; }
+  .rate-table-wrap th.rank { width: 3.5em; }
+
+  .rate-table-wrap--deposit {
+    th:nth-child(2) { width: 24%; }
+    th.num { width: 13%; }
+    th.sub { width: 10%; }
+  }
+
+  .rate-table-wrap--loan {
+    th:nth-child(2) { width: 15%; }
+    th.num { width: 8%; }
+    th.sub { width: 10%; }
+  }
+}
+
 /* 통계 카드 (홈·대출 허브) */
 .stat-cards {
   display: grid;
