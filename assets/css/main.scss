@@ -124,16 +124,52 @@ a { text-decoration: none; }
       vertical-align: middle;
     }
 
-    /* 순위 */
-    td:nth-child(1) { color: $muted-text-color; width: 3em; text-align: center; }
-    /* 금융회사 */
-    td:nth-child(2) { font-weight: 600; white-space: nowrap; }
-    /* 기본금리·최고우대금리 */
-    td:nth-child(4), td:nth-child(5) { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
-    td:nth-child(5) strong { color: $primary-color; font-size: 1.15em; font-weight: 700; }
-    /* 이자계산 */
-    td:nth-child(6) { color: $muted-text-color; font-size: 0.9em; white-space: nowrap; }
+    /* 공통 셀 유형 */
+    td.rank { color: $muted-text-color; width: 3em; text-align: center; }
+    td.co { font-weight: 600; white-space: nowrap; }
+    td.sub { color: $muted-text-color; font-size: 0.9em; white-space: nowrap; }
+    td.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+    td.num.hl strong { color: $primary-color; font-size: 1.15em; font-weight: 700; }
+    .cb { color: $muted-text-color; font-size: 0.85em; }
   }
+}
+
+/* 예·적금 표 (열 위치 기반 스타일) */
+.rate-table-wrap--deposit tbody {
+  td:nth-child(1) { color: $muted-text-color; width: 3em; text-align: center; }
+  td:nth-child(2) { font-weight: 600; white-space: nowrap; }
+  td:nth-child(4), td:nth-child(5) { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  td:nth-child(5) strong { color: $primary-color; font-size: 1.15em; font-weight: 700; }
+  td:nth-child(6) { color: $muted-text-color; font-size: 0.9em; white-space: nowrap; }
+}
+
+/* 대출 표는 열이 많아 글자를 조금 더 줄인다 */
+.rate-table-wrap--loan table { font-size: 0.8em; }
+
+/* 통계 카드 (홈·대출 허브) */
+.stat-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.8em;
+  margin: 1em 0 1.5em;
+
+  @include breakpoint($medium) { grid-template-columns: repeat(3, 1fr); }
+}
+
+.stat-card {
+  display: block;
+  padding: 1.1em 1.2em;
+  border: 1px solid $border-color;
+  border-radius: 14px;
+  color: $text-color;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+
+  &:hover { text-decoration: none !important; box-shadow: 0 4px 14px rgba(25, 31, 40, 0.08); transform: translateY(-2px); }
+
+  .stat-card__label { font-size: 0.8em; color: $muted-text-color; margin-bottom: 0.3em; }
+  .stat-card__value { font-size: 1.6em; font-weight: 800; color: $primary-color; letter-spacing: -0.02em; line-height: 1.2; }
+  .stat-card__value small { font-size: 0.5em; font-weight: 600; color: $muted-text-color; margin-left: 0.15em; }
+  .stat-card__desc { font-size: 0.8em; color: $muted-text-color; margin-top: 0.35em; }
 }
 
 /* --------------------------------------------------------------------------

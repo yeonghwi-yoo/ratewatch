@@ -1,0 +1,21 @@
+{% comment %} 대출 3종 최저금리 요약 카드 (은행 기준) {% endcomment %}
+{% assign m = site.data.mortgage.bank | first %}
+{% assign r = site.data.rent_loan.bank | first %}
+{% assign c = site.data.credit_loan.bank | first %}
+<div class="stat-cards" markdown="0">
+  <a class="stat-card" href="{{ '/loans/mortgage/' | relative_url }}">
+    <div class="stat-card__label">주택담보대출 최저금리 (은행)</div>
+    <div class="stat-card__value">{% if m and m.lend_rate_min %}{{ m.lend_rate_min }}<small>%</small>{% else %}수집 중{% endif %}</div>
+    <div class="stat-card__desc">{% if m %}{{ m.kor_co_nm }} · {{ m.lend_rate_type_nm }} · {{ m.rpay_type_nm }}{% else %}다음 갱신 후 표시{% endif %}</div>
+  </a>
+  <a class="stat-card" href="{{ '/loans/rent/' | relative_url }}">
+    <div class="stat-card__label">전세자금대출 최저금리 (은행)</div>
+    <div class="stat-card__value">{% if r and r.lend_rate_min %}{{ r.lend_rate_min }}<small>%</small>{% else %}수집 중{% endif %}</div>
+    <div class="stat-card__desc">{% if r %}{{ r.kor_co_nm }} · {{ r.lend_rate_type_nm }} · {{ r.rpay_type_nm }}{% else %}다음 갱신 후 표시{% endif %}</div>
+  </a>
+  <a class="stat-card" href="{{ '/loans/credit/' | relative_url }}">
+    <div class="stat-card__label">신용대출 최저 평균금리 (은행)</div>
+    <div class="stat-card__value">{% if c and c.crdt_grad_avg %}{{ c.crdt_grad_avg }}<small>%</small>{% else %}수집 중{% endif %}</div>
+    <div class="stat-card__desc">{% if c %}{{ c.kor_co_nm }} · {{ c.crdt_prdt_type_nm }}{% else %}다음 갱신 후 표시{% endif %}</div>
+  </a>
+</div>

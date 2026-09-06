@@ -1,0 +1,39 @@
+{% comment %}
+주택담보대출·전세자금대출 표. 파라미터:
+  rows      — site.data.mortgage.bank 등
+  limit     — 최대 행 수 (생략 시 전체)
+  show_mrtg — true면 담보유형(아파트/아파트외) 열 표시 (주담대)
+{% endcomment %}
+{% assign row_limit = include.limit | default: 1000 %}
+<div class="rate-table-wrap rate-table-wrap--loan">
+<table>
+  <thead>
+    <tr>
+      <th>순위</th>
+      <th>금융회사</th>
+      <th>상품명</th>
+      {% if include.show_mrtg %}<th>담보</th>{% endif %}
+      <th>상환방식</th>
+      <th>금리유형</th>
+      <th>최저(%)</th>
+      <th>평균(%)</th>
+      <th>최고(%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in include.rows limit: row_limit %}
+    <tr>
+      <td class="rank">{{ forloop.index }}</td>
+      <td class="co">{{ item.kor_co_nm }}</td>
+      <td>{{ item.fin_prdt_nm }}</td>
+      {% if include.show_mrtg %}<td class="sub">{{ item.mrtg_type_nm }}</td>{% endif %}
+      <td class="sub">{{ item.rpay_type_nm }}</td>
+      <td class="sub">{{ item.lend_rate_type_nm }}</td>
+      <td class="num hl"><strong>{% if item.lend_rate_min %}{{ item.lend_rate_min }}{% else %}-{% endif %}</strong></td>
+      <td class="num">{% if item.lend_rate_avg %}{{ item.lend_rate_avg }}{% else %}-{% endif %}</td>
+      <td class="num">{% if item.lend_rate_max %}{{ item.lend_rate_max }}{% else %}-{% endif %}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>

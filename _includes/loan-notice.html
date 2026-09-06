@@ -1,0 +1,13 @@
+{% comment %} 대출 표 공통 고지. 파라미터: data — site.data.mortgage 등 {% endcomment %}
+{% if include.data.pending or include.data == nil %}
+<div class="sample-notice">
+  ⏳ 대출 금리 데이터를 수집하는 중입니다. 다음 자동 갱신(매일 아침) 후 표시됩니다.
+</div>
+{% endif %}
+<p class="rate-notice">
+  ※ 본 데이터는 금융감독원 <a href="https://finlife.fss.or.kr/" target="_blank" rel="noopener">금융상품통합비교공시(금융상품 한눈에)</a>
+  기준입니다. "평균"은 각 금융회사가 전월에 실제 취급한 대출의 평균금리이며, 최저·최고는 공시 구간입니다.
+  실제 적용 금리는 개인의 신용·소득·담보·우대조건에 따라 달라지므로 각 금융회사에서 반드시 확인하세요.
+  본 사이트는 대출을 신청·중개하지 않으며 정보 비교만 제공합니다.
+  {% if include.data.dcls_month %}(공시월: {{ include.data.dcls_month | slice: 0, 4 }}년 {{ include.data.dcls_month | slice: 4, 2 }}월){% endif %}
+</p>

@@ -13,13 +13,19 @@
 ├── _config.yml                  # Jekyll 설정 (url/baseurl, 테마, 플러그인)
 ├── _data/
 │   ├── navigation.yml           # 상단 내비게이션
-│   ├── deposit.json             # 정기예금 데이터 (은행/저축은행)
-│   └── saving.json              # 적금 데이터 (은행/저축은행)
+│   ├── deposit.json             # 정기예금 (은행/저축은행)
+│   ├── saving.json              # 적금
+│   ├── mortgage.json            # 주택담보대출
+│   ├── rent_loan.json           # 전세자금대출
+│   ├── credit_loan.json         # 개인신용대출 (신용점수 구간별)
+│   └── rate_history.json        # 일별 요약 지표 누적 (금리 추이용)
 ├── _includes/
 │   ├── head/custom.html         # 애드센스·서치콘솔·네이버 메타 태그 자리
-│   ├── rate-table.html          # 금리 표 렌더링 include
-│   └── rate-notice.html         # 데이터 출처 고지문
-├── _pages/                      # 정기예금·적금·가이드·소개·개인정보처리방침·404
+│   ├── rate-table.html          # 예·적금 표 include
+│   ├── loan-table-*.html        # 대출 표 include (담보대출/신용대출)
+│   ├── loan-stat-cards.html     # 대출 최저금리 요약 카드
+│   └── *-notice.html            # 데이터 출처 고지문
+├── _pages/                      # 정기예금·적금·대출(허브+3종)·가이드·소개·개인정보처리방침·404
 ├── _posts/                      # 금융 가이드 글
 ├── index.md                     # 홈 (TOP5)
 ├── scripts/fetch_rates.py       # 금감원 오픈API → _data/*.json 갱신 스크립트
@@ -32,6 +38,11 @@
 API 키를 등록하면 다음 자동 실행부터 실데이터로 교체됩니다(`is_sample: false`).
 필드명은 금감원 API의 `baseList`/`optionList` 필드를 그대로 따릅니다
 (`kor_co_nm`, `fin_prdt_nm`, `intr_rate`, `intr_rate2`, `dcls_month` 등).
+
+대출 3종(`mortgage`, `rent_loan`, `credit_loan`)은 `pending: true` 상태로 시작하며 첫 워크플로 실행 시
+실데이터로 채워집니다. 대출 수집이 실패해도 예·적금 갱신은 계속되고 해당 파일은 이전 값을 유지합니다.
+`rate_history.json`에는 매 실행마다 하루 한 줄(최고금리·상위5 평균·대출 최저금리 등)이 누적되어
+추후 금리 추이 차트에 사용합니다.
 
 ## FSS_API_KEY 발급 및 등록
 

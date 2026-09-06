@@ -46,6 +46,13 @@ classes:
 
 {% include rate-table.html rows=site.data.saving.savings_bank limit=5 %}
 
+<div class="section-head" markdown="0">
+  <h2>대출 금리 한눈에</h2>
+  <a class="more-link" href="{{ '/loans/' | relative_url }}">전체 보기 →</a>
+</div>
+
+{% include loan-stat-cards.html %}
+
 {% include rate-notice.html data=site.data.deposit %}
 
 <div class="section-head" markdown="0">
