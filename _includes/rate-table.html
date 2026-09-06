@@ -21,7 +21,7 @@
     {% for item in include.rows limit: row_limit %}
     <tr>
       <td>{{ forloop.index }}</td>
-      <td>{{ item.kor_co_nm }}</td>
+      <td>{{ item.kor_co_nm | replace: '주식회사 ', '' | replace: ' 주식회사', '' | replace: '주식회사', '' }}</td>
       <td>{{ item.fin_prdt_nm }}</td>
       <td>{{ item.intr_rate }}</td>
       <td><strong>{{ item.intr_rate2 }}</strong></td>

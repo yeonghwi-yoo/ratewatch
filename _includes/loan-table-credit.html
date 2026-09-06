@@ -21,7 +21,7 @@
     {% for item in include.rows limit: row_limit %}
     <tr>
       <td class="rank">{{ forloop.index }}</td>
-      <td class="co">{{ item.kor_co_nm }}</td>
+      <td class="co">{{ item.kor_co_nm | replace: '주식회사 ', '' | replace: ' 주식회사', '' | replace: '주식회사', '' }}</td>
       <td>{{ item.fin_prdt_nm }}{% if item.cb_name %} <span class="cb">({{ item.cb_name }})</span>{% endif %}</td>
       <td class="sub">{{ item.crdt_prdt_type_nm }}</td>
       <td class="num">{% if item.crdt_grad_1 %}{{ item.crdt_grad_1 }}{% else %}-{% endif %}</td>

@@ -24,7 +24,7 @@
     {% for item in include.rows limit: row_limit %}
     <tr>
       <td class="rank">{{ forloop.index }}</td>
-      <td class="co">{{ item.kor_co_nm }}</td>
+      <td class="co">{{ item.kor_co_nm | replace: '주식회사 ', '' | replace: ' 주식회사', '' | replace: '주식회사', '' }}</td>
       <td>{{ item.fin_prdt_nm }}</td>
       {% if include.show_mrtg %}<td class="sub">{{ item.mrtg_type_nm }}</td>{% endif %}
       <td class="sub">{{ item.rpay_type_nm }}</td>
