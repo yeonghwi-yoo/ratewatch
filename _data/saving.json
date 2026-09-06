@@ -1,8 +1,8 @@
 {
   "is_sample": false,
-  "generated_at": "2026-09-06T07:44:37+09:00",
+  "pending": false,
+  "generated_at": "2026-09-06T17:43:31+09:00",
   "dcls_month": "202608",
-  "save_trm": "12",
   "bank": [
     {
       "dcls_month": "202608",
@@ -4598,5 +4598,6 @@
       "max_limit": null,
       "rsrv_type_nm": "자유적립식"
     }
-  ]
+  ],
+  "save_trm": "12"
 }
