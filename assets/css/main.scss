@@ -383,8 +383,9 @@ blockquote {
     /* 순위 열은 모바일에서 숨김 (공간 확보) */
     th:first-child, td:first-child { display: none; }
 
-    /* 금융회사 열 왼쪽 고정 — 스크롤해도 어느 은행인지 보이도록 */
-    th:nth-child(2), td:nth-child(2) {
+    /* 금융회사 열 왼쪽 고정 — 스크롤해도 어느 은행인지 보이도록
+       (예적금 표의 nowrap 규칙보다 우선하도록 선택자를 구체적으로) */
+    table thead th:nth-child(2), table tbody td:nth-child(2) {
       position: sticky;
       left: 0;
       z-index: 1;
@@ -399,8 +400,8 @@ blockquote {
       line-height: 1.3;
       font-size: 0.95em;
     }
-    thead th:nth-child(2) { background: #f9fafb; }
-    tbody tr:hover td:nth-child(2) { background: #f9fafb; }
+    table thead th:nth-child(2) { background: #f9fafb; }
+    table tbody tr:hover td:nth-child(2) { background: #f9fafb; }
 
     td:nth-child(3) { min-width: 11em; }
   }
