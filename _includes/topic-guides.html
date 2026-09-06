@@ -1,0 +1,17 @@
+{% comment %} 비교 페이지 하단 관련 가이드. 파라미터: topic (deposit/saving/loan/...), limit {% endcomment %}
+{% assign lim = include.limit | default: 4 %}
+{% assign matched = site.posts | where_exp: "p", "p.topics contains include.topic" %}
+{% if matched.size > 0 %}
+<div class="section-head" markdown="0">
+  <h2 id="related-guides">관련 가이드</h2>
+  <a class="more-link" href="{{ '/guides/' | relative_url }}">전체 보기 →</a>
+</div>
+<div class="guide-cards" markdown="0">
+  {% for post in matched limit: lim %}
+  <a class="guide-card" href="{{ post.url | relative_url }}">
+    <div class="guide-card__title">{{ post.title }}</div>
+    <div class="guide-card__desc">{{ post.excerpt | strip_html | truncate: 80 }}</div>
+  </a>
+  {% endfor %}
+</div>
+{% endif %}

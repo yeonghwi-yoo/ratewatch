@@ -4,6 +4,7 @@
 
 - 표준 라이브러리만 사용 (urllib, json)
 - 예·적금: 12개월(save_trm == "12") 옵션 기준, 최고우대금리(intr_rate2) 내림차순
+  + 만기별(6/12/24/36개월) 목록을 by_term 에 함께 저장 (만기별 비교 페이지용)
 - 주택담보대출·전세자금대출: 옵션(담보/상환/금리유형)별 행, 최저금리 오름차순
 - 개인신용대출: 신용점수 구간별 대출금리(crdt_lend_rate_type == "A"), 평균금리 오름차순
 - 권역: 020000(은행) → "bank", 030300(저축은행) → "savings_bank"
@@ -41,6 +42,7 @@ FIN_GROUPS = {
 }
 
 TARGET_TERM = "12"  # 예·적금 12개월 기준
+TERMS = ("6", "12", "24", "36")  # 만기별 비교 페이지에 쓰는 만기(개월)
 
 KST = timezone(timedelta(hours=9))
 
@@ -122,13 +124,13 @@ def sort_key_asc(value):
 # 예·적금
 # ---------------------------------------------------------------------------
 
-def build_rows(base_list, option_list):
-    """baseList와 optionList를 상품 단위로 합쳐 12개월 최고우대금리 순으로 정렬한다."""
+def build_rows(base_list, option_list, term=TARGET_TERM):
+    """baseList와 optionList를 상품 단위로 합쳐 해당 만기(term)의 최고우대금리 순으로 정렬한다."""
     base_by_key = base_index(base_list)
 
     best_option = {}
     for opt in option_list:
-        if str(opt.get("save_trm")) != TARGET_TERM:
+        if str(opt.get("save_trm")) != str(term):
             continue
         rate2 = to_float(opt.get("intr_rate2"))
         if rate2 is None:
@@ -295,13 +297,17 @@ def append_history(out_dir, today, dcls_month, payloads):
 # 메인
 # ---------------------------------------------------------------------------
 
-def collect(endpoint, auth_key, builder, label):
+def collect(endpoint, auth_key, builder, label, by_term=False):
+    """권역별로 API를 받아 builder로 행을 만든다.
+    by_term=True 이면 TERMS 각각의 목록을 payload["by_term"][term][group] 에도 저장한다."""
     payload = {
         "is_sample": False,
         "pending": False,
         "generated_at": datetime.now(KST).isoformat(timespec="seconds"),
         "dcls_month": None,
     }
+    if by_term:
+        payload["by_term"] = {t: {} for t in TERMS}
     for group_key, fin_grp in FIN_GROUPS.items():
         base_list, option_list = fetch_all(endpoint, auth_key, fin_grp)
         rows = builder(base_list, option_list)
@@ -309,6 +315,11 @@ def collect(endpoint, auth_key, builder, label):
         if rows and not payload["dcls_month"]:
             payload["dcls_month"] = rows[0].get("dcls_month")
         print(f"{label}/{group_key}: {len(rows)}건")
+        if by_term:
+            for term in TERMS:
+                term_rows = rows if term == TARGET_TERM else builder(base_list, option_list, term)
+                payload["by_term"][term][group_key] = term_rows
+                print(f"{label}/{group_key}/{term}개월: {len(term_rows)}건")
     return payload
 
 
@@ -333,7 +344,7 @@ def main() -> int:
 
     # 1) 예·적금 (필수)
     for name, endpoint in PRODUCTS.items():
-        payload = collect(endpoint, auth_key, build_rows, name)
+        payload = collect(endpoint, auth_key, build_rows, name, by_term=True)
         payload["save_trm"] = TARGET_TERM
         write_json(out_dir, name, payload)
         payloads[name] = payload

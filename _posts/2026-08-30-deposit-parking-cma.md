@@ -2,6 +2,7 @@
 title: "정기예금 vs 파킹통장 vs CMA — 구조부터 다른 세 가지 통장"
 permalink: /guides/deposit-parking-cma/
 excerpt: "겉보기엔 모두 '이자 주는 통장'이지만 돈이 굴러가는 구조가 완전히 다릅니다. 구조를 알면 어떤 돈을 어디에 둘지가 보입니다."
+topics: [deposit, basics]
 ---
 
 > **기준일: 2026년 8월 30일** · 이 글은 일반적인 정보 제공 목적이며 투자·금융 자문이 아닙니다.

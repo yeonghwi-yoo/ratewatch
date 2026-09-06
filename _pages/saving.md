@@ -13,6 +13,8 @@ toc_label: "바로가기"
 적금의 우대금리는 급여이체·카드실적·자동이체 등 조건이 붙는 경우가 많으니
 가입 전 우대조건 충족 가능 여부를 반드시 확인하세요.
 
+{% include term-tabs.html kind="saving" term="12" %}
+
 ## 은행 적금
 
 {% include rate-table.html rows=site.data.saving.bank %}
@@ -22,3 +24,5 @@ toc_label: "바로가기"
 {% include rate-table.html rows=site.data.saving.savings_bank %}
 
 {% include rate-notice.html data=site.data.saving %}
+
+{% include topic-guides.html topic="saving" %}

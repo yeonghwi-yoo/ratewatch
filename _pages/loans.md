@@ -57,3 +57,5 @@ classes: wide
    정부 지원 대출은 요건이 맞으면 시중 상품보다 유리한 경우가 많습니다.
 
 {% include loan-notice.html data=site.data.mortgage %}
+
+{% include topic-guides.html topic="loan" %}

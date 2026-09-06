@@ -1,0 +1,9 @@
+{% comment %} 만기별 비교 탭. 파라미터: kind (deposit|saving), term ("6"|"12"|"24"|"36") {% endcomment %}
+{% assign base = "/" | append: include.kind | append: "/" %}
+<div class="term-tabs" markdown="0">
+  <span class="term-tabs__label">만기</span>
+  {% for t in site.data.terms %}
+    {% if t.term == "12" %}{% assign href = base %}{% else %}{% assign href = base | append: t.term | append: "m/" %}{% endif %}
+    <a class="term-tab{% if include.term == t.term %} is-active{% endif %}" href="{{ href | relative_url }}">{{ t.label }}</a>
+  {% endfor %}
+</div>

@@ -1,0 +1,45 @@
+{% comment %}
+테마의 page__related.html 을 덮어쓴다.
+글 하단에 (1) topics 가 겹치는 다른 가이드 글 카드 최대 4개, (2) 관련 비교 페이지 링크를 보여준다.
+topics 값: deposit, saving, loan, tax, youth, basics
+{% endcomment %}
+{% assign my_topics = page.topics | default: empty %}
+{% assign picked = "" | split: "" %}
+{% for t in my_topics %}
+  {% for p in site.posts %}
+    {% if p.url == page.url %}{% continue %}{% endif %}
+    {% if picked contains p.url %}{% continue %}{% endif %}
+    {% if p.topics contains t %}
+      {% assign picked = picked | push: p.url %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+{% for p in site.posts %}
+  {% if picked.size >= 4 %}{% break %}{% endif %}
+  {% if p.url == page.url or picked contains p.url %}{% continue %}{% endif %}
+  {% assign picked = picked | push: p.url %}
+{% endfor %}
+
+<div class="page__related">
+<div class="related-compare">
+  <div class="related-compare__title">금리 비교 바로가기</div>
+  <div class="related-compare__links">
+    {% if my_topics contains "deposit" or my_topics.size == 0 %}<a href="{{ '/deposit/' | relative_url }}">정기예금 금리 비교</a>{% endif %}
+    {% if my_topics contains "saving" or my_topics contains "youth" or my_topics.size == 0 %}<a href="{{ '/saving/' | relative_url }}">적금 금리 비교</a>{% endif %}
+    {% if my_topics contains "loan" %}<a href="{{ '/loans/mortgage/' | relative_url }}">주택담보대출</a><a href="{{ '/loans/rent/' | relative_url }}">전세자금대출</a><a href="{{ '/loans/credit/' | relative_url }}">신용대출</a>{% endif %}
+    {% if my_topics contains "tax" or my_topics contains "basics" %}<a href="{{ '/deposit/' | relative_url }}">정기예금 금리 비교</a>{% endif %}
+    <a href="{{ '/guides/' | relative_url }}">가이드 전체</a>
+  </div>
+</div>
+
+  <h2 class="page__related-title">함께 읽을 글</h2>
+  <div class="guide-cards">
+    {% for u in picked limit: 4 %}
+      {% assign p = site.posts | where: "url", u | first %}
+      <a class="guide-card" href="{{ p.url | relative_url }}">
+        <div class="guide-card__title">{{ p.title }}</div>
+        <div class="guide-card__desc">{{ p.excerpt | strip_html | truncate: 80 }}</div>
+      </a>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,9 @@
+# 만기별 비교 페이지 탭 (fetch_rates.py 의 TERMS 와 맞출 것)
+- term: "6"
+  label: "6개월"
+- term: "12"
+  label: "12개월"
+- term: "24"
+  label: "24개월"
+- term: "36"
+  label: "36개월"

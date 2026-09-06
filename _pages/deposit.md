@@ -10,6 +10,8 @@ toc_label: "바로가기"
 은행·저축은행의 정기예금 금리를 12개월(1년) 만기 기준, 최고우대금리가 높은 순으로 비교합니다.
 데이터는 금융감독원 「금융상품통합비교공시」 오픈API에서 매일 아침 자동 갱신됩니다.
 
+{% include term-tabs.html kind="deposit" term="12" %}
+
 ## 은행 정기예금
 
 {% include rate-table.html rows=site.data.deposit.bank %}
@@ -22,3 +24,5 @@ toc_label: "바로가기"
 {% include rate-table.html rows=site.data.deposit.savings_bank %}
 
 {% include rate-notice.html data=site.data.deposit %}
+
+{% include topic-guides.html topic="deposit" %}

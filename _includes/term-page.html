@@ -1,0 +1,22 @@
+{% comment %} 만기별 예·적금 비교 페이지 본문. 파라미터: kind (deposit|saving), term, label {% endcomment %}
+{% assign d = site.data[include.kind] %}
+{% assign rows = d.by_term[include.term] %}
+{% if include.kind == "deposit" %}{% assign name = "정기예금" %}{% else %}{% assign name = "적금" %}{% endif %}
+{% include term-tabs.html kind=include.kind term=include.term %}
+
+{% if rows and rows.bank and rows.bank.size > 0 %}
+## 은행 {{ name }} ({{ include.label }})
+
+{% include rate-table.html rows=rows.bank %}
+
+## 저축은행 {{ name }} ({{ include.label }})
+
+{% include rate-table.html rows=rows.savings_bank %}
+
+{% include rate-notice.html data=d term=include.label %}
+{% else %}
+<div class="pending-notice" markdown="0">
+  {{ include.label }} 만기 데이터는 다음 자동 갱신(매일 오전 6시) 후 표시됩니다.
+  지금은 <a href="{{ '/' | append: include.kind | append: '/' | relative_url }}">12개월 기준 비교</a>를 참고하세요.
+</div>
+{% endif %}
