@@ -13,8 +13,10 @@
 ├── _config.yml                  # Jekyll 설정 (url/baseurl, 테마, 플러그인)
 ├── _data/
 │   ├── navigation.yml           # 상단 내비게이션
-│   ├── deposit.json             # 정기예금 (은행/저축은행)
-│   ├── saving.json              # 적금
+│   ├── deposit.json             # 정기예금 (은행/저축은행, 12개월 + by_term 만기별 6/12/24/36)
+│   ├── saving.json              # 적금 (동일 구조)
+│   ├── terms.yml                # 만기 탭 정의
+│   ├── ui-text.yml              # 테마 UI 문자열 한국어
 │   ├── mortgage.json            # 주택담보대출
 │   ├── rent_loan.json           # 전세자금대출
 │   ├── credit_loan.json         # 개인신용대출 (신용점수 구간별)
@@ -22,10 +24,14 @@
 ├── _includes/
 │   ├── head/custom.html         # 애드센스·서치콘솔·네이버 메타 태그 자리
 │   ├── rate-table.html          # 예·적금 표 include
+│   ├── term-page.html / term-tabs.html  # 만기별 비교 페이지 본문·탭
+│   ├── page__related.html       # 글 하단 관련 글(topics 기반) + 비교 페이지 링크
+│   ├── topic-guides.html        # 비교 페이지 하단 관련 가이드 카드
 │   ├── loan-table-*.html        # 대출 표 include (담보대출/신용대출)
 │   ├── loan-stat-cards.html     # 대출 최저금리 요약 카드
 │   └── *-notice.html            # 데이터 출처 고지문
-├── _pages/                      # 정기예금·적금·대출(허브+3종)·가이드·소개·개인정보처리방침·404
+├── _pages/                      # 정기예금·적금(12개월 + 6/24/36개월)·대출(허브+3종)·가이드·소개·개인정보처리방침·404
+├── assets/images/               # 파비콘·OG 공유 이미지
 ├── _posts/                      # 금융 가이드 글
 ├── index.md                     # 홈 (TOP5)
 ├── scripts/fetch_rates.py       # 금감원 오픈API → _data/*.json 갱신 스크립트
@@ -38,6 +44,10 @@
 API 키를 등록하면 다음 자동 실행부터 실데이터로 교체됩니다(`is_sample: false`).
 필드명은 금감원 API의 `baseList`/`optionList` 필드를 그대로 따릅니다
 (`kor_co_nm`, `fin_prdt_nm`, `intr_rate`, `intr_rate2`, `dcls_month` 등).
+`bank`/`savings_bank` 는 12개월 기준 목록이고, `by_term["6"|"12"|"24"|"36"]` 에 만기별 목록이 함께 저장됩니다.
+
+글(`_posts`)의 front matter `topics: [deposit, saving, loan, tax, youth, basics]` 는
+글 하단 관련 글 추천과 비교 페이지의 관련 가이드 카드에 사용됩니다. 새 글에도 반드시 넣으세요.
 
 대출 3종(`mortgage`, `rent_loan`, `credit_loan`)은 `pending: true` 상태로 시작하며 첫 워크플로 실행 시
 실데이터로 채워집니다. 대출 수집이 실패해도 예·적금 갱신은 계속되고 해당 파일은 이전 값을 유지합니다.
