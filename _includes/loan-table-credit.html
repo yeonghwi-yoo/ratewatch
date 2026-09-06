@@ -9,12 +9,12 @@
       <th class="rank">순위</th>
       <th>금융회사</th>
       <th>상품명</th>
-      <th class="sub">종류</th>
       <th class="num">900점 초과</th>
       <th class="num">801~900</th>
       <th class="num">701~800</th>
       <th class="num">601~700</th>
       <th class="num">평균</th>
+      <th class="sub">종류</th>
     </tr>
   </thead>
   <tbody>
@@ -23,12 +23,12 @@
       <td class="rank">{{ forloop.index }}</td>
       <td class="co">{{ item.kor_co_nm | replace: '주식회사 ', '' | replace: ' 주식회사', '' | replace: '주식회사', '' }}</td>
       <td>{{ item.fin_prdt_nm }}{% if item.cb_name %} <span class="cb">({{ item.cb_name }})</span>{% endif %}</td>
-      <td class="sub">{{ item.crdt_prdt_type_nm }}</td>
       <td class="num">{% include num.html v=item.crdt_grad_1 %}</td>
       <td class="num">{% include num.html v=item.crdt_grad_4 %}</td>
       <td class="num">{% include num.html v=item.crdt_grad_5 %}</td>
       <td class="num">{% include num.html v=item.crdt_grad_6 %}</td>
       <td class="num hl"><strong>{% include num.html v=item.crdt_grad_avg %}</strong></td>
+      <td class="sub">{{ item.crdt_prdt_type_nm }}</td>
     </tr>
     {% endfor %}
   </tbody>

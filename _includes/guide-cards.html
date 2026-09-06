@@ -1,0 +1,11 @@
+{% comment %} 가이드 글 카드 목록. 파라미터: limit (생략 시 전체), show_date {% endcomment %}
+{% assign card_limit = include.limit | default: 1000 %}
+<div class="guide-cards" markdown="0">
+  {% for post in site.posts limit: card_limit %}
+  <a class="guide-card" href="{{ post.url | relative_url }}">
+    <div class="guide-card__title">{{ post.title }}</div>
+    <div class="guide-card__desc">{{ post.excerpt | strip_html | truncate: 80 }}</div>
+    {% if include.show_date %}<div class="guide-card__meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time></div>{% endif %}
+  </a>
+  {% endfor %}
+</div>

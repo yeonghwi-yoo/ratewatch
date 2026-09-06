@@ -5,17 +5,17 @@
 <div class="stat-cards" markdown="0">
   <a class="stat-card" href="{{ '/loans/mortgage/' | relative_url }}">
     <div class="stat-card__label">주택담보대출 최저금리 (은행)</div>
-    <div class="stat-card__value">{% if m and m.lend_rate_min %}{{ m.lend_rate_min }}<small>%</small>{% else %}수집 중{% endif %}</div>
-    <div class="stat-card__desc">{% if m %}{{ m.kor_co_nm }} · {{ m.lend_rate_type_nm }} · {{ m.rpay_type_nm }}{% else %}다음 갱신 후 표시{% endif %}</div>
+    <div class="stat-card__value">{% if m and m.lend_rate_min %}{% include num.html v=m.lend_rate_min %}{% else %}수집 중{% endif %}</div>
+    <div class="stat-card__desc">{% if m %}{{ m.kor_co_nm | replace: '주식회사 ', '' | replace: ' 주식회사', '' | replace: '주식회사', '' }} · {{ m.lend_rate_type_nm }} · {{ m.rpay_type_nm }}{% else %}다음 갱신 후 표시{% endif %}</div>
   </a>
   <a class="stat-card" href="{{ '/loans/rent/' | relative_url }}">
     <div class="stat-card__label">전세자금대출 최저금리 (은행)</div>
-    <div class="stat-card__value">{% if r and r.lend_rate_min %}{{ r.lend_rate_min }}<small>%</small>{% else %}수집 중{% endif %}</div>
-    <div class="stat-card__desc">{% if r %}{{ r.kor_co_nm }} · {{ r.lend_rate_type_nm }} · {{ r.rpay_type_nm }}{% else %}다음 갱신 후 표시{% endif %}</div>
+    <div class="stat-card__value">{% if r and r.lend_rate_min %}{% include num.html v=r.lend_rate_min %}{% else %}수집 중{% endif %}</div>
+    <div class="stat-card__desc">{% if r %}{{ r.kor_co_nm | replace: '주식회사 ', '' | replace: ' 주식회사', '' | replace: '주식회사', '' }} · {{ r.lend_rate_type_nm }} · {{ r.rpay_type_nm }}{% else %}다음 갱신 후 표시{% endif %}</div>
   </a>
   <a class="stat-card" href="{{ '/loans/credit/' | relative_url }}">
     <div class="stat-card__label">신용대출 최저 평균금리 (은행)</div>
-    <div class="stat-card__value">{% if c and c.crdt_grad_avg %}{{ c.crdt_grad_avg }}<small>%</small>{% else %}수집 중{% endif %}</div>
-    <div class="stat-card__desc">{% if c %}{{ c.kor_co_nm }} · {{ c.crdt_prdt_type_nm }}{% else %}다음 갱신 후 표시{% endif %}</div>
+    <div class="stat-card__value">{% if c and c.crdt_grad_avg %}{% include num.html v=c.crdt_grad_avg %}{% else %}수집 중{% endif %}</div>
+    <div class="stat-card__desc">{% if c %}{{ c.kor_co_nm | replace: '주식회사 ', '' | replace: ' 주식회사', '' | replace: '주식회사', '' }} · {{ c.crdt_prdt_type_nm }}{% else %}다음 갱신 후 표시{% endif %}</div>
   </a>
 </div>

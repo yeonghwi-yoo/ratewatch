@@ -14,11 +14,26 @@ classes: wide
 
 ## 어떤 대출을 봐야 할까
 
-| 구분 | 이런 경우 | 금리 수준 | 비교 페이지 |
-|---|---|---|---|
-| **주택담보대출** | 집을 사거나, 보유 주택을 담보로 큰 금액을 장기간 빌릴 때 | 담보가 있어 가장 낮은 편 | [주담대 비교]({{ "/loans/mortgage/" | relative_url }}) |
-| **전세자금대출** | 전세 보증금이 부족할 때. 보증기관(HF·HUG·SGI) 보증으로 담보 없이 이용 | 주담대와 비슷하거나 약간 높음 | [전세대출 비교]({{ "/loans/rent/" | relative_url }}) |
-| **개인신용대출** | 담보 없이 신용으로 빌릴 때. 마이너스통장 포함 | 신용점수에 따라 차이가 큼 | [신용대출 비교]({{ "/loans/credit/" | relative_url }}) |
+<div class="type-cards" markdown="0">
+  <a class="type-card" href="{{ '/loans/mortgage/' | relative_url }}">
+    <div class="type-card__title">주택담보대출</div>
+    <div class="type-card__desc">집을 사거나, 보유 주택을 담보로 큰 금액을 장기간 빌릴 때</div>
+    <div class="type-card__tag">담보가 있어 금리가 가장 낮은 편</div>
+    <div class="type-card__link">주담대 금리 비교 →</div>
+  </a>
+  <a class="type-card" href="{{ '/loans/rent/' | relative_url }}">
+    <div class="type-card__title">전세자금대출</div>
+    <div class="type-card__desc">전세 보증금이 부족할 때. 보증기관(HF·HUG·SGI) 보증으로 담보 없이 이용</div>
+    <div class="type-card__tag">주담대와 비슷하거나 약간 높음</div>
+    <div class="type-card__link">전세대출 금리 비교 →</div>
+  </a>
+  <a class="type-card" href="{{ '/loans/credit/' | relative_url }}">
+    <div class="type-card__title">개인신용대출</div>
+    <div class="type-card__desc">담보 없이 신용으로 빌릴 때. 마이너스통장 포함</div>
+    <div class="type-card__tag">신용점수에 따라 차이가 큼</div>
+    <div class="type-card__link">신용대출 금리 비교 →</div>
+  </a>
+</div>
 
 ## 대출 금리 표를 읽는 법
 

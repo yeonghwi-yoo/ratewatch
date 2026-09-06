@@ -12,12 +12,12 @@
       <th class="rank">순위</th>
       <th>금융회사</th>
       <th>상품명</th>
-      {% if include.show_mrtg %}<th class="sub">담보</th>{% endif %}
-      <th class="sub">상환방식</th>
-      <th class="sub">금리유형</th>
       <th class="num">최저</th>
       <th class="num">평균</th>
       <th class="num">최고</th>
+      {% if include.show_mrtg %}<th class="sub">담보</th>{% endif %}
+      <th class="sub">상환방식</th>
+      <th class="sub">금리유형</th>
     </tr>
   </thead>
   <tbody>
@@ -26,12 +26,12 @@
       <td class="rank">{{ forloop.index }}</td>
       <td class="co">{{ item.kor_co_nm | replace: '주식회사 ', '' | replace: ' 주식회사', '' | replace: '주식회사', '' }}</td>
       <td>{{ item.fin_prdt_nm }}</td>
-      {% if include.show_mrtg %}<td class="sub">{{ item.mrtg_type_nm }}</td>{% endif %}
-      <td class="sub">{{ item.rpay_type_nm }}</td>
-      <td class="sub">{{ item.lend_rate_type_nm }}</td>
       <td class="num hl"><strong>{% include num.html v=item.lend_rate_min %}</strong></td>
       <td class="num">{% include num.html v=item.lend_rate_avg %}</td>
       <td class="num">{% include num.html v=item.lend_rate_max %}</td>
+      {% if include.show_mrtg %}<td class="sub">{{ item.mrtg_type_nm }}</td>{% endif %}
+      <td class="sub">{{ item.rpay_type_nm }}</td>
+      <td class="sub">{{ item.lend_rate_type_nm }}</td>
     </tr>
     {% endfor %}
   </tbody>

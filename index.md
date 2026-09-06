@@ -60,11 +60,4 @@ classes:
   <a class="more-link" href="{{ '/guides/' | relative_url }}">전체 보기 →</a>
 </div>
 
-<div class="guide-cards" markdown="0">
-  {% for post in site.posts limit: 6 %}
-  <a class="guide-card" href="{{ post.url | relative_url }}">
-    <div class="guide-card__title">{{ post.title }}</div>
-    <div class="guide-card__desc">{{ post.excerpt | strip_html | truncate: 80 }}</div>
-  </a>
-  {% endfor %}
-</div>
+{% include guide-cards.html limit=6 %}
