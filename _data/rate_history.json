@@ -24,5 +24,18 @@
   "mortgage_bank_min": 3.62,
   "rent_bank_min": 3.3,
   "credit_bank_avg_min": 4.57
+ },
+ {
+  "date": "2026-09-08",
+  "dcls_month": "202608",
+  "deposit_bank_max": 3.85,
+  "deposit_bank_top5_avg": 3.824,
+  "deposit_sb_max": 4.02,
+  "deposit_sb_top5_avg": 4.02,
+  "saving_bank_max": 7.0,
+  "saving_sb_max": 14.0,
+  "mortgage_bank_min": 3.62,
+  "rent_bank_min": 3.3,
+  "credit_bank_avg_min": 4.57
  }
 ]
