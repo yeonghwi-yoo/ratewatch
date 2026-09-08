@@ -1,8 +1,7 @@
 {
   "is_sample": false,
   "pending": false,
-  "generated_at": "2026-09-08T08:24:24+09:00",
-  "content_changed_at": "2026-09-08T08:24:24+09:00",
+  "generated_at": "2026-09-09T08:18:28+09:00",
   "dcls_month": "202608",
   "bank": [
     {
@@ -1527,5 +1526,6 @@
       "dly_rate": "약정금리+3%\n(최고 연체이자율 : 연 20%)",
       "join_way": "영업점"
     }
-  ]
+  ],
+  "content_changed_at": "2026-09-08T08:24:24+09:00"
 }
