@@ -35,6 +35,7 @@
 ├── _posts/                      # 금융 가이드 글
 ├── index.md                     # 홈 (TOP5)
 ├── sitemap.xml                  # 직접 작성한 사이트맵 (lastmod 포함)
+├── rss.xml                      # RSS 2.0 피드 (네이버 서치어드바이저 제출용)
 ├── scripts/fetch_rates.py       # 금감원 오픈API → _data/*.json 갱신 스크립트
 └── .github/workflows/
     ├── pages.yml                # main → gh-pages 미러링 (배포 트리거)
@@ -51,6 +52,10 @@ API 키를 등록하면 다음 자동 실행부터 실데이터로 교체됩니�
 `<lastmod>` 는 페이지 front matter 의 `lastmod_data` 가 가리키는 `_data` 파일의 `content_changed_at`
 값을 씁니다. 이 값은 `fetch_rates.py` 가 **금리 내용이 실제로 바뀐 날에만** 갱신하므로,
 매일 재실행돼도 내용이 같으면 수정일이 그대로 유지됩니다.
+
+검색엔진 제출 현황: 구글 서치콘솔·네이버 서치어드바이저에 `sitemap.xml` 제출 완료.
+네이버는 `rss.xml` 을 "요청 → RSS 제출"에 함께 등록합니다. 테마가 만드는 `/feed.xml` 은
+Atom 형식이라 네이버용으로는 RSS 2.0 인 `/rss.xml` 을 따로 둡니다.
 
 글(`_posts`)의 front matter `topics: [deposit, saving, loan, tax, youth, basics]` 는
 글 하단 관련 글 추천과 비교 페이지의 관련 가이드 카드에 사용됩니다. 새 글에도 반드시 넣으세요.

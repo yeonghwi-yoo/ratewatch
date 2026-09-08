@@ -1,0 +1,33 @@
+---
+layout: null
+permalink: /rss.xml
+sitemap: false
+---
+{%- comment -%}
+네이버 서치어드바이저 "RSS 제출"용 RSS 2.0 피드.
+테마(jekyll-feed)가 만드는 /feed.xml 은 Atom 형식이라 네이버가 요구하는 RSS 2.0 과 다르므로
+별도로 둔다. 구글·기타 리더는 기존 Atom 피드를 그대로 쓰면 된다.
+{%- endcomment -%}
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | xml_escape }}</title>
+    <link>{{ '/' | absolute_url }}</link>
+    <description>{{ site.description | xml_escape }}</description>
+    <language>ko</language>
+    <atom:link href="{{ '/rss.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
+    {%- assign newest = site.posts | first -%}
+    {%- if newest %}
+    <lastBuildDate>{{ newest.date | date_to_rfc822 }}</lastBuildDate>
+    {%- endif %}
+    {%- for post in site.posts limit: 30 %}
+    <item>
+      <title>{{ post.title | xml_escape }}</title>
+      <link>{{ post.url | absolute_url }}</link>
+      <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+      <description>{{ post.excerpt | strip_html | strip_newlines | truncate: 300 | xml_escape }}</description>
+    </item>
+    {%- endfor %}
+  </channel>
+</rss>
