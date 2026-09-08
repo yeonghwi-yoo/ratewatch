@@ -6,6 +6,7 @@ author_profile: false
 toc: true
 toc_label: "바로가기"
 topic: deposit
+lastmod_data: deposit   # sitemap lastmod 기준 데이터
 ---
 
 은행·저축은행의 정기예금 금리를 **24개월 만기** 기준, 최고우대금리가 높은 순으로 비교합니다.

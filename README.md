@@ -34,6 +34,7 @@
 ├── assets/images/               # 파비콘·OG 공유 이미지
 ├── _posts/                      # 금융 가이드 글
 ├── index.md                     # 홈 (TOP5)
+├── sitemap.xml                  # 직접 작성한 사이트맵 (lastmod 포함)
 ├── scripts/fetch_rates.py       # 금감원 오픈API → _data/*.json 갱신 스크립트
 └── .github/workflows/
     ├── pages.yml                # main → gh-pages 미러링 (배포 트리거)
@@ -45,6 +46,11 @@ API 키를 등록하면 다음 자동 실행부터 실데이터로 교체됩니�
 필드명은 금감원 API의 `baseList`/`optionList` 필드를 그대로 따릅니다
 (`kor_co_nm`, `fin_prdt_nm`, `intr_rate`, `intr_rate2`, `dcls_month` 등).
 `bank`/`savings_bank` 는 12개월 기준 목록이고, `by_term["6"|"12"|"24"|"36"]` 에 만기별 목록이 함께 저장됩니다.
+
+`sitemap.xml` 은 직접 작성한 템플릿입니다(jekyll-sitemap 은 소스에 파일이 있으면 생성을 건너뜁니다).
+`<lastmod>` 는 페이지 front matter 의 `lastmod_data` 가 가리키는 `_data` 파일의 `content_changed_at`
+값을 씁니다. 이 값은 `fetch_rates.py` 가 **금리 내용이 실제로 바뀐 날에만** 갱신하므로,
+매일 재실행돼도 내용이 같으면 수정일이 그대로 유지됩니다.
 
 글(`_posts`)의 front matter `topics: [deposit, saving, loan, tax, youth, basics]` 는
 글 하단 관련 글 추천과 비교 페이지의 관련 가이드 카드에 사용됩니다. 새 글에도 반드시 넣으세요.

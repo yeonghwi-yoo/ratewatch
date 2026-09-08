@@ -3,6 +3,7 @@ title: "개인정보처리방침"
 permalink: /privacy/
 layout: single
 author_profile: false
+last_modified_at: 2026-08-30
 ---
 
 예적금연구소(이하 "본 사이트")는 이용자의 개인정보를 중요시하며, 「개인정보 보호법」 등

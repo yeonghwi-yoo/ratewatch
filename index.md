@@ -5,6 +5,7 @@ author_profile: false
 classes:
   - wide
   - home
+lastmod_data: deposit   # sitemap lastmod 기준 데이터
 ---
 
 <div class="hero" markdown="0">

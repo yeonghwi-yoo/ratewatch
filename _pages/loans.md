@@ -4,6 +4,7 @@ permalink: /loans/
 layout: single
 author_profile: false
 classes: wide
+lastmod_data: mortgage   # sitemap lastmod 기준 데이터
 ---
 
 은행·저축은행이 금융감독원에 공시한 **주택담보대출·전세자금대출·개인신용대출** 금리를

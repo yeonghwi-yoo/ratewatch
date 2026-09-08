@@ -3,6 +3,7 @@ title: "예적금연구소 소개"
 permalink: /about/
 layout: single
 author_profile: false
+last_modified_at: 2026-09-06
 ---
 
 **예적금연구소**는 흩어져 있는 예·적금과 대출 금리 정보를 한 곳에서 비교할 수 있도록 만든 사이트입니다.

@@ -4,6 +4,7 @@ permalink: /guides/
 layout: single
 author_profile: false
 classes: wide
+lastmod_from_posts: true
 ---
 
 예·적금 고르는 법, 청년·정부지원 상품, 세금과 우대금리처럼 돈을 모을 때 꼭 알아야 할 내용을

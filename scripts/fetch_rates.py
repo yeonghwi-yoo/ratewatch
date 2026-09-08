@@ -323,8 +323,36 @@ def collect(endpoint, auth_key, builder, label, by_term=False):
     return payload
 
 
+def _content_key(payload):
+    """내용 비교용 사본 (실행 시각 관련 필드는 제외)."""
+    return {k: v for k, v in payload.items()
+            if k not in ("generated_at", "content_changed_at")}
+
+
 def write_json(out_dir, name, payload):
+    """JSON 저장. 내용이 이전과 같으면 content_changed_at 을 유지한다.
+
+    content_changed_at 은 sitemap.xml 의 <lastmod> 로 쓰인다.
+    매일 실행 시각(generated_at)을 그대로 쓰면 내용이 그대로여도 수정된 것처럼
+    보이므로, 실제로 금리 데이터가 바뀐 날만 갱신한다.
+    """
     out_path = os.path.join(out_dir, f"{name}.json")
+
+    previous = None
+    if os.path.exists(out_path):
+        try:
+            with open(out_path, encoding="utf-8") as f:
+                previous = json.load(f)
+        except (OSError, ValueError):
+            previous = None
+
+    payload["content_changed_at"] = payload["generated_at"]
+    if previous and _content_key(previous) == _content_key(payload):
+        payload["content_changed_at"] = (
+            previous.get("content_changed_at") or payload["generated_at"]
+        )
+        print(f"{name}: 내용 변경 없음 (최종 변경 {payload['content_changed_at'][:10]})")
+
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
         f.write("\n")

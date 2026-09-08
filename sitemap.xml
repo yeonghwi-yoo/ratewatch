@@ -1,0 +1,44 @@
+---
+layout: null
+sitemap: false
+---
+{%- comment -%}
+직접 작성한 사이트맵. jekyll-sitemap 은 소스에 sitemap.xml 이 있으면 생성을 건너뛴다.
+(robots.txt 는 계속 플러그인이 생성하며 이 파일을 가리킨다.)
+
+<lastmod> 기준:
+  - lastmod_data 가 있는 페이지  → 해당 _data 파일의 content_changed_at
+    (금리가 실제로 바뀐 날. 매일 바뀌는 실행 시각이 아님)
+  - lastmod_from_posts 가 true  → 가장 최근 글의 날짜
+  - last_modified_at / date     → 그 값
+  - 그 외                        → lastmod 생략 (없는 편이 거짓 값보다 낫다)
+{%- endcomment -%}
+{%- assign entries = site.pages | concat: site.posts -%}
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for entry in entries -%}
+  {%- if entry.sitemap == false -%}{%- continue -%}{%- endif -%}
+  {%- assign tail = entry.url | slice: -1 -%}
+  {%- assign ext = entry.url | split: "." | last -%}
+  {%- unless tail == "/" or ext == "html" -%}{%- continue -%}{%- endunless -%}
+  {%- assign lastmod = nil -%}
+  {%- if entry.lastmod_data -%}
+    {%- assign source = site.data[entry.lastmod_data] -%}
+    {%- assign lastmod = source.content_changed_at | default: source.generated_at -%}
+  {%- elsif entry.lastmod_from_posts -%}
+    {%- assign newest = site.posts | first -%}
+    {%- assign lastmod = newest.date | date_to_xmlschema -%}
+  {%- elsif entry.last_modified_at -%}
+    {%- assign lastmod = entry.last_modified_at | date_to_xmlschema -%}
+  {%- elsif entry.date -%}
+    {%- assign lastmod = entry.date | date_to_xmlschema -%}
+  {%- endif -%}
+  {%- assign loc = entry.url | replace: "/index.html", "/" | absolute_url | xml_escape %}
+  <url>
+    <loc>{{ loc }}</loc>
+    {%- if lastmod %}
+    <lastmod>{{ lastmod }}</lastmod>
+    {%- endif %}
+  </url>
+{%- endfor %}
+</urlset>

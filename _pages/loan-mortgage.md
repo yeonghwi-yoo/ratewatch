@@ -4,6 +4,7 @@ permalink: /loans/mortgage/
 layout: single
 author_profile: false
 classes: wide
+lastmod_data: mortgage   # sitemap lastmod 기준 데이터
 ---
 
 은행·저축은행의 **주택담보대출** 공시 금리를 최저금리가 낮은 순으로 비교합니다.

@@ -4,6 +4,7 @@ permalink: /loans/credit/
 layout: single
 author_profile: false
 classes: wide
+lastmod_data: credit_loan   # sitemap lastmod 기준 데이터
 ---
 
 은행·저축은행의 **개인신용대출** 금리를 **신용점수 구간별**로 비교합니다.
