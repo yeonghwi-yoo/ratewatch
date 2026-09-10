@@ -14,6 +14,15 @@ og_image: /assets/images/og-image.png   # 공유(카카오톡·SNS) 미리보기
 
 search: true
 
+# 구글 애널리틱스 (GA4)
+# tracking_id 에 측정 ID(G-XXXXXXXXXX)를 넣으면 다음 배포부터 집계가 시작됩니다.
+# 비워 두면 분석 스크립트가 아예 삽입되지 않습니다.
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: ""
+    anonymize_ip: true
+
 # 피드·메타용 사이트 저자 정보 (익명 운영: 사이트명·문의 메일만)
 author:
   name: "예적금연구소"

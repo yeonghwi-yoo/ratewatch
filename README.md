@@ -26,6 +26,7 @@
 │   ├── rate-table.html          # 예·적금 표 include
 │   ├── term-page.html / term-tabs.html  # 만기별 비교 페이지 본문·탭
 │   ├── page__related.html       # 글 하단 관련 글(topics 기반) + 비교 페이지 링크
+│   ├── analytics.html           # GA4 삽입 (측정 ID 비어 있으면 미삽입)
 │   ├── topic-guides.html        # 비교 페이지 하단 관련 가이드 카드
 │   ├── loan-table-*.html        # 대출 표 include (담보대출/신용대출)
 │   ├── loan-stat-cards.html     # 대출 최저금리 요약 카드
@@ -105,7 +106,9 @@ bundle exec jekyll serve
       `ca-pub-XXXXXXXXXXXXXXXX` 를 본인 게시자 ID로 교체
 - [ ] [Google Search Console](https://search.google.com/search-console) 등록 +
       사이트맵 제출(`https://savinglab.org/sitemap.xml`), 소유 확인 메타 태그는 `head/custom.html` 주석 해제
-- [ ] [네이버 서치어드바이저](https://searchadvisor.naver.com) 등록(메타 태그 동일 위치)
+- [x] [네이버 서치어드바이저](https://searchadvisor.naver.com) 등록 + 사이트맵·RSS(`/rss.xml`) 제출
+- [ ] 구글 애널리틱스: `_config.yml` 의 `analytics.google.tracking_id` 에 GA4 측정 ID(`G-…`) 입력
+      (비워 두면 분석 스크립트가 삽입되지 않음, production 빌드에서만 동작)
 - [ ] 애드센스 가입 → 사이트 추가 → 심사 요청 → 승인 후 광고 코드 활성화
 - [ ] `ads.txt` 필요 시 루트에 추가 (승인 후 애드센스가 안내하는 내용대로)
 
