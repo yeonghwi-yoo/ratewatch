@@ -20,7 +20,7 @@ search: true
 analytics:
   provider: "google-gtag"
   google:
-    tracking_id: ""
+    tracking_id: "G-50LHT1Q6MJ"
     anonymize_ip: true
 
 # 피드·메타용 사이트 저자 정보 (익명 운영: 사이트명·문의 메일만)

@@ -1,3 +1,18 @@
+{%- comment -%}
+구글 애널리틱스 (GA4). 측정 ID는 _config.yml 의 analytics.google.tracking_id 에서 관리한다.
+ID가 비어 있거나 개발 빌드면 삽입하지 않는다. 테마의 analytics.html 은 중복을 막기 위해 비워 뒀다.
+{%- endcomment -%}
+{%- assign ga_id = site.analytics.google.tracking_id | default: "" | strip -%}
+{%- if jekyll.environment == "production" and ga_id != "" and page.analytics != false %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ ga_id }}', { 'anonymize_ip': {{ site.analytics.google.anonymize_ip | default: false }} });
+</script>
+{%- endif %}
+
 <!-- RSS 2.0 피드 (네이버 서치어드바이저 제출용) -->
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS" href="{{ '/rss.xml' | relative_url }}">
 
