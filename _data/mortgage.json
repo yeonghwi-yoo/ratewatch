@@ -1,7 +1,7 @@
 {
   "is_sample": false,
   "pending": false,
-  "generated_at": "2026-09-11T08:02:41+09:00",
+  "generated_at": "2026-09-12T08:08:42+09:00",
   "dcls_month": "202608",
   "bank": [
     {
@@ -1449,24 +1449,8 @@
       "kor_co_nm": "제주은행",
       "fin_prdt_cd": "12106723",
       "fin_prdt_nm": "금리safe모기지론",
-      "mrtg_type_nm": "아파트",
+      "mrtg_type_nm": "아파트외",
       "rpay_type_nm": "만기일시상환방식",
-      "lend_rate_type_nm": "고정금리",
-      "lend_rate_min": 5.76,
-      "lend_rate_max": 6.76,
-      "lend_rate_avg": null,
-      "loan_lmt": "감정가의 70%이내",
-      "erly_rpay_fee": "중도상환금액×1.3%×대출잔여일수/대출기간\n3년경과시 면제",
-      "dly_rate": "적용금리+3%\n최고적용 15%",
-      "join_way": "영업점"
-    },
-    {
-      "dcls_month": "202608",
-      "kor_co_nm": "제주은행",
-      "fin_prdt_cd": "12106723",
-      "fin_prdt_nm": "금리safe모기지론",
-      "mrtg_type_nm": "아파트",
-      "rpay_type_nm": "분할상환방식",
       "lend_rate_type_nm": "고정금리",
       "lend_rate_min": 5.76,
       "lend_rate_max": 6.76,
@@ -1497,8 +1481,24 @@
       "kor_co_nm": "제주은행",
       "fin_prdt_cd": "12106723",
       "fin_prdt_nm": "금리safe모기지론",
-      "mrtg_type_nm": "아파트외",
+      "mrtg_type_nm": "아파트",
       "rpay_type_nm": "만기일시상환방식",
+      "lend_rate_type_nm": "고정금리",
+      "lend_rate_min": 5.76,
+      "lend_rate_max": 6.76,
+      "lend_rate_avg": null,
+      "loan_lmt": "감정가의 70%이내",
+      "erly_rpay_fee": "중도상환금액×1.3%×대출잔여일수/대출기간\n3년경과시 면제",
+      "dly_rate": "적용금리+3%\n최고적용 15%",
+      "join_way": "영업점"
+    },
+    {
+      "dcls_month": "202608",
+      "kor_co_nm": "제주은행",
+      "fin_prdt_cd": "12106723",
+      "fin_prdt_nm": "금리safe모기지론",
+      "mrtg_type_nm": "아파트",
+      "rpay_type_nm": "분할상환방식",
       "lend_rate_type_nm": "고정금리",
       "lend_rate_min": 5.76,
       "lend_rate_max": 6.76,
@@ -1705,7 +1705,7 @@
       "kor_co_nm": "중소기업은행",
       "fin_prdt_cd": "212010144",
       "fin_prdt_nm": "IBK주택담보대출",
-      "mrtg_type_nm": "아파트",
+      "mrtg_type_nm": "아파트외",
       "rpay_type_nm": "만기일시상환방식",
       "lend_rate_type_nm": "고정금리",
       "lend_rate_min": 6.28,
@@ -1721,7 +1721,7 @@
       "kor_co_nm": "중소기업은행",
       "fin_prdt_cd": "212010144",
       "fin_prdt_nm": "IBK주택담보대출",
-      "mrtg_type_nm": "아파트외",
+      "mrtg_type_nm": "아파트",
       "rpay_type_nm": "만기일시상환방식",
       "lend_rate_type_nm": "고정금리",
       "lend_rate_min": 6.28,
@@ -4007,5 +4007,5 @@
       "join_way": "영업점"
     }
   ],
-  "content_changed_at": "2026-09-10T08:07:28+09:00"
+  "content_changed_at": "2026-09-12T08:08:42+09:00"
 }
