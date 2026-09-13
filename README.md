@@ -100,17 +100,15 @@ bundle exec jekyll serve
 
 ## 애드센스 체크리스트
 
-- [ ] 콘텐츠 준비: 가이드 글 확충(최소 15~20개 권장), 각 글 충분한 분량·독창성
+- [x] 콘텐츠 준비: 가이드 34편(10/31까지 예약 발행), 비교 페이지 13개에 표 아래 설명 본문 1,000자 이상
 - [ ] 필수 페이지: 소개(`/about/`), 개인정보처리방침(`/privacy/`) — 포함됨
-- [ ] `_includes/head/custom.html` 의 애드센스 스크립트 주석 해제 후
-      `ca-pub-XXXXXXXXXXXXXXXX` 를 본인 게시자 ID로 교체
+- [x] 애드센스 스크립트(`ca-pub-7635369920244942`) 전 페이지 head 삽입, 루트 `ads.txt` 배포
 - [ ] [Google Search Console](https://search.google.com/search-console) 등록 +
       사이트맵 제출(`https://savinglab.org/sitemap.xml`), 소유 확인 메타 태그는 `head/custom.html` 주석 해제
 - [x] [네이버 서치어드바이저](https://searchadvisor.naver.com) 등록 + 사이트맵·RSS(`/rss.xml`) 제출
 - [x] 구글 애널리틱스(GA4) 연동 완료. 측정 ID는 `_config.yml` 의
       `analytics.google.tracking_id` 한 곳에서 관리하며, 비우면 스크립트가 삽입되지 않음
 - [ ] 애드센스 가입 → 사이트 추가 → 심사 요청 → 승인 후 광고 코드 활성화
-- [ ] `ads.txt` 필요 시 루트에 추가 (승인 후 애드센스가 안내하는 내용대로)
 
 ## 고지
 
