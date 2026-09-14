@@ -1,7 +1,7 @@
 {
   "is_sample": false,
   "pending": false,
-  "generated_at": "2026-09-14T08:03:20+09:00",
+  "generated_at": "2026-09-15T08:48:13+09:00",
   "dcls_month": "202608",
   "by_term": {
     "6": {
@@ -3360,6 +3360,20 @@
         },
         {
           "dcls_month": "202608",
+          "kor_co_nm": "농협은행주식회사",
+          "fin_prdt_cd": "10-059-1264-0001",
+          "fin_prdt_nm": "NH직장인월복리적금",
+          "intr_rate_type_nm": "복리",
+          "save_trm": "12",
+          "intr_rate": 3.05,
+          "intr_rate2": 3.85,
+          "spcl_cnd": "1. 급여입금실적 보유 고객 중\n - 가입기간 중 3개월 이상 급여이체시 : 0.3%p\n - 주택청약종합저축 또는 펀드가입 : 0.2%p\n - NH채움카드 결제실적 1백만원 이상 : 0.2%p\n2. 인터넷(스마트)뱅킹 또는 올원뱅크로 가입 : 0.1%p",
+          "join_way": "영업점,인터넷,스마트폰",
+          "max_limit": 3000000,
+          "rsrv_type_nm": "자유적립식"
+        },
+        {
+          "dcls_month": "202608",
           "kor_co_nm": "주식회사 카카오뱅크",
           "fin_prdt_cd": "10-01-30-355-0002",
           "fin_prdt_nm": "카카오뱅크 자유적금",
@@ -3370,20 +3384,6 @@
           "spcl_cnd": "자동이체시 우대금리 제공 : 연 0.20%p\n - 제공조건 : 전체 계약월수의 1/2이상을 자동이체로 납입하고 만기 해지하는 경우\n - 유의사항 : 만기 자동연장된 원리금은 우대금리를 제공하지 않음",
           "join_way": "스마트폰",
           "max_limit": null,
-          "rsrv_type_nm": "자유적립식"
-        },
-        {
-          "dcls_month": "202608",
-          "kor_co_nm": "농협은행주식회사",
-          "fin_prdt_cd": "10-059-1264-0001",
-          "fin_prdt_nm": "NH직장인월복리적금",
-          "intr_rate_type_nm": "복리",
-          "save_trm": "12",
-          "intr_rate": 3.04,
-          "intr_rate2": 3.84,
-          "spcl_cnd": "1. 급여입금실적 보유 고객 중\n - 가입기간 중 3개월 이상 급여이체시 : 0.3%p\n - 주택청약종합저축 또는 펀드가입 : 0.2%p\n - NH채움카드 결제실적 1백만원 이상 : 0.2%p\n2. 인터넷(스마트)뱅킹 또는 올원뱅크로 가입 : 0.1%p",
-          "join_way": "영업점,인터넷,스마트폰",
-          "max_limit": 3000000,
           "rsrv_type_nm": "자유적립식"
         },
         {
@@ -3491,8 +3491,8 @@
           "fin_prdt_nm": "KDB 자유적금",
           "intr_rate_type_nm": "단리",
           "save_trm": "12",
-          "intr_rate": 3.55,
-          "intr_rate2": 3.55,
+          "intr_rate": 3.6,
+          "intr_rate2": 3.6,
           "spcl_cnd": "해당없음",
           "join_way": "영업점,인터넷,스마트폰",
           "max_limit": 5000000,
@@ -3547,8 +3547,8 @@
           "fin_prdt_nm": "KDB 기업정기적금",
           "intr_rate_type_nm": "단리",
           "save_trm": "12",
-          "intr_rate": 3.35,
-          "intr_rate2": 3.35,
+          "intr_rate": 3.4,
+          "intr_rate2": 3.4,
           "spcl_cnd": "해당없음",
           "join_way": "영업점,인터넷",
           "max_limit": null,
@@ -5014,20 +5014,6 @@
         },
         {
           "dcls_month": "202608",
-          "kor_co_nm": "오투저축은행",
-          "fin_prdt_cd": "310001",
-          "fin_prdt_nm": "정기적금",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "12",
-          "intr_rate": 3.98,
-          "intr_rate2": 3.98,
-          "spcl_cnd": "없음",
-          "join_way": "영업점",
-          "max_limit": null,
-          "rsrv_type_nm": "자유적립식"
-        },
-        {
-          "dcls_month": "202608",
           "kor_co_nm": "민국저축은행",
           "fin_prdt_cd": "MK310001",
           "fin_prdt_nm": "정기적금",
@@ -5137,6 +5123,20 @@
           "join_way": "영업점",
           "max_limit": null,
           "rsrv_type_nm": "정액적립식"
+        },
+        {
+          "dcls_month": "202608",
+          "kor_co_nm": "오투저축은행",
+          "fin_prdt_cd": "310001",
+          "fin_prdt_nm": "정기적금",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "12",
+          "intr_rate": 3.9,
+          "intr_rate2": 3.9,
+          "spcl_cnd": "없음",
+          "join_way": "영업점",
+          "max_limit": null,
+          "rsrv_type_nm": "자유적립식"
         },
         {
           "dcls_month": "202608",
@@ -7837,8 +7837,8 @@
           "fin_prdt_nm": "KDB 자유적금",
           "intr_rate_type_nm": "단리",
           "save_trm": "24",
-          "intr_rate": 3.52,
-          "intr_rate2": 3.52,
+          "intr_rate": 3.56,
+          "intr_rate2": 3.56,
           "spcl_cnd": "해당없음",
           "join_way": "영업점,인터넷,스마트폰",
           "max_limit": 5000000,
@@ -7865,8 +7865,8 @@
           "fin_prdt_nm": "KDB 기업정기적금",
           "intr_rate_type_nm": "단리",
           "save_trm": "24",
-          "intr_rate": 3.42,
-          "intr_rate2": 3.42,
+          "intr_rate": 3.46,
+          "intr_rate2": 3.46,
           "spcl_cnd": "해당없음",
           "join_way": "영업점,인터넷",
           "max_limit": null,
@@ -11581,8 +11581,8 @@
           "fin_prdt_nm": "KDB 자유적금",
           "intr_rate_type_nm": "단리",
           "save_trm": "36",
-          "intr_rate": 3.7,
-          "intr_rate2": 3.7,
+          "intr_rate": 3.73,
+          "intr_rate2": 3.73,
           "spcl_cnd": "해당없음",
           "join_way": "영업점,인터넷,스마트폰",
           "max_limit": 5000000,
@@ -11604,6 +11604,20 @@
         },
         {
           "dcls_month": "202608",
+          "kor_co_nm": "한국산업은행",
+          "fin_prdt_cd": "03101",
+          "fin_prdt_nm": "KDB 기업정기적금",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "36",
+          "intr_rate": 3.63,
+          "intr_rate2": 3.63,
+          "spcl_cnd": "해당없음",
+          "join_way": "영업점,인터넷",
+          "max_limit": null,
+          "rsrv_type_nm": "정액적립식"
+        },
+        {
+          "dcls_month": "202608",
           "kor_co_nm": "광주은행",
           "fin_prdt_cd": "TD11330029000",
           "fin_prdt_nm": "해피라이프_여행스케치적금V",
@@ -11614,20 +11628,6 @@
           "spcl_cnd": "▶ 최고우대금리 1.20%p  \n①해피라이프_여행스케치외화적금V 동일자가입 0.5%p \n②해지원금 기준 500만원이상 : 최고0.2%p\n③신용(체크)카드사용실적300만원이상:최고 0.3%p\n④개인(신용)정보 동의: 0.2%p",
           "join_way": "영업점,스마트폰",
           "max_limit": 5000000,
-          "rsrv_type_nm": "정액적립식"
-        },
-        {
-          "dcls_month": "202608",
-          "kor_co_nm": "한국산업은행",
-          "fin_prdt_cd": "03101",
-          "fin_prdt_nm": "KDB 기업정기적금",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "36",
-          "intr_rate": 3.6,
-          "intr_rate2": 3.6,
-          "spcl_cnd": "해당없음",
-          "join_way": "영업점,인터넷",
-          "max_limit": null,
           "rsrv_type_nm": "정액적립식"
         },
         {
@@ -15236,6 +15236,20 @@
     },
     {
       "dcls_month": "202608",
+      "kor_co_nm": "농협은행주식회사",
+      "fin_prdt_cd": "10-059-1264-0001",
+      "fin_prdt_nm": "NH직장인월복리적금",
+      "intr_rate_type_nm": "복리",
+      "save_trm": "12",
+      "intr_rate": 3.05,
+      "intr_rate2": 3.85,
+      "spcl_cnd": "1. 급여입금실적 보유 고객 중\n - 가입기간 중 3개월 이상 급여이체시 : 0.3%p\n - 주택청약종합저축 또는 펀드가입 : 0.2%p\n - NH채움카드 결제실적 1백만원 이상 : 0.2%p\n2. 인터넷(스마트)뱅킹 또는 올원뱅크로 가입 : 0.1%p",
+      "join_way": "영업점,인터넷,스마트폰",
+      "max_limit": 3000000,
+      "rsrv_type_nm": "자유적립식"
+    },
+    {
+      "dcls_month": "202608",
       "kor_co_nm": "주식회사 카카오뱅크",
       "fin_prdt_cd": "10-01-30-355-0002",
       "fin_prdt_nm": "카카오뱅크 자유적금",
@@ -15246,20 +15260,6 @@
       "spcl_cnd": "자동이체시 우대금리 제공 : 연 0.20%p\n - 제공조건 : 전체 계약월수의 1/2이상을 자동이체로 납입하고 만기 해지하는 경우\n - 유의사항 : 만기 자동연장된 원리금은 우대금리를 제공하지 않음",
       "join_way": "스마트폰",
       "max_limit": null,
-      "rsrv_type_nm": "자유적립식"
-    },
-    {
-      "dcls_month": "202608",
-      "kor_co_nm": "농협은행주식회사",
-      "fin_prdt_cd": "10-059-1264-0001",
-      "fin_prdt_nm": "NH직장인월복리적금",
-      "intr_rate_type_nm": "복리",
-      "save_trm": "12",
-      "intr_rate": 3.04,
-      "intr_rate2": 3.84,
-      "spcl_cnd": "1. 급여입금실적 보유 고객 중\n - 가입기간 중 3개월 이상 급여이체시 : 0.3%p\n - 주택청약종합저축 또는 펀드가입 : 0.2%p\n - NH채움카드 결제실적 1백만원 이상 : 0.2%p\n2. 인터넷(스마트)뱅킹 또는 올원뱅크로 가입 : 0.1%p",
-      "join_way": "영업점,인터넷,스마트폰",
-      "max_limit": 3000000,
       "rsrv_type_nm": "자유적립식"
     },
     {
@@ -15367,8 +15367,8 @@
       "fin_prdt_nm": "KDB 자유적금",
       "intr_rate_type_nm": "단리",
       "save_trm": "12",
-      "intr_rate": 3.55,
-      "intr_rate2": 3.55,
+      "intr_rate": 3.6,
+      "intr_rate2": 3.6,
       "spcl_cnd": "해당없음",
       "join_way": "영업점,인터넷,스마트폰",
       "max_limit": 5000000,
@@ -15423,8 +15423,8 @@
       "fin_prdt_nm": "KDB 기업정기적금",
       "intr_rate_type_nm": "단리",
       "save_trm": "12",
-      "intr_rate": 3.35,
-      "intr_rate2": 3.35,
+      "intr_rate": 3.4,
+      "intr_rate2": 3.4,
       "spcl_cnd": "해당없음",
       "join_way": "영업점,인터넷",
       "max_limit": null,
@@ -16890,20 +16890,6 @@
     },
     {
       "dcls_month": "202608",
-      "kor_co_nm": "오투저축은행",
-      "fin_prdt_cd": "310001",
-      "fin_prdt_nm": "정기적금",
-      "intr_rate_type_nm": "단리",
-      "save_trm": "12",
-      "intr_rate": 3.98,
-      "intr_rate2": 3.98,
-      "spcl_cnd": "없음",
-      "join_way": "영업점",
-      "max_limit": null,
-      "rsrv_type_nm": "자유적립식"
-    },
-    {
-      "dcls_month": "202608",
       "kor_co_nm": "민국저축은행",
       "fin_prdt_cd": "MK310001",
       "fin_prdt_nm": "정기적금",
@@ -17013,6 +16999,20 @@
       "join_way": "영업점",
       "max_limit": null,
       "rsrv_type_nm": "정액적립식"
+    },
+    {
+      "dcls_month": "202608",
+      "kor_co_nm": "오투저축은행",
+      "fin_prdt_cd": "310001",
+      "fin_prdt_nm": "정기적금",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 3.9,
+      "intr_rate2": 3.9,
+      "spcl_cnd": "없음",
+      "join_way": "영업점",
+      "max_limit": null,
+      "rsrv_type_nm": "자유적립식"
     },
     {
       "dcls_month": "202608",
@@ -19466,5 +19466,5 @@
     }
   ],
   "save_trm": "12",
-  "content_changed_at": "2026-09-12T08:08:36+09:00"
+  "content_changed_at": "2026-09-15T08:48:13+09:00"
 }
