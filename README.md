@@ -23,7 +23,10 @@
 │   └── rate_history.json        # 일별 요약 지표 누적 (금리 추이용)
 ├── _includes/
 │   ├── head/custom.html         # GA4·파비콘·RSS·애드센스·서치콘솔·네이버 메타
-│   ├── rate-table.html          # 예·적금 표 include
+│   ├── rate-table.html          # 예·적금 표 include (25행 초과 시 20행 이후 접힘, footer.html 의 스크립트가 "더 보기" 버튼 생성)
+│   ├── co-name.html             # 금융회사명 정리 ('주식회사' 제거, 긴 공식명 → 통용 명칭)
+│   ├── guide-cards.html / topic-chips.html  # 가이드 카드(홈 최신 3편)·주제별 칩(홈·가이드 목록 공용, 대표 주제 기준 편수)
+│   ├── post_pagination.html     # 글 하단 이전/다음 글 (제목 표시)
 │   ├── term-page.html / term-tabs.html  # 만기별 비교 페이지 본문·탭
 │   ├── page__related.html       # 글 하단 관련 글(topics 기반) + 비교 페이지 링크
 │   ├── analytics.html           # 비워 둠 (테마의 body 끝 삽입을 끄고 head 에서 삽입)
@@ -34,7 +37,7 @@
 ├── _pages/                      # 정기예금·적금(12개월 + 6/24/36개월)·대출(허브+3종)·가이드·소개·개인정보처리방침·404
 ├── assets/images/               # 파비콘·OG 공유 이미지
 ├── _posts/                      # 금융 가이드 글
-├── index.md                     # 홈 (TOP5)
+├── index.md                     # 홈 (요약 카드·최신 가이드·주제 칩·은행 TOP5)
 ├── sitemap.xml                  # 직접 작성한 사이트맵 (lastmod 포함)
 ├── rss.xml                      # RSS 2.0 피드 (네이버 서치어드바이저 제출용)
 ├── scripts/fetch_rates.py       # 금감원 오픈API → _data/*.json 갱신 스크립트
