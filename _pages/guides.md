@@ -13,6 +13,8 @@ lastmod_from_posts: true
 
 **처음이라면 이 순서로 읽는 것을 권합니다.** ① 기초 편에서 통장 구조와 이자 계산을 익히고 → ② 예금·적금 편에서 상품 고르는 기준을 잡은 뒤 → ③ 세금 편으로 실수령액을 계산하고 → ④ 청년이라면 정부지원 편을, 대출이 필요하면 대출 편을 보면 됩니다. 각 글 하단에는 관련 비교 페이지와 함께 읽을 글이 연결되어 있습니다.
 
+{% include topic-chips.html %}
+
 {% assign matched = site.posts | where_exp: "p", "p.topics.first == 'basics'" %}
 {% if matched.size > 0 %}
 <div class="section-head" markdown="0">
@@ -21,15 +23,17 @@ lastmod_from_posts: true
 
 파킹통장·CMA·예금의 차이, 적금 이자가 생각보다 적은 이유, 비상금과 통장 쪼개기, 첫 월급 관리처럼 저축을 시작하기 전에 알아야 할 구조를 다룹니다. 금융 상품을 고르기 전에 "돈이 어떻게 굴러가는지"를 먼저 이해하면 이후 선택이 쉬워집니다.
 
-<div class="guide-cards" markdown="0">
+<ul class="guide-list" markdown="0">
   {% for post in matched %}
-  <a class="guide-card" href="{{ post.url | relative_url }}">
-    <div class="guide-card__title">{{ post.title }}</div>
-    <div class="guide-card__desc">{{ post.excerpt | strip_html | truncate: 80 }}</div>
-    <div class="guide-card__meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time></div>
-  </a>
+  <li class="guide-list__item">
+    <a class="guide-list__link" href="{{ post.url | relative_url }}">
+      <span class="guide-list__title">{{ post.title }}</span>
+      <span class="guide-list__desc">{{ post.excerpt | strip_html | truncate: 90 }}</span>
+    </a>
+    <time class="guide-list__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+  </li>
   {% endfor %}
-</div>
+</ul>
 {% endif %}
 
 {% assign matched = site.posts | where_exp: "p", "p.topics.first == 'deposit'" %}
@@ -40,15 +44,17 @@ lastmod_from_posts: true
 
 정기예금 고르는 기준, 만기 선택, 특판 잡는 법, 저축은행 고르기, 예금자보호, 만기 후 관리와 중도해지 대응까지 목돈을 굴릴 때 필요한 판단을 정리했습니다. 실제 금리는 [정기예금 비교]({{ "/deposit/" | relative_url }})에서 매일 갱신되며, 6·24·36개월 만기는 만기 탭에서 볼 수 있습니다.
 
-<div class="guide-cards" markdown="0">
+<ul class="guide-list" markdown="0">
   {% for post in matched %}
-  <a class="guide-card" href="{{ post.url | relative_url }}">
-    <div class="guide-card__title">{{ post.title }}</div>
-    <div class="guide-card__desc">{{ post.excerpt | strip_html | truncate: 80 }}</div>
-    <div class="guide-card__meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time></div>
-  </a>
+  <li class="guide-list__item">
+    <a class="guide-list__link" href="{{ post.url | relative_url }}">
+      <span class="guide-list__title">{{ post.title }}</span>
+      <span class="guide-list__desc">{{ post.excerpt | strip_html | truncate: 90 }}</span>
+    </a>
+    <time class="guide-list__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+  </li>
   {% endfor %}
-</div>
+</ul>
 {% endif %}
 
 {% assign matched = site.posts | where_exp: "p", "p.topics.first == 'saving'" %}
@@ -59,15 +65,17 @@ lastmod_from_posts: true
 
 적금 이자 계산 구조, 예금과 적금의 역할 차이, 풍차돌리기의 실제 효과, 자동이체 설계처럼 매달 돈을 모으는 사람에게 필요한 내용입니다. 상품별 금리는 [적금 비교]({{ "/saving/" | relative_url }})에서 확인하세요.
 
-<div class="guide-cards" markdown="0">
+<ul class="guide-list" markdown="0">
   {% for post in matched %}
-  <a class="guide-card" href="{{ post.url | relative_url }}">
-    <div class="guide-card__title">{{ post.title }}</div>
-    <div class="guide-card__desc">{{ post.excerpt | strip_html | truncate: 80 }}</div>
-    <div class="guide-card__meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time></div>
-  </a>
+  <li class="guide-list__item">
+    <a class="guide-list__link" href="{{ post.url | relative_url }}">
+      <span class="guide-list__title">{{ post.title }}</span>
+      <span class="guide-list__desc">{{ post.excerpt | strip_html | truncate: 90 }}</span>
+    </a>
+    <time class="guide-list__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+  </li>
   {% endfor %}
-</div>
+</ul>
 {% endif %}
 
 {% assign matched = site.posts | where_exp: "p", "p.topics.first == 'youth'" %}
@@ -78,15 +86,17 @@ lastmod_from_posts: true
 
 청년미래적금, 주택청약, ISA처럼 정부 기여금이나 세제혜택이 붙는 상품은 일반 예·적금보다 실효 수익률이 높아 우선순위가 앞섭니다. 자격 요건, 신청 시기, 중복 가입 제한, 놓치기 쉬운 실수를 정리했습니다.
 
-<div class="guide-cards" markdown="0">
+<ul class="guide-list" markdown="0">
   {% for post in matched %}
-  <a class="guide-card" href="{{ post.url | relative_url }}">
-    <div class="guide-card__title">{{ post.title }}</div>
-    <div class="guide-card__desc">{{ post.excerpt | strip_html | truncate: 80 }}</div>
-    <div class="guide-card__meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time></div>
-  </a>
+  <li class="guide-list__item">
+    <a class="guide-list__link" href="{{ post.url | relative_url }}">
+      <span class="guide-list__title">{{ post.title }}</span>
+      <span class="guide-list__desc">{{ post.excerpt | strip_html | truncate: 90 }}</span>
+    </a>
+    <time class="guide-list__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+  </li>
   {% endfor %}
-</div>
+</ul>
 {% endif %}
 
 {% assign matched = site.posts | where_exp: "p", "p.topics.first == 'tax'" %}
@@ -97,15 +107,17 @@ lastmod_from_posts: true
 
 이자소득세 15.4%의 구조와 세후 환산법, 비과세 저축, 연금저축·IRP 세액공제, 신용카드·체크카드 소득공제처럼 실수령액과 환급액을 바꾸는 세금 이야기입니다. 금리 0.1%p보다 세금 구조를 아는 것이 실수령액에 더 큰 차이를 만드는 경우가 많습니다.
 
-<div class="guide-cards" markdown="0">
+<ul class="guide-list" markdown="0">
   {% for post in matched %}
-  <a class="guide-card" href="{{ post.url | relative_url }}">
-    <div class="guide-card__title">{{ post.title }}</div>
-    <div class="guide-card__desc">{{ post.excerpt | strip_html | truncate: 80 }}</div>
-    <div class="guide-card__meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time></div>
-  </a>
+  <li class="guide-list__item">
+    <a class="guide-list__link" href="{{ post.url | relative_url }}">
+      <span class="guide-list__title">{{ post.title }}</span>
+      <span class="guide-list__desc">{{ post.excerpt | strip_html | truncate: 90 }}</span>
+    </a>
+    <time class="guide-list__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+  </li>
   {% endfor %}
-</div>
+</ul>
 {% endif %}
 
 {% assign matched = site.posts | where_exp: "p", "p.topics.first == 'loan'" %}
@@ -116,15 +128,17 @@ lastmod_from_posts: true
 
 주택담보대출·전세자금대출·신용대출의 금리 결정 구조, DSR 한도 계산, 고정·변동 선택, 대환 손익, 마이너스통장과 리볼빙의 위험, 금리인하요구권까지 빌리는 쪽의 판단을 다룹니다. 금리 비교는 [대출 금리 비교]({{ "/loans/" | relative_url }})에서 볼 수 있습니다.
 
-<div class="guide-cards" markdown="0">
+<ul class="guide-list" markdown="0">
   {% for post in matched %}
-  <a class="guide-card" href="{{ post.url | relative_url }}">
-    <div class="guide-card__title">{{ post.title }}</div>
-    <div class="guide-card__desc">{{ post.excerpt | strip_html | truncate: 80 }}</div>
-    <div class="guide-card__meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time></div>
-  </a>
+  <li class="guide-list__item">
+    <a class="guide-list__link" href="{{ post.url | relative_url }}">
+      <span class="guide-list__title">{{ post.title }}</span>
+      <span class="guide-list__desc">{{ post.excerpt | strip_html | truncate: 90 }}</span>
+    </a>
+    <time class="guide-list__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+  </li>
   {% endfor %}
-</div>
+</ul>
 {% endif %}
 
 ## 이 가이드를 읽을 때

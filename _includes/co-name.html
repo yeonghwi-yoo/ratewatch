@@ -1,0 +1,2 @@
+{%- comment -%} 금융회사명 정리: '주식회사' 제거, 긴 공식명은 통용 명칭으로 {%- endcomment -%}
+{{- include.name | replace: '주식회사 ', '' | replace: ' 주식회사', '' | replace: '주식회사', '' | replace: '한국스탠다드차타드은행', 'SC제일은행' | replace: '중소기업은행', 'IBK기업은행' | replace: '한국산업은행', 'KDB산업은행' | replace: '한국씨티은행', '씨티은행' -}}

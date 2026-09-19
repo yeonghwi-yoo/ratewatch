@@ -2,7 +2,8 @@
 예·적금 금리 표. 파라미터: rows (bank/savings_bank 배열), limit (최대 행 수)
 {% endcomment %}
 {% assign row_limit = include.limit | default: 500 %}
-<div class="rate-table-wrap rate-table-wrap--deposit">
+{% assign row_count = include.rows | size %}
+<div{% if include.limit == nil and row_count > 25 %} data-collapse="20"{% endif %} class="rate-table-wrap rate-table-wrap--deposit">
 <table>
   <thead>
     <tr>
@@ -16,9 +17,9 @@
   </thead>
   <tbody>
     {% for item in include.rows limit: row_limit %}
-    <tr>
+    <tr{% if forloop.index > 20 %} class="is-extra"{% endif %}>
       <td class="rank">{{ forloop.index }}</td>
-      <td class="co">{{ item.kor_co_nm | replace: '주식회사 ', '' | replace: ' 주식회사', '' | replace: '주식회사', '' }}</td>
+      <td class="co">{% include co-name.html name=item.kor_co_nm %}</td>
       <td>{{ item.fin_prdt_nm }}</td>
       <td class="num">{% include num.html v=item.intr_rate %}</td>
       <td class="num hl"><strong>{% include num.html v=item.intr_rate2 %}</strong></td>

@@ -2,7 +2,8 @@
 개인신용대출 표 — 신용점수 구간별 금리. 파라미터: rows, limit
 {% endcomment %}
 {% assign row_limit = include.limit | default: 1000 %}
-<div class="rate-table-wrap rate-table-wrap--loan">
+{% assign row_count = include.rows | size %}
+<div{% if include.limit == nil and row_count > 25 %} data-collapse="20"{% endif %} class="rate-table-wrap rate-table-wrap--loan">
 <table>
   <thead>
     <tr>
@@ -19,9 +20,9 @@
   </thead>
   <tbody>
     {% for item in include.rows limit: row_limit %}
-    <tr>
+    <tr{% if forloop.index > 20 %} class="is-extra"{% endif %}>
       <td class="rank">{{ forloop.index }}</td>
-      <td class="co">{{ item.kor_co_nm | replace: '주식회사 ', '' | replace: ' 주식회사', '' | replace: '주식회사', '' }}</td>
+      <td class="co">{% include co-name.html name=item.kor_co_nm %}</td>
       <td>{{ item.fin_prdt_nm }}{% if item.cb_name %} <span class="cb">({{ item.cb_name }})</span>{% endif %}</td>
       <td class="num">{% include num.html v=item.crdt_grad_1 %}</td>
       <td class="num">{% include num.html v=item.crdt_grad_4 %}</td>

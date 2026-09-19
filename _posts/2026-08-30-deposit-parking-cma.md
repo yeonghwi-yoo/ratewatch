@@ -2,7 +2,7 @@
 title: "정기예금 vs 파킹통장 vs CMA, 어떤 돈을 어디에 두나"
 permalink: /guides/deposit-parking-cma/
 excerpt: "정기예금·파킹통장·CMA는 이자가 붙는 구조가 서로 다릅니다. 언제 쓸 돈인지에 따라 어디에 두는 게 맞는지, 세 통장의 차이와 고르는 기준을 정리했습니다."
-topics: [deposit, basics]
+topics: [basics, deposit]
 ---
 
 > **기준일: 2026년 8월 30일** · 이 글은 일반적인 정보 제공 목적이며 투자·금융 자문이 아닙니다.

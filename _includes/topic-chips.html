@@ -1,0 +1,16 @@
+{% comment %} 주제별 칩(대표 주제 기준 편수). 홈과 가이드 목록에서 공용 {% endcomment %}
+{% assign n_basics = site.posts | where_exp: "p", "p.topics.first == 'basics'" | size %}
+{% assign n_deposit = site.posts | where_exp: "p", "p.topics.first == 'deposit'" | size %}
+{% assign n_saving = site.posts | where_exp: "p", "p.topics.first == 'saving'" | size %}
+{% assign n_youth = site.posts | where_exp: "p", "p.topics.first == 'youth'" | size %}
+{% assign n_tax = site.posts | where_exp: "p", "p.topics.first == 'tax'" | size %}
+{% assign n_loan = site.posts | where_exp: "p", "p.topics.first == 'loan'" | size %}
+<nav class="topic-chips" markdown="0" aria-label="주제별 가이드">
+  <span class="topic-chips__label">주제별</span>
+  {% if n_basics > 0 %}<a class="topic-chip" href="{{ '/guides/' | relative_url }}#topic-basics">기초 <b>{{ n_basics }}</b></a>{% endif %}
+  {% if n_deposit > 0 %}<a class="topic-chip" href="{{ '/guides/' | relative_url }}#topic-deposit">예금 <b>{{ n_deposit }}</b></a>{% endif %}
+  {% if n_saving > 0 %}<a class="topic-chip" href="{{ '/guides/' | relative_url }}#topic-saving">적금 <b>{{ n_saving }}</b></a>{% endif %}
+  {% if n_youth > 0 %}<a class="topic-chip" href="{{ '/guides/' | relative_url }}#topic-youth">청년·정부지원 <b>{{ n_youth }}</b></a>{% endif %}
+  {% if n_tax > 0 %}<a class="topic-chip" href="{{ '/guides/' | relative_url }}#topic-tax">세금·연말정산 <b>{{ n_tax }}</b></a>{% endif %}
+  {% if n_loan > 0 %}<a class="topic-chip" href="{{ '/guides/' | relative_url }}#topic-loan">대출 <b>{{ n_loan }}</b></a>{% endif %}
+</nav>

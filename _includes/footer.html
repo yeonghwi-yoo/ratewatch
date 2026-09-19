@@ -10,3 +10,21 @@
   <a href="{{ '/guides/' | relative_url }}">가이드</a> ·
   문의 <a href="mailto:contact@savinglab.org">contact@savinglab.org</a>
 </div>
+<script>
+(function () {
+  var wraps = document.querySelectorAll('.rate-table-wrap[data-collapse]');
+  for (var i = 0; i < wraps.length; i++) {
+    (function (w) {
+      var extra = w.querySelectorAll('tr.is-extra');
+      if (!extra.length) return;
+      w.classList.add('is-collapsed');
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'table-more';
+      btn.textContent = '나머지 ' + extra.length + '개 상품 더 보기';
+      btn.addEventListener('click', function () { w.classList.remove('is-collapsed'); btn.parentNode.removeChild(btn); });
+      w.appendChild(btn);
+    })(wraps[i]);
+  }
+})();
+</script>

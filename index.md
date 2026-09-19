@@ -32,22 +32,22 @@ lastmod_data: deposit   # sitemap lastmod 기준 데이터
   <a class="stat-card" href="{{ '/deposit/' | relative_url }}">
     <div class="stat-card__label">은행 정기예금 최고</div>
     <div class="stat-card__value">{% include num.html v=d_bank.intr_rate2 %}</div>
-    <div class="stat-card__desc">{{ d_bank.kor_co_nm | replace: '주식회사 ', '' | replace: ' 주식회사', '' | replace: '주식회사', '' }}</div>
+    <div class="stat-card__desc">{% include co-name.html name=d_bank.kor_co_nm %}</div>
   </a>
   <a class="stat-card" href="{{ '/deposit/' | relative_url }}#저축은행-정기예금">
     <div class="stat-card__label">저축은행 정기예금 최고</div>
     <div class="stat-card__value">{% include num.html v=d_sb.intr_rate2 %}</div>
-    <div class="stat-card__desc">{{ d_sb.kor_co_nm | replace: '주식회사 ', '' | replace: ' 주식회사', '' | replace: '주식회사', '' }}</div>
+    <div class="stat-card__desc">{% include co-name.html name=d_sb.kor_co_nm %}</div>
   </a>
   <a class="stat-card" href="{{ '/saving/' | relative_url }}">
     <div class="stat-card__label">은행 적금 최고</div>
     <div class="stat-card__value">{% include num.html v=s_bank.intr_rate2 %}</div>
-    <div class="stat-card__desc">{{ s_bank.kor_co_nm | replace: '주식회사 ', '' | replace: ' 주식회사', '' | replace: '주식회사', '' }}</div>
+    <div class="stat-card__desc">{% include co-name.html name=s_bank.kor_co_nm %}</div>
   </a>
   <a class="stat-card" href="{{ '/loans/mortgage/' | relative_url }}">
     <div class="stat-card__label">주택담보대출 최저</div>
     <div class="stat-card__value">{% if m_bank and m_bank.lend_rate_min %}{% include num.html v=m_bank.lend_rate_min %}{% else %}수집 중{% endif %}</div>
-    <div class="stat-card__desc">{% if m_bank %}{{ m_bank.kor_co_nm | replace: '주식회사 ', '' | replace: ' 주식회사', '' | replace: '주식회사', '' }}{% endif %}</div>
+    <div class="stat-card__desc">{% if m_bank %}{% include co-name.html name=m_bank.kor_co_nm %}{% endif %}</div>
   </a>
 </div>
 
@@ -59,21 +59,7 @@ lastmod_data: deposit   # sitemap lastmod 기준 데이터
 
 {% include guide-cards.html limit=3 cols=3 %}
 
-{% assign n_basics = site.posts | where_exp: "p", "p.topics contains 'basics'" | size %}
-{% assign n_deposit = site.posts | where_exp: "p", "p.topics contains 'deposit'" | size %}
-{% assign n_saving = site.posts | where_exp: "p", "p.topics contains 'saving'" | size %}
-{% assign n_youth = site.posts | where_exp: "p", "p.topics contains 'youth'" | size %}
-{% assign n_tax = site.posts | where_exp: "p", "p.topics contains 'tax'" | size %}
-{% assign n_loan = site.posts | where_exp: "p", "p.topics contains 'loan'" | size %}
-<nav class="topic-chips" markdown="0" aria-label="주제별 가이드">
-  <span class="topic-chips__label">주제별</span>
-  <a class="topic-chip" href="{{ '/guides/' | relative_url }}#topic-basics">기초 <b>{{ n_basics }}</b></a>
-  <a class="topic-chip" href="{{ '/guides/' | relative_url }}#topic-deposit">예금 <b>{{ n_deposit }}</b></a>
-  <a class="topic-chip" href="{{ '/guides/' | relative_url }}#topic-saving">적금 <b>{{ n_saving }}</b></a>
-  <a class="topic-chip" href="{{ '/guides/' | relative_url }}#topic-youth">청년·정부지원 <b>{{ n_youth }}</b></a>
-  <a class="topic-chip" href="{{ '/guides/' | relative_url }}#topic-tax">세금·연말정산 <b>{{ n_tax }}</b></a>
-  <a class="topic-chip" href="{{ '/guides/' | relative_url }}#topic-loan">대출 <b>{{ n_loan }}</b></a>
-</nav>
+{% include topic-chips.html %}
 
 <div class="section-head" markdown="0">
   <h2>은행 정기예금 TOP5</h2>
