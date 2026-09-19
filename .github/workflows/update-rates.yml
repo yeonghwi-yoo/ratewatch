@@ -51,4 +51,7 @@ jobs:
             # GITHUB_TOKEN 푸시는 다른 워크플로(sync-to-pages)를 트리거하지 않으므로
             # 배포 브랜치(gh-pages)도 여기서 직접 갱신한다
             git push origin HEAD:gh-pages --force
+            # 오늘 공개된 글 + 금리가 실제로 바뀐 비교 페이지를 네이버·빙(IndexNow)에 알림
+            sleep 90
+            INDEXNOW_BEFORE=HEAD~1 python3 scripts/indexnow.py --auto || true
           fi

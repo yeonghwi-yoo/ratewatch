@@ -9,6 +9,11 @@ on:
   push:
     branches: ["main"]
   workflow_dispatch:
+    inputs:
+      urls:
+        description: "IndexNow 로 제출할 경로 (쉼표 구분, 예: /deposit/,/saving/). 비우면 최근 커밋에서 자동 추정"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -28,3 +33,17 @@ jobs:
 
       - name: Mirror main to gh-pages
         run: git push origin HEAD:gh-pages --force
+
+      # 네이버·빙 등 IndexNow 참여 검색엔진에 바뀐 URL 을 알린다.
+      # (구글은 IndexNow 미참여 — 사이트맵으로 자동 발견됨)
+      - name: IndexNow 제출
+        env:
+          INDEXNOW_BEFORE: ${{ github.event.before }}
+          INPUT_URLS: ${{ github.event.inputs.urls }}
+        run: |
+          sleep 90   # Pages 빌드가 끝나 새 내용·키 파일이 서비스될 시간
+          if [ -n "$INPUT_URLS" ]; then
+            python3 scripts/indexnow.py --urls "$INPUT_URLS"
+          else
+            python3 scripts/indexnow.py --auto
+          fi
