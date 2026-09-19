@@ -1,0 +1,21 @@
+{% comment %}
+테마의 post_pagination.html 을 덮어쓴다. 원본은 "이전/다음" 글자만 보이고 제목이 없어
+무엇으로 이동하는지 알 수 없었다. 제목을 함께 보여 준다.
+(Jekyll 기준 page.previous = 더 오래된 글, page.next = 더 최근 글)
+{% endcomment %}
+{% if page.previous or page.next %}
+<nav class="post-nav" aria-label="이전·다음 글">
+  {% if page.previous %}
+  <a class="post-nav__item post-nav__item--prev" href="{{ page.previous.url | relative_url }}">
+    <span class="post-nav__label">← 이전 글</span>
+    <span class="post-nav__title">{{ page.previous.title }}</span>
+  </a>
+  {% else %}<span></span>{% endif %}
+  {% if page.next %}
+  <a class="post-nav__item post-nav__item--next" href="{{ page.next.url | relative_url }}">
+    <span class="post-nav__label">다음 글 →</span>
+    <span class="post-nav__title">{{ page.next.title }}</span>
+  </a>
+  {% endif %}
+</nav>
+{% endif %}

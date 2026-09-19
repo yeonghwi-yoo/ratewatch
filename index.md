@@ -11,7 +11,11 @@ lastmod_data: deposit   # sitemap lastmod 기준 데이터
 
 <div class="hero" markdown="0">
   <h1>오늘의 예·적금 금리,<br><span class="accent">한눈에</span> 비교하세요</h1>
-  <p>금융감독원 공시 데이터를 매일 아침 자동으로 받아 은행·저축은행의 정기예금·적금 금리를 비교합니다.</p>
+  <p>금융감독원 공시 데이터를 매일 아침 받아 은행·저축은행의 예금·적금·대출 금리를 비교하고, 돈을 모으고 빌릴 때 알아야 할 것을 가이드로 정리합니다.</p>
+  <div class="hero-actions">
+    <a class="btn-primary" href="{{ '/deposit/' | relative_url }}">정기예금 금리 비교</a>
+    <a class="btn-secondary" href="{{ '/guides/' | relative_url }}">금융 가이드 읽기</a>
+  </div>
   <div class="hero-chips">
     <span class="chip chip--blue">공시월 {{ site.data.deposit.dcls_month | slice: 0, 4 }}.{{ site.data.deposit.dcls_month | slice: 4, 2 }}</span>
     <span class="chip">12개월 만기 기준</span>
@@ -20,33 +24,87 @@ lastmod_data: deposit   # sitemap lastmod 기준 데이터
   </div>
 </div>
 
+{% assign d_bank = site.data.deposit.bank | first %}
+{% assign d_sb = site.data.deposit.savings_bank | first %}
+{% assign s_bank = site.data.saving.bank | first %}
+{% assign m_bank = site.data.mortgage.bank | first %}
+<div class="stat-cards stat-cards--4" markdown="0">
+  <a class="stat-card" href="{{ '/deposit/' | relative_url }}">
+    <div class="stat-card__label">은행 정기예금 최고</div>
+    <div class="stat-card__value">{% include num.html v=d_bank.intr_rate2 %}</div>
+    <div class="stat-card__desc">{{ d_bank.kor_co_nm | replace: '주식회사 ', '' | replace: ' 주식회사', '' | replace: '주식회사', '' }}</div>
+  </a>
+  <a class="stat-card" href="{{ '/deposit/' | relative_url }}#저축은행-정기예금">
+    <div class="stat-card__label">저축은행 정기예금 최고</div>
+    <div class="stat-card__value">{% include num.html v=d_sb.intr_rate2 %}</div>
+    <div class="stat-card__desc">{{ d_sb.kor_co_nm | replace: '주식회사 ', '' | replace: ' 주식회사', '' | replace: '주식회사', '' }}</div>
+  </a>
+  <a class="stat-card" href="{{ '/saving/' | relative_url }}">
+    <div class="stat-card__label">은행 적금 최고</div>
+    <div class="stat-card__value">{% include num.html v=s_bank.intr_rate2 %}</div>
+    <div class="stat-card__desc">{{ s_bank.kor_co_nm | replace: '주식회사 ', '' | replace: ' 주식회사', '' | replace: '주식회사', '' }}</div>
+  </a>
+  <a class="stat-card" href="{{ '/loans/mortgage/' | relative_url }}">
+    <div class="stat-card__label">주택담보대출 최저</div>
+    <div class="stat-card__value">{% if m_bank and m_bank.lend_rate_min %}{% include num.html v=m_bank.lend_rate_min %}{% else %}수집 중{% endif %}</div>
+    <div class="stat-card__desc">{% if m_bank %}{{ m_bank.kor_co_nm | replace: '주식회사 ', '' | replace: ' 주식회사', '' | replace: '주식회사', '' }}{% endif %}</div>
+  </a>
+</div>
+
+<div class="section-head" markdown="0">
+  <h2>금융 가이드</h2>
+  <a class="more-link" href="{{ '/guides/' | relative_url }}">전체 {{ site.posts.size }}편 보기 →</a>
+</div>
+<p class="section-lead" markdown="0">금리 비교표만으로는 알 수 없는 것들을 다룹니다. 이자 세금, 우대조건 함정, 만기 선택, 청년 지원 상품, 대출 한도 계산까지 주 2~3편씩 추가됩니다.</p>
+
+{% include guide-cards.html limit=3 %}
+
+<div class="topic-cards" markdown="0">
+  {% assign n_basics = site.posts | where_exp: "p", "p.topics contains 'basics'" | size %}
+  {% assign n_deposit = site.posts | where_exp: "p", "p.topics contains 'deposit'" | size %}
+  {% assign n_saving = site.posts | where_exp: "p", "p.topics contains 'saving'" | size %}
+  {% assign n_youth = site.posts | where_exp: "p", "p.topics contains 'youth'" | size %}
+  {% assign n_tax = site.posts | where_exp: "p", "p.topics contains 'tax'" | size %}
+  {% assign n_loan = site.posts | where_exp: "p", "p.topics contains 'loan'" | size %}
+  <a class="topic-card" href="{{ '/guides/' | relative_url }}#topic-basics">
+    <div class="topic-card__title">기초 <span class="topic-card__count">{{ n_basics }}편</span></div>
+    <div class="topic-card__desc">통장 구조, 적금 이자 계산, 비상금, 첫 월급 관리. 저축을 시작하기 전에 알아야 할 것</div>
+  </a>
+  <a class="topic-card" href="{{ '/guides/' | relative_url }}#topic-deposit">
+    <div class="topic-card__title">예금 <span class="topic-card__count">{{ n_deposit }}편</span></div>
+    <div class="topic-card__desc">정기예금 고르기, 만기 선택, 특판, 저축은행 고르는 법, 만기 후 관리</div>
+  </a>
+  <a class="topic-card" href="{{ '/guides/' | relative_url }}#topic-saving">
+    <div class="topic-card__title">적금 <span class="topic-card__count">{{ n_saving }}편</span></div>
+    <div class="topic-card__desc">적금 이자가 적은 이유, 예금과의 차이, 풍차돌리기, 자동이체 설계</div>
+  </a>
+  <a class="topic-card" href="{{ '/guides/' | relative_url }}#topic-youth">
+    <div class="topic-card__title">청년·정부지원 <span class="topic-card__count">{{ n_youth }}편</span></div>
+    <div class="topic-card__desc">청년미래적금, 주택청약, ISA처럼 기여금·세제혜택이 붙는 상품의 조건과 신청</div>
+  </a>
+  <a class="topic-card" href="{{ '/guides/' | relative_url }}#topic-tax">
+    <div class="topic-card__title">세금·연말정산 <span class="topic-card__count">{{ n_tax }}편</span></div>
+    <div class="topic-card__desc">이자소득세 15.4%, 비과세 저축, 연금저축·IRP, 카드 소득공제</div>
+  </a>
+  <a class="topic-card" href="{{ '/guides/' | relative_url }}#topic-loan">
+    <div class="topic-card__title">대출 <span class="topic-card__count">{{ n_loan }}편</span></div>
+    <div class="topic-card__desc">주담대·전세·신용대출 금리 구조, DSR 한도, 대환, 마이너스통장, 리볼빙</div>
+  </a>
+</div>
+
 <div class="section-head" markdown="0">
   <h2>은행 정기예금 TOP5</h2>
-  <a class="more-link" href="{{ '/deposit/' | relative_url }}">전체 보기 →</a>
+  <a class="more-link" href="{{ '/deposit/' | relative_url }}">저축은행 포함 전체 보기 →</a>
 </div>
 
 {% include rate-table.html rows=site.data.deposit.bank limit=5 %}
 
 <div class="section-head" markdown="0">
-  <h2>저축은행 정기예금 TOP5</h2>
-  <a class="more-link" href="{{ '/deposit/' | relative_url }}">전체 보기 →</a>
-</div>
-
-{% include rate-table.html rows=site.data.deposit.savings_bank limit=5 %}
-
-<div class="section-head" markdown="0">
   <h2>은행 적금 TOP5</h2>
-  <a class="more-link" href="{{ '/saving/' | relative_url }}">전체 보기 →</a>
+  <a class="more-link" href="{{ '/saving/' | relative_url }}">저축은행 포함 전체 보기 →</a>
 </div>
 
 {% include rate-table.html rows=site.data.saving.bank limit=5 %}
-
-<div class="section-head" markdown="0">
-  <h2>저축은행 적금 TOP5</h2>
-  <a class="more-link" href="{{ '/saving/' | relative_url }}">전체 보기 →</a>
-</div>
-
-{% include rate-table.html rows=site.data.saving.savings_bank limit=5 %}
 
 <div class="section-head" markdown="0">
   <h2>대출 금리 한눈에</h2>
@@ -76,10 +134,3 @@ lastmod_data: deposit   # sitemap lastmod 기준 데이터
 이 사이트는 광고나 제휴 없이 공시 데이터만으로 정렬하며, 금융상품을 판매하거나 중개하지 않습니다. 공시와 실제 판매 조건에는 시차가 있을 수 있으니 가입 전 각 금융회사에서 확인하세요.
 
 </div>
-
-<div class="section-head" markdown="0">
-  <h2>금융 가이드</h2>
-  <a class="more-link" href="{{ '/guides/' | relative_url }}">전체 보기 →</a>
-</div>
-
-{% include guide-cards.html limit=6 %}

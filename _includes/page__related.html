@@ -24,10 +24,13 @@ topics 값: deposit, saving, loan, tax, youth, basics
 <div class="related-compare">
   <div class="related-compare__title">금리 비교 바로가기</div>
   <div class="related-compare__links">
-    {% if my_topics contains "deposit" or my_topics.size == 0 %}<a href="{{ '/deposit/' | relative_url }}">정기예금 금리 비교</a>{% endif %}
-    {% if my_topics contains "saving" or my_topics contains "youth" or my_topics.size == 0 %}<a href="{{ '/saving/' | relative_url }}">적금 금리 비교</a>{% endif %}
-    {% if my_topics contains "loan" %}<a href="{{ '/loans/mortgage/' | relative_url }}">주택담보대출</a><a href="{{ '/loans/rent/' | relative_url }}">전세자금대출</a><a href="{{ '/loans/credit/' | relative_url }}">신용대출</a>{% endif %}
-    {% if my_topics contains "tax" or my_topics contains "basics" %}<a href="{{ '/deposit/' | relative_url }}">정기예금 금리 비교</a>{% endif %}
+    {%- assign want_deposit = false -%}{%- assign want_saving = false -%}{%- assign want_loan = false -%}
+    {%- if my_topics.size == 0 or my_topics contains "deposit" or my_topics contains "tax" or my_topics contains "basics" -%}{%- assign want_deposit = true -%}{%- endif -%}
+    {%- if my_topics.size == 0 or my_topics contains "saving" or my_topics contains "youth" -%}{%- assign want_saving = true -%}{%- endif -%}
+    {%- if my_topics contains "loan" -%}{%- assign want_loan = true -%}{%- endif -%}
+    {% if want_deposit %}<a href="{{ '/deposit/' | relative_url }}">정기예금 금리 비교</a>{% endif %}
+    {% if want_saving %}<a href="{{ '/saving/' | relative_url }}">적금 금리 비교</a>{% endif %}
+    {% if want_loan %}<a href="{{ '/loans/mortgage/' | relative_url }}">주택담보대출</a><a href="{{ '/loans/rent/' | relative_url }}">전세자금대출</a><a href="{{ '/loans/credit/' | relative_url }}">신용대출</a>{% endif %}
     <a href="{{ '/guides/' | relative_url }}">가이드 전체</a>
   </div>
 </div>
