@@ -1,5 +1,6 @@
 ---
-title: "정기예금 금리 비교"
+title: "정기예금 금리 비교, 은행·저축은행 최고금리 순 매일 갱신"
+description: "은행·저축은행 정기예금을 12개월 만기 기준 최고우대금리 순으로 매일 갱신해 비교합니다. 기본금리와 우대조건 함정, 1,000만원 예금의 세후 실수령액 계산 예시까지 함께 확인하세요."
 permalink: /deposit/
 layout: single
 author_profile: false

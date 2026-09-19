@@ -1,5 +1,6 @@
 ---
-title: "적금 금리 비교"
+title: "적금 금리 비교, 은행·저축은행 최고금리 순 매일 갱신"
+description: "은행·저축은행 적금을 12개월 기준 최고우대금리 순으로 매일 갱신해 비교합니다. 월 50만원 넣으면 이자가 실제로 얼마인지, 높은 금리의 우대조건은 채울 만한지 표 아래에서 설명합니다."
 permalink: /saving/
 layout: single
 author_profile: false

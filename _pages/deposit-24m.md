@@ -1,5 +1,6 @@
 ---
-title: "정기예금 금리 비교 — 24개월 만기"
+title: "정기예금 24개월 금리 비교, 2년 만기 최고금리 순"
+description: "24개월 만기 정기예금을 은행·저축은행별 최고우대금리 순으로 매일 갱신해 비교합니다. 2년 예금이 유리한 금리 환경, 이자 지급 방식, 1,000만원 세후 이자 예시를 함께 정리했습니다."
 permalink: /deposit/24m/
 layout: single
 author_profile: false

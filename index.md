@@ -1,6 +1,7 @@
 ---
 layout: single
-title: "오늘의 예·적금 금리 비교 — 은행·저축은행 TOP5"
+title: "오늘의 예금·적금 금리 비교, 은행·저축은행 TOP5"
+description: "금융감독원 공시 기준으로 매일 아침 갱신되는 은행·저축은행 정기예금·적금 최고금리 TOP5. 대출 최저금리와 예적금 고르는 법, 세금·청년 상품 가이드까지 한 곳에서 봅니다."
 author_profile: false
 classes:
   - wide
