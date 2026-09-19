@@ -55,42 +55,25 @@ lastmod_data: deposit   # sitemap lastmod 기준 데이터
   <h2>금융 가이드</h2>
   <a class="more-link" href="{{ '/guides/' | relative_url }}">전체 {{ site.posts.size }}편 보기 →</a>
 </div>
-<p class="section-lead" markdown="0">금리 비교표만으로는 알 수 없는 것들을 다룹니다. 이자 세금, 우대조건 함정, 만기 선택, 청년 지원 상품, 대출 한도 계산까지 주 2~3편씩 추가됩니다.</p>
+<p class="section-lead" markdown="0">금리 비교표만으로는 알 수 없는 것들을 다룹니다. 주 2~3편씩 추가됩니다.</p>
 
-{% include guide-cards.html limit=3 %}
+{% include guide-cards.html limit=3 cols=3 %}
 
-<div class="topic-cards" markdown="0">
-  {% assign n_basics = site.posts | where_exp: "p", "p.topics contains 'basics'" | size %}
-  {% assign n_deposit = site.posts | where_exp: "p", "p.topics contains 'deposit'" | size %}
-  {% assign n_saving = site.posts | where_exp: "p", "p.topics contains 'saving'" | size %}
-  {% assign n_youth = site.posts | where_exp: "p", "p.topics contains 'youth'" | size %}
-  {% assign n_tax = site.posts | where_exp: "p", "p.topics contains 'tax'" | size %}
-  {% assign n_loan = site.posts | where_exp: "p", "p.topics contains 'loan'" | size %}
-  <a class="topic-card" href="{{ '/guides/' | relative_url }}#topic-basics">
-    <div class="topic-card__title">기초 <span class="topic-card__count">{{ n_basics }}편</span></div>
-    <div class="topic-card__desc">통장 구조, 적금 이자 계산, 비상금, 첫 월급 관리. 저축을 시작하기 전에 알아야 할 것</div>
-  </a>
-  <a class="topic-card" href="{{ '/guides/' | relative_url }}#topic-deposit">
-    <div class="topic-card__title">예금 <span class="topic-card__count">{{ n_deposit }}편</span></div>
-    <div class="topic-card__desc">정기예금 고르기, 만기 선택, 특판, 저축은행 고르는 법, 만기 후 관리</div>
-  </a>
-  <a class="topic-card" href="{{ '/guides/' | relative_url }}#topic-saving">
-    <div class="topic-card__title">적금 <span class="topic-card__count">{{ n_saving }}편</span></div>
-    <div class="topic-card__desc">적금 이자가 적은 이유, 예금과의 차이, 풍차돌리기, 자동이체 설계</div>
-  </a>
-  <a class="topic-card" href="{{ '/guides/' | relative_url }}#topic-youth">
-    <div class="topic-card__title">청년·정부지원 <span class="topic-card__count">{{ n_youth }}편</span></div>
-    <div class="topic-card__desc">청년미래적금, 주택청약, ISA처럼 기여금·세제혜택이 붙는 상품의 조건과 신청</div>
-  </a>
-  <a class="topic-card" href="{{ '/guides/' | relative_url }}#topic-tax">
-    <div class="topic-card__title">세금·연말정산 <span class="topic-card__count">{{ n_tax }}편</span></div>
-    <div class="topic-card__desc">이자소득세 15.4%, 비과세 저축, 연금저축·IRP, 카드 소득공제</div>
-  </a>
-  <a class="topic-card" href="{{ '/guides/' | relative_url }}#topic-loan">
-    <div class="topic-card__title">대출 <span class="topic-card__count">{{ n_loan }}편</span></div>
-    <div class="topic-card__desc">주담대·전세·신용대출 금리 구조, DSR 한도, 대환, 마이너스통장, 리볼빙</div>
-  </a>
-</div>
+{% assign n_basics = site.posts | where_exp: "p", "p.topics contains 'basics'" | size %}
+{% assign n_deposit = site.posts | where_exp: "p", "p.topics contains 'deposit'" | size %}
+{% assign n_saving = site.posts | where_exp: "p", "p.topics contains 'saving'" | size %}
+{% assign n_youth = site.posts | where_exp: "p", "p.topics contains 'youth'" | size %}
+{% assign n_tax = site.posts | where_exp: "p", "p.topics contains 'tax'" | size %}
+{% assign n_loan = site.posts | where_exp: "p", "p.topics contains 'loan'" | size %}
+<nav class="topic-chips" markdown="0" aria-label="주제별 가이드">
+  <span class="topic-chips__label">주제별</span>
+  <a class="topic-chip" href="{{ '/guides/' | relative_url }}#topic-basics">기초 <b>{{ n_basics }}</b></a>
+  <a class="topic-chip" href="{{ '/guides/' | relative_url }}#topic-deposit">예금 <b>{{ n_deposit }}</b></a>
+  <a class="topic-chip" href="{{ '/guides/' | relative_url }}#topic-saving">적금 <b>{{ n_saving }}</b></a>
+  <a class="topic-chip" href="{{ '/guides/' | relative_url }}#topic-youth">청년·정부지원 <b>{{ n_youth }}</b></a>
+  <a class="topic-chip" href="{{ '/guides/' | relative_url }}#topic-tax">세금·연말정산 <b>{{ n_tax }}</b></a>
+  <a class="topic-chip" href="{{ '/guides/' | relative_url }}#topic-loan">대출 <b>{{ n_loan }}</b></a>
+</nav>
 
 <div class="section-head" markdown="0">
   <h2>은행 정기예금 TOP5</h2>

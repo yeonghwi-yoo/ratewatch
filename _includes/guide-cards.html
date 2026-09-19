@@ -1,6 +1,6 @@
 {% comment %} 가이드 글 카드 목록. 파라미터: limit (생략 시 전체), show_date {% endcomment %}
 {% assign card_limit = include.limit | default: 1000 %}
-<div class="guide-cards" markdown="0">
+<div class="guide-cards{% if include.cols == 3 %} guide-cards--3{% endif %}" markdown="0">
   {% for post in site.posts limit: card_limit %}
   <a class="guide-card" href="{{ post.url | relative_url }}">
     <div class="guide-card__title">{{ post.title }}</div>

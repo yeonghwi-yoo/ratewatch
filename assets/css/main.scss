@@ -279,6 +279,10 @@ body.home #page-title { display: none; }
   margin: 1em 0;
 
   @include breakpoint($medium) { grid-template-columns: 1fr 1fr; }
+
+  &--3 {
+    @include breakpoint($medium) { grid-template-columns: repeat(3, 1fr); }
+  }
 }
 
 .guide-card {
@@ -296,7 +300,10 @@ body.home #page-title { display: none; }
   }
 
   .guide-card__title { font-weight: 700; font-size: 0.95em; margin-bottom: 0.35em; color: $text-color; }
-  .guide-card__desc { font-size: 0.82em; color: $muted-text-color; line-height: 1.6; }
+  .guide-card__desc {
+    font-size: 0.82em; color: $muted-text-color; line-height: 1.6;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
   .guide-card__meta { font-size: 0.75em; color: #8b95a1; margin-top: 0.6em; }
 }
 
@@ -464,25 +471,28 @@ body.home #page-title { display: none; }
 .stat-cards--4 { @include breakpoint($medium) { grid-template-columns: repeat(4, 1fr); } }
 .section-lead { color: $muted-text-color; font-size: 0.9em; margin: -0.4em 0 1em; }
 
-.topic-cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.7em;
-  margin: 1em 0 2.2em;
-  @include breakpoint($medium) { grid-template-columns: repeat(3, 1fr); }
+.topic-chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45em;
+  margin: 0.2em 0 2.2em;
 }
-.topic-card {
-  display: block;
-  padding: 1em 1.1em;
+.topic-chips__label { font-size: 0.8em; font-weight: 600; color: #8b95a1; margin-right: 0.3em; }
+.topic-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  padding: 0.4em 0.9em;
   border: 1px solid $border-color;
-  border-radius: 14px;
+  border-radius: 999px;
+  font-size: 0.82em;
+  font-weight: 600;
   color: $text-color;
   text-decoration: none !important;
-  transition: box-shadow 0.15s ease, transform 0.15s ease;
-  &:hover { box-shadow: 0 4px 14px rgba(25, 31, 40, 0.08); transform: translateY(-2px); }
-  .topic-card__title { display: flex; justify-content: space-between; align-items: center; font-weight: 800; font-size: 0.95em; }
-  .topic-card__count { font-size: 0.72em; font-weight: 600; color: $primary-color; background: #eef4ff; border-radius: 999px; padding: 0.15em 0.65em; }
-  .topic-card__desc { font-size: 0.82em; color: $muted-text-color; margin-top: 0.4em; line-height: 1.55; }
+  transition: background 0.15s ease, border-color 0.15s ease;
+  b { font-weight: 600; color: $primary-color; }
+  &:hover { background: #f2f4f6; border-color: #c9d1dc; color: $text-color; }
 }
 
 /* 글 하단 "업데이트: 날짜" 줄은 상단 날짜와 중복이라 숨김 */
