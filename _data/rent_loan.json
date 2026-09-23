@@ -1,7 +1,7 @@
 {
   "is_sample": false,
   "pending": false,
-  "generated_at": "2026-09-23T08:33:19+09:00",
+  "generated_at": "2026-09-24T08:32:16+09:00",
   "dcls_month": "202609",
   "bank": [
     {
@@ -570,7 +570,7 @@
       "fin_prdt_cd": "WR0001A",
       "fin_prdt_nm": "신한전세대출(주택금융공사)",
       "mrtg_type_nm": null,
-      "rpay_type_nm": "만기일시상환방식",
+      "rpay_type_nm": "분할상환방식",
       "lend_rate_type_nm": "고정금리",
       "lend_rate_min": 4.73,
       "lend_rate_max": 5.93,
@@ -586,7 +586,7 @@
       "fin_prdt_cd": "WR0001A",
       "fin_prdt_nm": "신한전세대출(주택금융공사)",
       "mrtg_type_nm": null,
-      "rpay_type_nm": "분할상환방식",
+      "rpay_type_nm": "만기일시상환방식",
       "lend_rate_type_nm": "고정금리",
       "lend_rate_min": 4.73,
       "lend_rate_max": 5.93,
@@ -602,7 +602,7 @@
       "fin_prdt_cd": "WR0002B",
       "fin_prdt_nm": "신한전세대출(서울보증)",
       "mrtg_type_nm": null,
-      "rpay_type_nm": "분할상환방식",
+      "rpay_type_nm": "만기일시상환방식",
       "lend_rate_type_nm": "고정금리",
       "lend_rate_min": 4.73,
       "lend_rate_max": 5.63,
@@ -618,7 +618,7 @@
       "fin_prdt_cd": "WR0002B",
       "fin_prdt_nm": "신한전세대출(서울보증)",
       "mrtg_type_nm": null,
-      "rpay_type_nm": "만기일시상환방식",
+      "rpay_type_nm": "분할상환방식",
       "lend_rate_type_nm": "고정금리",
       "lend_rate_min": 4.73,
       "lend_rate_max": 5.63,
@@ -986,7 +986,7 @@
       "fin_prdt_cd": "126",
       "fin_prdt_nm": "BNK행복스케치전세자금대출",
       "mrtg_type_nm": null,
-      "rpay_type_nm": "만기일시상환방식",
+      "rpay_type_nm": "분할상환방식",
       "lend_rate_type_nm": "고정금리",
       "lend_rate_min": 5.37,
       "lend_rate_max": 6.17,
@@ -1002,7 +1002,7 @@
       "fin_prdt_cd": "126",
       "fin_prdt_nm": "BNK행복스케치전세자금대출",
       "mrtg_type_nm": null,
-      "rpay_type_nm": "분할상환방식",
+      "rpay_type_nm": "만기일시상환방식",
       "lend_rate_type_nm": "고정금리",
       "lend_rate_min": 5.37,
       "lend_rate_max": 6.17,
@@ -1543,5 +1543,5 @@
       "join_way": "영업점"
     }
   ],
-  "content_changed_at": "2026-09-23T08:33:19+09:00"
+  "content_changed_at": "2026-09-24T08:32:16+09:00"
 }

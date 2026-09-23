@@ -1,7 +1,7 @@
 {
   "is_sample": false,
   "pending": false,
-  "generated_at": "2026-09-23T08:33:01+09:00",
+  "generated_at": "2026-09-24T08:31:56+09:00",
   "dcls_month": "202609",
   "by_term": {
     "6": {
@@ -86,6 +86,19 @@
         },
         {
           "dcls_month": "202609",
+          "kor_co_nm": "주식회사 카카오뱅크",
+          "fin_prdt_cd": "10-01-20-388-0002",
+          "fin_prdt_nm": "카카오뱅크 정기예금",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "6",
+          "intr_rate": 3.5,
+          "intr_rate2": 3.5,
+          "spcl_cnd": "※복잡한 우대조건 없이 가입가능한 정기예금",
+          "join_way": "스마트폰",
+          "max_limit": null
+        },
+        {
+          "dcls_month": "202609",
           "kor_co_nm": "전북은행",
           "fin_prdt_cd": "10-01-20-024-0046-0000",
           "fin_prdt_nm": "JB 다이렉트예금통장\n(만기일시지급식)",
@@ -104,8 +117,8 @@
           "fin_prdt_nm": "IBK굴리기통장(정기예금)",
           "intr_rate_type_nm": "단리",
           "save_trm": "6",
-          "intr_rate": 3.43,
-          "intr_rate2": 3.43,
+          "intr_rate": 3.41,
+          "intr_rate2": 3.41,
           "spcl_cnd": "없음",
           "join_way": "영업점,스마트폰",
           "max_limit": 300000000
@@ -151,15 +164,28 @@
         },
         {
           "dcls_month": "202609",
-          "kor_co_nm": "주식회사 카카오뱅크",
-          "fin_prdt_cd": "10-01-20-388-0002",
-          "fin_prdt_nm": "카카오뱅크 정기예금",
+          "kor_co_nm": "광주은행",
+          "fin_prdt_cd": "TD11300031000",
+          "fin_prdt_nm": "스마트모아Dream정기예금",
           "intr_rate_type_nm": "단리",
           "save_trm": "6",
-          "intr_rate": 3.4,
-          "intr_rate2": 3.4,
-          "spcl_cnd": "※복잡한 우대조건 없이 가입가능한 정기예금",
-          "join_way": "스마트폰",
+          "intr_rate": 3.26,
+          "intr_rate2": 3.36,
+          "spcl_cnd": "▶ 1년미만, 1천만원이상 0.10%p\n▶ 1년이상, 1천만원이상 0.20%p",
+          "join_way": "인터넷,스마트폰",
+          "max_limit": null
+        },
+        {
+          "dcls_month": "202609",
+          "kor_co_nm": "중소기업은행",
+          "fin_prdt_cd": "01211310130",
+          "fin_prdt_nm": "IBK더굴리기통장(실세금리정기예금)",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "6",
+          "intr_rate": 3.36,
+          "intr_rate2": 3.36,
+          "spcl_cnd": "없음",
+          "join_way": "인터넷,스마트폰",
           "max_limit": null
         },
         {
@@ -177,29 +203,29 @@
         },
         {
           "dcls_month": "202609",
-          "kor_co_nm": "중소기업은행",
-          "fin_prdt_cd": "01211310130",
-          "fin_prdt_nm": "IBK더굴리기통장(실세금리정기예금)",
+          "kor_co_nm": "농협은행주식회사",
+          "fin_prdt_cd": "10-003-1225-0001",
+          "fin_prdt_nm": "NH왈츠회전예금 II",
           "intr_rate_type_nm": "단리",
           "save_trm": "6",
-          "intr_rate": 3.34,
-          "intr_rate2": 3.34,
-          "spcl_cnd": "없음",
-          "join_way": "인터넷,스마트폰",
+          "intr_rate": 3.25,
+          "intr_rate2": 3.35,
+          "spcl_cnd": "1. 급여이체실적(50만원 이상)이 있는 경우 : 0.1%p\n2. 트리플 회전 우대이율 :  4회전기간부터 0.1%p",
+          "join_way": "영업점,인터넷,스마트폰",
           "max_limit": null
         },
         {
           "dcls_month": "202609",
-          "kor_co_nm": "광주은행",
-          "fin_prdt_cd": "TD11300031000",
-          "fin_prdt_nm": "스마트모아Dream정기예금",
+          "kor_co_nm": "농협은행주식회사",
+          "fin_prdt_cd": "10-003-1384-0001",
+          "fin_prdt_nm": "NH올원e예금",
           "intr_rate_type_nm": "단리",
           "save_trm": "6",
-          "intr_rate": 3.23,
-          "intr_rate2": 3.33,
-          "spcl_cnd": "▶ 1년미만, 1천만원이상 0.10%p\n▶ 1년이상, 1천만원이상 0.20%p",
+          "intr_rate": 3.35,
+          "intr_rate2": 3.35,
+          "spcl_cnd": "없음",
           "join_way": "인터넷,스마트폰",
-          "max_limit": null
+          "max_limit": 1000000000
         },
         {
           "dcls_month": "202609",
@@ -265,32 +291,6 @@
           "spcl_cnd": "해당무",
           "join_way": "인터넷,스마트폰",
           "max_limit": null
-        },
-        {
-          "dcls_month": "202609",
-          "kor_co_nm": "농협은행주식회사",
-          "fin_prdt_cd": "10-003-1225-0001",
-          "fin_prdt_nm": "NH왈츠회전예금 II",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "6",
-          "intr_rate": 3.15,
-          "intr_rate2": 3.25,
-          "spcl_cnd": "1. 급여이체실적(50만원 이상)이 있는 경우 : 0.1%p\n2. 트리플 회전 우대이율 :  4회전기간부터 0.1%p",
-          "join_way": "영업점,인터넷,스마트폰",
-          "max_limit": null
-        },
-        {
-          "dcls_month": "202609",
-          "kor_co_nm": "농협은행주식회사",
-          "fin_prdt_cd": "10-003-1384-0001",
-          "fin_prdt_nm": "NH올원e예금",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "6",
-          "intr_rate": 3.25,
-          "intr_rate2": 3.25,
-          "spcl_cnd": "없음",
-          "join_way": "인터넷,스마트폰",
-          "max_limit": 1000000000
         },
         {
           "dcls_month": "202609",
@@ -3594,8 +3594,8 @@
           "fin_prdt_nm": "굿스타트예금",
           "intr_rate_type_nm": "단리",
           "save_trm": "12",
-          "intr_rate": 3.45,
-          "intr_rate2": 3.95,
+          "intr_rate": 3.49,
+          "intr_rate2": 3.99,
           "spcl_cnd": "▶ 최고우대금리 0.5% \n ① 첫예금거래 : 0.4% -최근1년동안 정기예금 계좌 신규 또는 해지이력이 없는경우\n ② 개인(신용)정보 수집이용동의 : 0.1% -만기일전일까지 유지시",
           "join_way": "스마트폰",
           "max_limit": 100000000
@@ -3612,6 +3612,19 @@
           "spcl_cnd": "\"* 우대이율 (최대 1.82%p)\n가. 모바일뱅킹 금융정보 및 혜택알림 동의 우대이율 : 0.10%p\n나. 신규고객 또는 정기예금 중도해지고객 우대이율 1.12%p\n다. 특판우대이율 : 0.60%p(24개월 0.95%p)\"",
           "join_way": "인터넷,스마트폰",
           "max_limit": null
+        },
+        {
+          "dcls_month": "202609",
+          "kor_co_nm": "광주은행",
+          "fin_prdt_cd": "TD11300027000",
+          "fin_prdt_nm": "미즈월복리정기예금",
+          "intr_rate_type_nm": "복리",
+          "save_trm": "12",
+          "intr_rate": 3.69,
+          "intr_rate2": 3.89,
+          "spcl_cnd": "▶ 최고우대금리 0.2% \n ① 요구불평잔 : 0.2% -300만원이상 0.1%, 500만원이상 0.2%\n ② 신용(체크)카드결제실적 : 0.1% -전월결제금 300만원이상 0.05%, 500만원이상 0.1%",
+          "join_way": "영업점,인터넷,스마트폰,기타",
+          "max_limit": 50000000
         },
         {
           "dcls_month": "202609",
@@ -3638,19 +3651,6 @@
           "spcl_cnd": "1.SC제일은행 최초 거래 신규고객에 대하여 우대 이율을 제공함 (보너스이율0.2%)                     \n2.만기일에 아래의 조건을 모두 충족하는 경우에 보너스이율을 제공함\n-6~12개월제(만기일시지급식) 5천만원 이상 가입\n-만기일 기준 전전월 마지막 영업일에 수익증권(펀드)*을 3천만원 이상 보유 시\n(가입기간: 6개월~1년제/ 보너스이율:0.1% / 만기해약하는 경우에 한해 보너스이율을 적용함)",
           "join_way": "인터넷,스마트폰",
           "max_limit": 1000000000
-        },
-        {
-          "dcls_month": "202609",
-          "kor_co_nm": "광주은행",
-          "fin_prdt_cd": "TD11300027000",
-          "fin_prdt_nm": "미즈월복리정기예금",
-          "intr_rate_type_nm": "복리",
-          "save_trm": "12",
-          "intr_rate": 3.65,
-          "intr_rate2": 3.85,
-          "spcl_cnd": "▶ 최고우대금리 0.2% \n ① 요구불평잔 : 0.2% -300만원이상 0.1%, 500만원이상 0.2%\n ② 신용(체크)카드결제실적 : 0.1% -전월결제금 300만원이상 0.05%, 500만원이상 0.1%",
-          "join_way": "영업점,인터넷,스마트폰,기타",
-          "max_limit": 50000000
         },
         {
           "dcls_month": "202609",
@@ -3737,8 +3737,8 @@
           "fin_prdt_nm": "스마트모아Dream정기예금",
           "intr_rate_type_nm": "단리",
           "save_trm": "12",
-          "intr_rate": 3.55,
-          "intr_rate2": 3.75,
+          "intr_rate": 3.59,
+          "intr_rate2": 3.79,
           "spcl_cnd": "▶ 1년미만, 1천만원이상 0.10%p\n▶ 1년이상, 1천만원이상 0.20%p",
           "join_way": "인터넷,스마트폰",
           "max_limit": null
@@ -3784,13 +3784,26 @@
         },
         {
           "dcls_month": "202609",
+          "kor_co_nm": "주식회사 카카오뱅크",
+          "fin_prdt_cd": "10-01-20-388-0002",
+          "fin_prdt_nm": "카카오뱅크 정기예금",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "12",
+          "intr_rate": 3.7,
+          "intr_rate2": 3.7,
+          "spcl_cnd": "※복잡한 우대조건 없이 가입가능한 정기예금",
+          "join_way": "스마트폰",
+          "max_limit": null
+        },
+        {
+          "dcls_month": "202609",
           "kor_co_nm": "중소기업은행",
           "fin_prdt_cd": "01211310142",
           "fin_prdt_nm": "IBK굴리기통장(정기예금)",
           "intr_rate_type_nm": "단리",
           "save_trm": "12",
-          "intr_rate": 3.67,
-          "intr_rate2": 3.67,
+          "intr_rate": 3.66,
+          "intr_rate2": 3.66,
           "spcl_cnd": "없음",
           "join_way": "영업점,스마트폰",
           "max_limit": 300000000
@@ -3823,19 +3836,6 @@
         },
         {
           "dcls_month": "202609",
-          "kor_co_nm": "주식회사 카카오뱅크",
-          "fin_prdt_cd": "10-01-20-388-0002",
-          "fin_prdt_nm": "카카오뱅크 정기예금",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "12",
-          "intr_rate": 3.6,
-          "intr_rate2": 3.6,
-          "spcl_cnd": "※복잡한 우대조건 없이 가입가능한 정기예금",
-          "join_way": "스마트폰",
-          "max_limit": null
-        },
-        {
-          "dcls_month": "202609",
           "kor_co_nm": "토스뱅크 주식회사",
           "fin_prdt_cd": "1001202000002",
           "fin_prdt_nm": "토스뱅크 먼저 이자 받는 정기예금",
@@ -3846,6 +3846,19 @@
           "spcl_cnd": "우대조건 없음",
           "join_way": "스마트폰",
           "max_limit": 1000000000
+        },
+        {
+          "dcls_month": "202609",
+          "kor_co_nm": "중소기업은행",
+          "fin_prdt_cd": "01211310130",
+          "fin_prdt_nm": "IBK더굴리기통장(실세금리정기예금)",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "12",
+          "intr_rate": 3.56,
+          "intr_rate2": 3.56,
+          "spcl_cnd": "없음",
+          "join_way": "인터넷,스마트폰",
+          "max_limit": null
         },
         {
           "dcls_month": "202609",
@@ -3875,16 +3888,29 @@
         },
         {
           "dcls_month": "202609",
-          "kor_co_nm": "중소기업은행",
-          "fin_prdt_cd": "01211310130",
-          "fin_prdt_nm": "IBK더굴리기통장(실세금리정기예금)",
+          "kor_co_nm": "농협은행주식회사",
+          "fin_prdt_cd": "10-003-1225-0001",
+          "fin_prdt_nm": "NH왈츠회전예금 II",
           "intr_rate_type_nm": "단리",
           "save_trm": "12",
-          "intr_rate": 3.52,
-          "intr_rate2": 3.52,
+          "intr_rate": 3.45,
+          "intr_rate2": 3.55,
+          "spcl_cnd": "1. 급여이체실적(50만원 이상)이 있는 경우 : 0.1%p\n2. 트리플 회전 우대이율 :  4회전기간부터 0.1%p",
+          "join_way": "영업점,인터넷,스마트폰",
+          "max_limit": null
+        },
+        {
+          "dcls_month": "202609",
+          "kor_co_nm": "농협은행주식회사",
+          "fin_prdt_cd": "10-003-1384-0001",
+          "fin_prdt_nm": "NH올원e예금",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "12",
+          "intr_rate": 3.55,
+          "intr_rate2": 3.55,
           "spcl_cnd": "없음",
           "join_way": "인터넷,스마트폰",
-          "max_limit": null
+          "max_limit": 1000000000
         },
         {
           "dcls_month": "202609",
@@ -3911,32 +3937,6 @@
           "spcl_cnd": "해당무",
           "join_way": "인터넷,스마트폰",
           "max_limit": null
-        },
-        {
-          "dcls_month": "202609",
-          "kor_co_nm": "농협은행주식회사",
-          "fin_prdt_cd": "10-003-1225-0001",
-          "fin_prdt_nm": "NH왈츠회전예금 II",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "12",
-          "intr_rate": 3.35,
-          "intr_rate2": 3.45,
-          "spcl_cnd": "1. 급여이체실적(50만원 이상)이 있는 경우 : 0.1%p\n2. 트리플 회전 우대이율 :  4회전기간부터 0.1%p",
-          "join_way": "영업점,인터넷,스마트폰",
-          "max_limit": null
-        },
-        {
-          "dcls_month": "202609",
-          "kor_co_nm": "농협은행주식회사",
-          "fin_prdt_cd": "10-003-1384-0001",
-          "fin_prdt_nm": "NH올원e예금",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "12",
-          "intr_rate": 3.45,
-          "intr_rate2": 3.45,
-          "spcl_cnd": "없음",
-          "join_way": "인터넷,스마트폰",
-          "max_limit": 1000000000
         },
         {
           "dcls_month": "202609",
@@ -3979,6 +3979,32 @@
         },
         {
           "dcls_month": "202609",
+          "kor_co_nm": "농협은행주식회사",
+          "fin_prdt_cd": "10-003-1387-0001",
+          "fin_prdt_nm": "NH고향사랑기부예금",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "12",
+          "intr_rate": 2.65,
+          "intr_rate2": 3.1,
+          "spcl_cnd": "1. 고향사랑기부금 건당 5만원 이상 납부고객 우대 : 0.3%p\n\n2-1. 만65세 이상 고령자 우대 : 0.1%p\n2-2. 만 19~34세 MZ고객 우대 : 0.1%p",
+          "join_way": "영업점,인터넷,스마트폰",
+          "max_limit": null
+        },
+        {
+          "dcls_month": "202609",
+          "kor_co_nm": "농협은행주식회사",
+          "fin_prdt_cd": "10-003-1381-0001",
+          "fin_prdt_nm": "NH내가Green초록세상예금",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "12",
+          "intr_rate": 2.65,
+          "intr_rate2": 3.05,
+          "spcl_cnd": "※ 우대금리 최대한도 : 0.4%p(연%, 세전)\n1. 온실가스 줄이기 실천서약서 동의 : 0.1%p\n2. 통장미발급 : 0.1%p\n3. 손하나로인증 서비스 등록 : 0.1%p\n4. NH내가Green초록세상적금 동시 보유 : 0.1%p",
+          "join_way": "영업점,인터넷,스마트폰",
+          "max_limit": null
+        },
+        {
+          "dcls_month": "202609",
           "kor_co_nm": "전북은행",
           "fin_prdt_cd": "10-01-20-024-0063-0000",
           "fin_prdt_nm": "내맘 쏙 정기예금",
@@ -3992,19 +4018,6 @@
         },
         {
           "dcls_month": "202609",
-          "kor_co_nm": "농협은행주식회사",
-          "fin_prdt_cd": "10-003-1387-0001",
-          "fin_prdt_nm": "NH고향사랑기부예금",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "12",
-          "intr_rate": 2.45,
-          "intr_rate2": 2.9,
-          "spcl_cnd": "1. 고향사랑기부금 건당 5만원 이상 납부고객 우대 : 0.3%p\n\n2-1. 만65세 이상 고령자 우대 : 0.1%p\n2-2. 만 19~34세 MZ고객 우대 : 0.1%p",
-          "join_way": "영업점,인터넷,스마트폰",
-          "max_limit": null
-        },
-        {
-          "dcls_month": "202609",
           "kor_co_nm": "제주은행",
           "fin_prdt_cd": "101272000058",
           "fin_prdt_nm": "스마일드림 \n정기예금\n(개인/선이자\n지급식)",
@@ -4014,19 +4027,6 @@
           "intr_rate2": 2.85,
           "spcl_cnd": "-아래의 우대요건 충족시 최고0.3% 추가우대(신규시제공)\n①김만덕나눔적금 보유 또는 김만적 나눔적금 만기 해지고객 0.2%우대(가입시제공)\n②예금가입시 탐나는전 체크카드 보유고객 0.1%우대(가입시제공)\n(단, 이벤트시 영업점,디지털채널에 고시한 우대금리를 추가 적용할 수 있음)",
           "join_way": "영업점,스마트폰",
-          "max_limit": null
-        },
-        {
-          "dcls_month": "202609",
-          "kor_co_nm": "농협은행주식회사",
-          "fin_prdt_cd": "10-003-1381-0001",
-          "fin_prdt_nm": "NH내가Green초록세상예금",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "12",
-          "intr_rate": 2.45,
-          "intr_rate2": 2.85,
-          "spcl_cnd": "※ 우대금리 최대한도 : 0.4%p(연%, 세전)\n1. 온실가스 줄이기 실천서약서 동의 : 0.1%p\n2. 통장미발급 : 0.1%p\n3. 손하나로인증 서비스 등록 : 0.1%p\n4. NH내가Green초록세상적금 동시 보유 : 0.1%p",
-          "join_way": "영업점,인터넷,스마트폰",
           "max_limit": null
         },
         {
@@ -8306,8 +8306,8 @@
           "fin_prdt_nm": "미즈월복리정기예금",
           "intr_rate_type_nm": "복리",
           "save_trm": "24",
-          "intr_rate": 3.55,
-          "intr_rate2": 3.75,
+          "intr_rate": 3.57,
+          "intr_rate2": 3.77,
           "spcl_cnd": "▶ 최고우대금리 0.2% \n ① 요구불평잔 : 0.2% -300만원이상 0.1%, 500만원이상 0.2%\n ② 신용(체크)카드결제실적 : 0.1% -전월결제금 300만원이상 0.05%, 500만원이상 0.1%",
           "join_way": "영업점,인터넷,스마트폰,기타",
           "max_limit": 50000000
@@ -8319,8 +8319,8 @@
           "fin_prdt_nm": "스마트모아Dream정기예금",
           "intr_rate_type_nm": "단리",
           "save_trm": "24",
-          "intr_rate": 3.45,
-          "intr_rate2": 3.65,
+          "intr_rate": 3.47,
+          "intr_rate2": 3.67,
           "spcl_cnd": "▶ 1년미만, 1천만원이상 0.10%p\n▶ 1년이상, 1천만원이상 0.20%p",
           "join_way": "인터넷,스마트폰",
           "max_limit": null
@@ -8332,8 +8332,8 @@
           "fin_prdt_nm": "IBK더굴리기통장(실세금리정기예금)",
           "intr_rate_type_nm": "단리",
           "save_trm": "24",
-          "intr_rate": 3.59,
-          "intr_rate2": 3.59,
+          "intr_rate": 3.57,
+          "intr_rate2": 3.57,
           "spcl_cnd": "없음",
           "join_way": "인터넷,스마트폰",
           "max_limit": null
@@ -8361,6 +8361,19 @@
           "intr_rate": 3.1,
           "intr_rate2": 3.1,
           "spcl_cnd": "우대조건 없음",
+          "join_way": "스마트폰",
+          "max_limit": null
+        },
+        {
+          "dcls_month": "202609",
+          "kor_co_nm": "주식회사 카카오뱅크",
+          "fin_prdt_cd": "10-01-20-388-0002",
+          "fin_prdt_nm": "카카오뱅크 정기예금",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "24",
+          "intr_rate": 3.1,
+          "intr_rate2": 3.1,
+          "spcl_cnd": "※복잡한 우대조건 없이 가입가능한 정기예금",
           "join_way": "스마트폰",
           "max_limit": null
         },
@@ -8406,6 +8419,19 @@
         {
           "dcls_month": "202609",
           "kor_co_nm": "농협은행주식회사",
+          "fin_prdt_cd": "10-003-1381-0001",
+          "fin_prdt_nm": "NH내가Green초록세상예금",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "24",
+          "intr_rate": 2.6,
+          "intr_rate2": 3.0,
+          "spcl_cnd": "※ 우대금리 최대한도 : 0.4%p(연%, 세전)\n1. 온실가스 줄이기 실천서약서 동의 : 0.1%p\n2. 통장미발급 : 0.1%p\n3. 손하나로인증 서비스 등록 : 0.1%p\n4. NH내가Green초록세상적금 동시 보유 : 0.1%p",
+          "join_way": "영업점,인터넷,스마트폰",
+          "max_limit": null
+        },
+        {
+          "dcls_month": "202609",
+          "kor_co_nm": "농협은행주식회사",
           "fin_prdt_cd": "10-003-1384-0001",
           "fin_prdt_nm": "NH올원e예금",
           "intr_rate_type_nm": "단리",
@@ -8431,19 +8457,6 @@
         },
         {
           "dcls_month": "202609",
-          "kor_co_nm": "주식회사 카카오뱅크",
-          "fin_prdt_cd": "10-01-20-388-0002",
-          "fin_prdt_nm": "카카오뱅크 정기예금",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "24",
-          "intr_rate": 3.0,
-          "intr_rate2": 3.0,
-          "spcl_cnd": "※복잡한 우대조건 없이 가입가능한 정기예금",
-          "join_way": "스마트폰",
-          "max_limit": null
-        },
-        {
-          "dcls_month": "202609",
           "kor_co_nm": "한국산업은행",
           "fin_prdt_cd": "06492",
           "fin_prdt_nm": "KDB 정기예금",
@@ -8452,19 +8465,6 @@
           "intr_rate": 2.85,
           "intr_rate2": 2.85,
           "spcl_cnd": "해당없음",
-          "join_way": "영업점,인터넷,스마트폰",
-          "max_limit": null
-        },
-        {
-          "dcls_month": "202609",
-          "kor_co_nm": "농협은행주식회사",
-          "fin_prdt_cd": "10-003-1381-0001",
-          "fin_prdt_nm": "NH내가Green초록세상예금",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "24",
-          "intr_rate": 2.35,
-          "intr_rate2": 2.75,
-          "spcl_cnd": "※ 우대금리 최대한도 : 0.4%p(연%, 세전)\n1. 온실가스 줄이기 실천서약서 동의 : 0.1%p\n2. 통장미발급 : 0.1%p\n3. 손하나로인증 서비스 등록 : 0.1%p\n4. NH내가Green초록세상적금 동시 보유 : 0.1%p",
           "join_way": "영업점,인터넷,스마트폰",
           "max_limit": null
         },
@@ -11341,24 +11341,11 @@
           "fin_prdt_nm": "미즈월복리정기예금",
           "intr_rate_type_nm": "복리",
           "save_trm": "36",
-          "intr_rate": 3.43,
-          "intr_rate2": 3.63,
+          "intr_rate": 3.44,
+          "intr_rate2": 3.64,
           "spcl_cnd": "▶ 최고우대금리 0.2% \n ① 요구불평잔 : 0.2% -300만원이상 0.1%, 500만원이상 0.2%\n ② 신용(체크)카드결제실적 : 0.1% -전월결제금 300만원이상 0.05%, 500만원이상 0.1%",
           "join_way": "영업점,인터넷,스마트폰,기타",
           "max_limit": 50000000
-        },
-        {
-          "dcls_month": "202609",
-          "kor_co_nm": "중소기업은행",
-          "fin_prdt_cd": "01211310130",
-          "fin_prdt_nm": "IBK더굴리기통장(실세금리정기예금)",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "36",
-          "intr_rate": 3.56,
-          "intr_rate2": 3.56,
-          "spcl_cnd": "없음",
-          "join_way": "인터넷,스마트폰",
-          "max_limit": null
         },
         {
           "dcls_month": "202609",
@@ -11367,9 +11354,22 @@
           "fin_prdt_nm": "스마트모아Dream정기예금",
           "intr_rate_type_nm": "단리",
           "save_trm": "36",
-          "intr_rate": 3.33,
-          "intr_rate2": 3.53,
+          "intr_rate": 3.34,
+          "intr_rate2": 3.54,
           "spcl_cnd": "▶ 1년미만, 1천만원이상 0.10%p\n▶ 1년이상, 1천만원이상 0.20%p",
+          "join_way": "인터넷,스마트폰",
+          "max_limit": null
+        },
+        {
+          "dcls_month": "202609",
+          "kor_co_nm": "중소기업은행",
+          "fin_prdt_cd": "01211310130",
+          "fin_prdt_nm": "IBK더굴리기통장(실세금리정기예금)",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "36",
+          "intr_rate": 3.54,
+          "intr_rate2": 3.54,
+          "spcl_cnd": "없음",
           "join_way": "인터넷,스마트폰",
           "max_limit": null
         },
@@ -11406,8 +11406,8 @@
           "fin_prdt_nm": "카카오뱅크 정기예금",
           "intr_rate_type_nm": "단리",
           "save_trm": "36",
-          "intr_rate": 3.0,
-          "intr_rate2": 3.0,
+          "intr_rate": 3.1,
+          "intr_rate2": 3.1,
           "spcl_cnd": "※복잡한 우대조건 없이 가입가능한 정기예금",
           "join_way": "스마트폰",
           "max_limit": null
@@ -11423,6 +11423,19 @@
           "intr_rate2": 2.97,
           "spcl_cnd": "\"* 우대이율 (최대 1.82%p)\n가. 모바일뱅킹 금융정보 및 혜택알림 동의 우대이율 : 0.10%p\n나. 신규고객 또는 정기예금 중도해지고객 우대이율 1.12%p\n다. 특판우대이율 : 0.60%p(24개월 0.95%p)\"",
           "join_way": "인터넷,스마트폰",
+          "max_limit": null
+        },
+        {
+          "dcls_month": "202609",
+          "kor_co_nm": "농협은행주식회사",
+          "fin_prdt_cd": "10-003-1381-0001",
+          "fin_prdt_nm": "NH내가Green초록세상예금",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "36",
+          "intr_rate": 2.55,
+          "intr_rate2": 2.95,
+          "spcl_cnd": "※ 우대금리 최대한도 : 0.4%p(연%, 세전)\n1. 온실가스 줄이기 실천서약서 동의 : 0.1%p\n2. 통장미발급 : 0.1%p\n3. 손하나로인증 서비스 등록 : 0.1%p\n4. NH내가Green초록세상적금 동시 보유 : 0.1%p",
+          "join_way": "영업점,인터넷,스마트폰",
           "max_limit": null
         },
         {
@@ -11449,19 +11462,6 @@
           "intr_rate2": 2.7,
           "spcl_cnd": "해당사항 없음",
           "join_way": "인터넷,스마트폰,전화(텔레뱅킹)",
-          "max_limit": null
-        },
-        {
-          "dcls_month": "202609",
-          "kor_co_nm": "농협은행주식회사",
-          "fin_prdt_cd": "10-003-1381-0001",
-          "fin_prdt_nm": "NH내가Green초록세상예금",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "36",
-          "intr_rate": 2.3,
-          "intr_rate2": 2.7,
-          "spcl_cnd": "※ 우대금리 최대한도 : 0.4%p(연%, 세전)\n1. 온실가스 줄이기 실천서약서 동의 : 0.1%p\n2. 통장미발급 : 0.1%p\n3. 손하나로인증 서비스 등록 : 0.1%p\n4. NH내가Green초록세상적금 동시 보유 : 0.1%p",
-          "join_way": "영업점,인터넷,스마트폰",
           "max_limit": null
         },
         {
@@ -13739,8 +13739,8 @@
       "fin_prdt_nm": "굿스타트예금",
       "intr_rate_type_nm": "단리",
       "save_trm": "12",
-      "intr_rate": 3.45,
-      "intr_rate2": 3.95,
+      "intr_rate": 3.49,
+      "intr_rate2": 3.99,
       "spcl_cnd": "▶ 최고우대금리 0.5% \n ① 첫예금거래 : 0.4% -최근1년동안 정기예금 계좌 신규 또는 해지이력이 없는경우\n ② 개인(신용)정보 수집이용동의 : 0.1% -만기일전일까지 유지시",
       "join_way": "스마트폰",
       "max_limit": 100000000
@@ -13757,6 +13757,19 @@
       "spcl_cnd": "\"* 우대이율 (최대 1.82%p)\n가. 모바일뱅킹 금융정보 및 혜택알림 동의 우대이율 : 0.10%p\n나. 신규고객 또는 정기예금 중도해지고객 우대이율 1.12%p\n다. 특판우대이율 : 0.60%p(24개월 0.95%p)\"",
       "join_way": "인터넷,스마트폰",
       "max_limit": null
+    },
+    {
+      "dcls_month": "202609",
+      "kor_co_nm": "광주은행",
+      "fin_prdt_cd": "TD11300027000",
+      "fin_prdt_nm": "미즈월복리정기예금",
+      "intr_rate_type_nm": "복리",
+      "save_trm": "12",
+      "intr_rate": 3.69,
+      "intr_rate2": 3.89,
+      "spcl_cnd": "▶ 최고우대금리 0.2% \n ① 요구불평잔 : 0.2% -300만원이상 0.1%, 500만원이상 0.2%\n ② 신용(체크)카드결제실적 : 0.1% -전월결제금 300만원이상 0.05%, 500만원이상 0.1%",
+      "join_way": "영업점,인터넷,스마트폰,기타",
+      "max_limit": 50000000
     },
     {
       "dcls_month": "202609",
@@ -13783,19 +13796,6 @@
       "spcl_cnd": "1.SC제일은행 최초 거래 신규고객에 대하여 우대 이율을 제공함 (보너스이율0.2%)                     \n2.만기일에 아래의 조건을 모두 충족하는 경우에 보너스이율을 제공함\n-6~12개월제(만기일시지급식) 5천만원 이상 가입\n-만기일 기준 전전월 마지막 영업일에 수익증권(펀드)*을 3천만원 이상 보유 시\n(가입기간: 6개월~1년제/ 보너스이율:0.1% / 만기해약하는 경우에 한해 보너스이율을 적용함)",
       "join_way": "인터넷,스마트폰",
       "max_limit": 1000000000
-    },
-    {
-      "dcls_month": "202609",
-      "kor_co_nm": "광주은행",
-      "fin_prdt_cd": "TD11300027000",
-      "fin_prdt_nm": "미즈월복리정기예금",
-      "intr_rate_type_nm": "복리",
-      "save_trm": "12",
-      "intr_rate": 3.65,
-      "intr_rate2": 3.85,
-      "spcl_cnd": "▶ 최고우대금리 0.2% \n ① 요구불평잔 : 0.2% -300만원이상 0.1%, 500만원이상 0.2%\n ② 신용(체크)카드결제실적 : 0.1% -전월결제금 300만원이상 0.05%, 500만원이상 0.1%",
-      "join_way": "영업점,인터넷,스마트폰,기타",
-      "max_limit": 50000000
     },
     {
       "dcls_month": "202609",
@@ -13882,8 +13882,8 @@
       "fin_prdt_nm": "스마트모아Dream정기예금",
       "intr_rate_type_nm": "단리",
       "save_trm": "12",
-      "intr_rate": 3.55,
-      "intr_rate2": 3.75,
+      "intr_rate": 3.59,
+      "intr_rate2": 3.79,
       "spcl_cnd": "▶ 1년미만, 1천만원이상 0.10%p\n▶ 1년이상, 1천만원이상 0.20%p",
       "join_way": "인터넷,스마트폰",
       "max_limit": null
@@ -13929,13 +13929,26 @@
     },
     {
       "dcls_month": "202609",
+      "kor_co_nm": "주식회사 카카오뱅크",
+      "fin_prdt_cd": "10-01-20-388-0002",
+      "fin_prdt_nm": "카카오뱅크 정기예금",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 3.7,
+      "intr_rate2": 3.7,
+      "spcl_cnd": "※복잡한 우대조건 없이 가입가능한 정기예금",
+      "join_way": "스마트폰",
+      "max_limit": null
+    },
+    {
+      "dcls_month": "202609",
       "kor_co_nm": "중소기업은행",
       "fin_prdt_cd": "01211310142",
       "fin_prdt_nm": "IBK굴리기통장(정기예금)",
       "intr_rate_type_nm": "단리",
       "save_trm": "12",
-      "intr_rate": 3.67,
-      "intr_rate2": 3.67,
+      "intr_rate": 3.66,
+      "intr_rate2": 3.66,
       "spcl_cnd": "없음",
       "join_way": "영업점,스마트폰",
       "max_limit": 300000000
@@ -13968,19 +13981,6 @@
     },
     {
       "dcls_month": "202609",
-      "kor_co_nm": "주식회사 카카오뱅크",
-      "fin_prdt_cd": "10-01-20-388-0002",
-      "fin_prdt_nm": "카카오뱅크 정기예금",
-      "intr_rate_type_nm": "단리",
-      "save_trm": "12",
-      "intr_rate": 3.6,
-      "intr_rate2": 3.6,
-      "spcl_cnd": "※복잡한 우대조건 없이 가입가능한 정기예금",
-      "join_way": "스마트폰",
-      "max_limit": null
-    },
-    {
-      "dcls_month": "202609",
       "kor_co_nm": "토스뱅크 주식회사",
       "fin_prdt_cd": "1001202000002",
       "fin_prdt_nm": "토스뱅크 먼저 이자 받는 정기예금",
@@ -13991,6 +13991,19 @@
       "spcl_cnd": "우대조건 없음",
       "join_way": "스마트폰",
       "max_limit": 1000000000
+    },
+    {
+      "dcls_month": "202609",
+      "kor_co_nm": "중소기업은행",
+      "fin_prdt_cd": "01211310130",
+      "fin_prdt_nm": "IBK더굴리기통장(실세금리정기예금)",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 3.56,
+      "intr_rate2": 3.56,
+      "spcl_cnd": "없음",
+      "join_way": "인터넷,스마트폰",
+      "max_limit": null
     },
     {
       "dcls_month": "202609",
@@ -14020,16 +14033,29 @@
     },
     {
       "dcls_month": "202609",
-      "kor_co_nm": "중소기업은행",
-      "fin_prdt_cd": "01211310130",
-      "fin_prdt_nm": "IBK더굴리기통장(실세금리정기예금)",
+      "kor_co_nm": "농협은행주식회사",
+      "fin_prdt_cd": "10-003-1225-0001",
+      "fin_prdt_nm": "NH왈츠회전예금 II",
       "intr_rate_type_nm": "단리",
       "save_trm": "12",
-      "intr_rate": 3.52,
-      "intr_rate2": 3.52,
+      "intr_rate": 3.45,
+      "intr_rate2": 3.55,
+      "spcl_cnd": "1. 급여이체실적(50만원 이상)이 있는 경우 : 0.1%p\n2. 트리플 회전 우대이율 :  4회전기간부터 0.1%p",
+      "join_way": "영업점,인터넷,스마트폰",
+      "max_limit": null
+    },
+    {
+      "dcls_month": "202609",
+      "kor_co_nm": "농협은행주식회사",
+      "fin_prdt_cd": "10-003-1384-0001",
+      "fin_prdt_nm": "NH올원e예금",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 3.55,
+      "intr_rate2": 3.55,
       "spcl_cnd": "없음",
       "join_way": "인터넷,스마트폰",
-      "max_limit": null
+      "max_limit": 1000000000
     },
     {
       "dcls_month": "202609",
@@ -14056,32 +14082,6 @@
       "spcl_cnd": "해당무",
       "join_way": "인터넷,스마트폰",
       "max_limit": null
-    },
-    {
-      "dcls_month": "202609",
-      "kor_co_nm": "농협은행주식회사",
-      "fin_prdt_cd": "10-003-1225-0001",
-      "fin_prdt_nm": "NH왈츠회전예금 II",
-      "intr_rate_type_nm": "단리",
-      "save_trm": "12",
-      "intr_rate": 3.35,
-      "intr_rate2": 3.45,
-      "spcl_cnd": "1. 급여이체실적(50만원 이상)이 있는 경우 : 0.1%p\n2. 트리플 회전 우대이율 :  4회전기간부터 0.1%p",
-      "join_way": "영업점,인터넷,스마트폰",
-      "max_limit": null
-    },
-    {
-      "dcls_month": "202609",
-      "kor_co_nm": "농협은행주식회사",
-      "fin_prdt_cd": "10-003-1384-0001",
-      "fin_prdt_nm": "NH올원e예금",
-      "intr_rate_type_nm": "단리",
-      "save_trm": "12",
-      "intr_rate": 3.45,
-      "intr_rate2": 3.45,
-      "spcl_cnd": "없음",
-      "join_way": "인터넷,스마트폰",
-      "max_limit": 1000000000
     },
     {
       "dcls_month": "202609",
@@ -14124,6 +14124,32 @@
     },
     {
       "dcls_month": "202609",
+      "kor_co_nm": "농협은행주식회사",
+      "fin_prdt_cd": "10-003-1387-0001",
+      "fin_prdt_nm": "NH고향사랑기부예금",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 2.65,
+      "intr_rate2": 3.1,
+      "spcl_cnd": "1. 고향사랑기부금 건당 5만원 이상 납부고객 우대 : 0.3%p\n\n2-1. 만65세 이상 고령자 우대 : 0.1%p\n2-2. 만 19~34세 MZ고객 우대 : 0.1%p",
+      "join_way": "영업점,인터넷,스마트폰",
+      "max_limit": null
+    },
+    {
+      "dcls_month": "202609",
+      "kor_co_nm": "농협은행주식회사",
+      "fin_prdt_cd": "10-003-1381-0001",
+      "fin_prdt_nm": "NH내가Green초록세상예금",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 2.65,
+      "intr_rate2": 3.05,
+      "spcl_cnd": "※ 우대금리 최대한도 : 0.4%p(연%, 세전)\n1. 온실가스 줄이기 실천서약서 동의 : 0.1%p\n2. 통장미발급 : 0.1%p\n3. 손하나로인증 서비스 등록 : 0.1%p\n4. NH내가Green초록세상적금 동시 보유 : 0.1%p",
+      "join_way": "영업점,인터넷,스마트폰",
+      "max_limit": null
+    },
+    {
+      "dcls_month": "202609",
       "kor_co_nm": "전북은행",
       "fin_prdt_cd": "10-01-20-024-0063-0000",
       "fin_prdt_nm": "내맘 쏙 정기예금",
@@ -14137,19 +14163,6 @@
     },
     {
       "dcls_month": "202609",
-      "kor_co_nm": "농협은행주식회사",
-      "fin_prdt_cd": "10-003-1387-0001",
-      "fin_prdt_nm": "NH고향사랑기부예금",
-      "intr_rate_type_nm": "단리",
-      "save_trm": "12",
-      "intr_rate": 2.45,
-      "intr_rate2": 2.9,
-      "spcl_cnd": "1. 고향사랑기부금 건당 5만원 이상 납부고객 우대 : 0.3%p\n\n2-1. 만65세 이상 고령자 우대 : 0.1%p\n2-2. 만 19~34세 MZ고객 우대 : 0.1%p",
-      "join_way": "영업점,인터넷,스마트폰",
-      "max_limit": null
-    },
-    {
-      "dcls_month": "202609",
       "kor_co_nm": "제주은행",
       "fin_prdt_cd": "101272000058",
       "fin_prdt_nm": "스마일드림 \n정기예금\n(개인/선이자\n지급식)",
@@ -14159,19 +14172,6 @@
       "intr_rate2": 2.85,
       "spcl_cnd": "-아래의 우대요건 충족시 최고0.3% 추가우대(신규시제공)\n①김만덕나눔적금 보유 또는 김만적 나눔적금 만기 해지고객 0.2%우대(가입시제공)\n②예금가입시 탐나는전 체크카드 보유고객 0.1%우대(가입시제공)\n(단, 이벤트시 영업점,디지털채널에 고시한 우대금리를 추가 적용할 수 있음)",
       "join_way": "영업점,스마트폰",
-      "max_limit": null
-    },
-    {
-      "dcls_month": "202609",
-      "kor_co_nm": "농협은행주식회사",
-      "fin_prdt_cd": "10-003-1381-0001",
-      "fin_prdt_nm": "NH내가Green초록세상예금",
-      "intr_rate_type_nm": "단리",
-      "save_trm": "12",
-      "intr_rate": 2.45,
-      "intr_rate2": 2.85,
-      "spcl_cnd": "※ 우대금리 최대한도 : 0.4%p(연%, 세전)\n1. 온실가스 줄이기 실천서약서 동의 : 0.1%p\n2. 통장미발급 : 0.1%p\n3. 손하나로인증 서비스 등록 : 0.1%p\n4. NH내가Green초록세상적금 동시 보유 : 0.1%p",
-      "join_way": "영업점,인터넷,스마트폰",
       "max_limit": null
     },
     {
@@ -18403,5 +18403,5 @@
     }
   ],
   "save_trm": "12",
-  "content_changed_at": "2026-09-23T08:33:01+09:00"
+  "content_changed_at": "2026-09-24T08:31:56+09:00"
 }
