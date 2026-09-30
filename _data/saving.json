@@ -1,7 +1,7 @@
 {
   "is_sample": false,
   "pending": false,
-  "generated_at": "2026-09-29T09:54:39+09:00",
+  "generated_at": "2026-09-30T09:16:07+09:00",
   "dcls_month": "202609",
   "by_term": {
     "6": {
@@ -162,6 +162,20 @@
         },
         {
           "dcls_month": "202609",
+          "kor_co_nm": "주식회사 케이뱅크",
+          "fin_prdt_cd": "01012000210000000000",
+          "fin_prdt_nm": "주거래우대 자유적금",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "6",
+          "intr_rate": 3.3,
+          "intr_rate2": 3.9,
+          "spcl_cnd": "급여이체 또는 통신비 자동이체, 체크카드 고객에게 우대금리 제공 (최고 연 0.6%)",
+          "join_way": "스마트폰",
+          "max_limit": 3000000,
+          "rsrv_type_nm": "자유적립식"
+        },
+        {
+          "dcls_month": "202609",
           "kor_co_nm": "경남은행",
           "fin_prdt_cd": "21001116",
           "fin_prdt_nm": "BNK더조은자유적금",
@@ -172,20 +186,6 @@
           "spcl_cnd": "①오픈뱅킹서비스 가입 0.10%(만기까지 유지)\n②당행 입출금통장에서 자동이체시 입금건별 0.10%\n③이 상품 신규시 금리우대쿠폰을 등록할 경우 0.30%\n④마케팅동의 0.20%",
           "join_way": "인터넷,스마트폰",
           "max_limit": 5000000,
-          "rsrv_type_nm": "자유적립식"
-        },
-        {
-          "dcls_month": "202609",
-          "kor_co_nm": "주식회사 케이뱅크",
-          "fin_prdt_cd": "01012000210000000000",
-          "fin_prdt_nm": "주거래우대 자유적금",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "6",
-          "intr_rate": 3.2,
-          "intr_rate2": 3.8,
-          "spcl_cnd": "급여이체 또는 통신비 자동이체, 체크카드 고객에게 우대금리 제공 (최고 연 0.6%)",
-          "join_way": "스마트폰",
-          "max_limit": 3000000,
           "rsrv_type_nm": "자유적립식"
         },
         {
@@ -237,8 +237,8 @@
           "fin_prdt_nm": "코드K 자유적금",
           "intr_rate_type_nm": "단리",
           "save_trm": "6",
-          "intr_rate": 3.5,
-          "intr_rate2": 3.5,
+          "intr_rate": 3.6,
+          "intr_rate2": 3.6,
           "spcl_cnd": "금리우대 코드를 입력하는 경우 우대금리 적용",
           "join_way": "스마트폰",
           "max_limit": 300000,
@@ -407,7 +407,7 @@
           "save_trm": "6",
           "intr_rate": 1.8,
           "intr_rate2": 2.3,
-          "spcl_cnd": "· 적금 가입 시 설정되는 월 단위 자동이체를 모두 성공하는 경우 : 연 0.50% 제공",
+          "spcl_cnd": "· 전체 계약월수 중 1/2 이상에 해당하는 개월 수 동안 자동이체를 성공한 경우 : 연 0.50% 제공",
           "join_way": "스마트폰",
           "max_limit": 3000000,
           "rsrv_type_nm": "자유적립식"
@@ -3073,7 +3073,7 @@
           "save_trm": "12",
           "intr_rate": 2.5,
           "intr_rate2": 5.0,
-          "spcl_cnd": "· 적금 가입 시 설정되는 월 단위 자동이체를 모두 성공하는 경우 : 연 2.50% 제공",
+          "spcl_cnd": "· 전체 계약월수 중 1/2 이상에 해당하는 개월 수 동안 자동이체를 성공한 경우 : 연 2.50% 제공",
           "join_way": "스마트폰",
           "max_limit": 200000,
           "rsrv_type_nm": "자유적립식"
@@ -3206,6 +3206,20 @@
         },
         {
           "dcls_month": "202609",
+          "kor_co_nm": "주식회사 케이뱅크",
+          "fin_prdt_cd": "01012000210000000000",
+          "fin_prdt_nm": "주거래우대 자유적금",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "12",
+          "intr_rate": 3.7,
+          "intr_rate2": 4.3,
+          "spcl_cnd": "급여이체 또는 통신비 자동이체, 체크카드 고객에게 우대금리 제공 (최고 연 0.6%)",
+          "join_way": "스마트폰",
+          "max_limit": 3000000,
+          "rsrv_type_nm": "자유적립식"
+        },
+        {
+          "dcls_month": "202609",
           "kor_co_nm": "신한은행",
           "fin_prdt_cd": "230-0119-85",
           "fin_prdt_nm": "신한 알.쏠 적금",
@@ -3215,20 +3229,6 @@
           "intr_rate2": 4.2,
           "spcl_cnd": "※가산금리 최고 연 1.30%\n- 소득이체 : 연 0.6%\n- 카드이용 : 연 0.3%\n- 오픈뱅킹 : 연 0.6%\n- 청약보유 : 연 0.3%\n- 마케팅동의 : 연 0.1%\n※ 우대금리 항목별 자세한 적용 조건은 상품설명서 참조",
           "join_way": "영업점,스마트폰",
-          "max_limit": 3000000,
-          "rsrv_type_nm": "자유적립식"
-        },
-        {
-          "dcls_month": "202609",
-          "kor_co_nm": "주식회사 케이뱅크",
-          "fin_prdt_cd": "01012000210000000000",
-          "fin_prdt_nm": "주거래우대 자유적금",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "12",
-          "intr_rate": 3.6,
-          "intr_rate2": 4.2,
-          "spcl_cnd": "급여이체 또는 통신비 자동이체, 체크카드 고객에게 우대금리 제공 (최고 연 0.6%)",
-          "join_way": "스마트폰",
           "max_limit": 3000000,
           "rsrv_type_nm": "자유적립식"
         },
@@ -3281,8 +3281,8 @@
           "fin_prdt_nm": "NH직장인월복리적금",
           "intr_rate_type_nm": "복리",
           "save_trm": "12",
-          "intr_rate": 3.24,
-          "intr_rate2": 4.04,
+          "intr_rate": 3.25,
+          "intr_rate2": 4.05,
           "spcl_cnd": "1. 급여입금실적 보유 고객 중\n - 가입기간 중 3개월 이상 급여이체시 : 0.3%p\n - 주택청약종합저축 또는 펀드가입 : 0.2%p\n - NH채움카드 결제실적 1백만원 이상 : 0.2%p\n2. 인터넷(스마트)뱅킹 또는 올원뱅크로 가입 : 0.1%p",
           "join_way": "영업점,인터넷,스마트폰",
           "max_limit": 3000000,
@@ -3416,6 +3416,20 @@
         },
         {
           "dcls_month": "202609",
+          "kor_co_nm": "주식회사 케이뱅크",
+          "fin_prdt_cd": "01012000200000000003",
+          "fin_prdt_nm": "코드K 자유적금",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "12",
+          "intr_rate": 3.8,
+          "intr_rate2": 3.8,
+          "spcl_cnd": "금리우대 코드를 입력하는 경우 우대금리 적용",
+          "join_way": "스마트폰",
+          "max_limit": 300000,
+          "rsrv_type_nm": "자유적립식"
+        },
+        {
+          "dcls_month": "202609",
           "kor_co_nm": "농협은행주식회사",
           "fin_prdt_cd": "10-047-1381-0001",
           "fin_prdt_nm": "NH내가Green초록세상적금",
@@ -3455,20 +3469,6 @@
           "join_way": "인터넷,스마트폰",
           "max_limit": 5000000,
           "rsrv_type_nm": "정액적립식"
-        },
-        {
-          "dcls_month": "202609",
-          "kor_co_nm": "주식회사 케이뱅크",
-          "fin_prdt_cd": "01012000200000000003",
-          "fin_prdt_nm": "코드K 자유적금",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "12",
-          "intr_rate": 3.7,
-          "intr_rate2": 3.7,
-          "spcl_cnd": "금리우대 코드를 입력하는 경우 우대금리 적용",
-          "join_way": "스마트폰",
-          "max_limit": 300000,
-          "rsrv_type_nm": "자유적립식"
         },
         {
           "dcls_month": "202609",
@@ -3647,7 +3647,7 @@
           "save_trm": "12",
           "intr_rate": 2.5,
           "intr_rate2": 3.0,
-          "spcl_cnd": "· 적금 가입 시 설정되는 월 단위 자동이체를 모두 성공하는 경우 : 연 0.50% 제공",
+          "spcl_cnd": "· 전체 계약월수 중 1/2 이상에 해당하는 개월 수 동안 자동이체를 성공한 경우 : 연 0.50% 제공",
           "join_way": "스마트폰",
           "max_limit": 3000000,
           "rsrv_type_nm": "자유적립식"
@@ -7664,6 +7664,20 @@
         },
         {
           "dcls_month": "202609",
+          "kor_co_nm": "주식회사 케이뱅크",
+          "fin_prdt_cd": "01012000210000000000",
+          "fin_prdt_nm": "주거래우대 자유적금",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "24",
+          "intr_rate": 3.5,
+          "intr_rate2": 4.1,
+          "spcl_cnd": "급여이체 또는 통신비 자동이체, 체크카드 고객에게 우대금리 제공 (최고 연 0.6%)",
+          "join_way": "스마트폰",
+          "max_limit": 3000000,
+          "rsrv_type_nm": "자유적립식"
+        },
+        {
+          "dcls_month": "202609",
           "kor_co_nm": "농협은행주식회사",
           "fin_prdt_cd": "10-047-1387-0001",
           "fin_prdt_nm": "NH고향사랑기부적금",
@@ -7687,20 +7701,6 @@
           "intr_rate2": 4.0,
           "spcl_cnd": "최고 연1.0%\n- 주거래하나우대(연 0.5%) : 적금만기 전전월말기준 본인명의 당행입출금통장을 통해 계약기간 1/2이상 이체된 주거래실적 1종  - 주거래플러스우대(연 0.9%) : 주거래 하나우대와 동일요건의 거래실적 2종이상 경우 \n- 온라인.재예치우대 연 최대 0.1%",
           "join_way": "영업점,인터넷,스마트폰",
-          "max_limit": 3000000,
-          "rsrv_type_nm": "자유적립식"
-        },
-        {
-          "dcls_month": "202609",
-          "kor_co_nm": "주식회사 케이뱅크",
-          "fin_prdt_cd": "01012000210000000000",
-          "fin_prdt_nm": "주거래우대 자유적금",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "24",
-          "intr_rate": 3.4,
-          "intr_rate2": 4.0,
-          "spcl_cnd": "급여이체 또는 통신비 자동이체, 체크카드 고객에게 우대금리 제공 (최고 연 0.6%)",
-          "join_way": "스마트폰",
           "max_limit": 3000000,
           "rsrv_type_nm": "자유적립식"
         },
@@ -7930,6 +7930,20 @@
         },
         {
           "dcls_month": "202609",
+          "kor_co_nm": "주식회사 케이뱅크",
+          "fin_prdt_cd": "01012000200000000003",
+          "fin_prdt_nm": "코드K 자유적금",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "24",
+          "intr_rate": 3.2,
+          "intr_rate2": 3.2,
+          "spcl_cnd": "금리우대 코드를 입력하는 경우 우대금리 적용",
+          "join_way": "스마트폰",
+          "max_limit": 300000,
+          "rsrv_type_nm": "자유적립식"
+        },
+        {
+          "dcls_month": "202609",
           "kor_co_nm": "한국스탠다드차타드은행",
           "fin_prdt_cd": "00266451",
           "fin_prdt_nm": "퍼스트가계적금",
@@ -7958,20 +7972,6 @@
         },
         {
           "dcls_month": "202609",
-          "kor_co_nm": "주식회사 케이뱅크",
-          "fin_prdt_cd": "01012000200000000003",
-          "fin_prdt_nm": "코드K 자유적금",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "24",
-          "intr_rate": 3.0,
-          "intr_rate2": 3.0,
-          "spcl_cnd": "금리우대 코드를 입력하는 경우 우대금리 적용",
-          "join_way": "스마트폰",
-          "max_limit": 300000,
-          "rsrv_type_nm": "자유적립식"
-        },
-        {
-          "dcls_month": "202609",
           "kor_co_nm": "토스뱅크 주식회사",
           "fin_prdt_cd": "1001303001004",
           "fin_prdt_nm": "토스뱅크 자유 적금",
@@ -7979,7 +7979,7 @@
           "save_trm": "24",
           "intr_rate": 2.5,
           "intr_rate2": 3.0,
-          "spcl_cnd": "· 적금 가입 시 설정되는 월 단위 자동이체를 모두 성공하는 경우 : 연 0.50% 제공",
+          "spcl_cnd": "· 전체 계약월수 중 1/2 이상에 해당하는 개월 수 동안 자동이체를 성공한 경우 : 연 0.50% 제공",
           "join_way": "스마트폰",
           "max_limit": 3000000,
           "rsrv_type_nm": "자유적립식"
@@ -11464,6 +11464,20 @@
         },
         {
           "dcls_month": "202609",
+          "kor_co_nm": "주식회사 케이뱅크",
+          "fin_prdt_cd": "01012000210000000000",
+          "fin_prdt_nm": "주거래우대 자유적금",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "36",
+          "intr_rate": 3.5,
+          "intr_rate2": 4.1,
+          "spcl_cnd": "급여이체 또는 통신비 자동이체, 체크카드 고객에게 우대금리 제공 (최고 연 0.6%)",
+          "join_way": "스마트폰",
+          "max_limit": 3000000,
+          "rsrv_type_nm": "자유적립식"
+        },
+        {
+          "dcls_month": "202609",
           "kor_co_nm": "국민은행",
           "fin_prdt_cd": "010200100084",
           "fin_prdt_nm": "KB맑은하늘적금",
@@ -11488,20 +11502,6 @@
           "spcl_cnd": "1. 고향사랑기부금을 건당 5만원이상 납부한 가입자 우대 : 0.5%p\n\n2-1. 만 65세 이상 고령자 우대 : 0.1%p\n2-2. 만 19~34세 MZ고객 우대 : 0.3%p",
           "join_way": "영업점,인터넷,스마트폰",
           "max_limit": 500000,
-          "rsrv_type_nm": "자유적립식"
-        },
-        {
-          "dcls_month": "202609",
-          "kor_co_nm": "주식회사 케이뱅크",
-          "fin_prdt_cd": "01012000210000000000",
-          "fin_prdt_nm": "주거래우대 자유적금",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "36",
-          "intr_rate": 3.4,
-          "intr_rate2": 4.0,
-          "spcl_cnd": "급여이체 또는 통신비 자동이체, 체크카드 고객에게 우대금리 제공 (최고 연 0.6%)",
-          "join_way": "스마트폰",
-          "max_limit": 3000000,
           "rsrv_type_nm": "자유적립식"
         },
         {
@@ -11688,6 +11688,20 @@
         },
         {
           "dcls_month": "202609",
+          "kor_co_nm": "주식회사 케이뱅크",
+          "fin_prdt_cd": "01012000200000000003",
+          "fin_prdt_nm": "코드K 자유적금",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "36",
+          "intr_rate": 3.2,
+          "intr_rate2": 3.2,
+          "spcl_cnd": "금리우대 코드를 입력하는 경우 우대금리 적용",
+          "join_way": "스마트폰",
+          "max_limit": 300000,
+          "rsrv_type_nm": "자유적립식"
+        },
+        {
+          "dcls_month": "202609",
           "kor_co_nm": "한국스탠다드차타드은행",
           "fin_prdt_cd": "00266451",
           "fin_prdt_nm": "퍼스트가계적금",
@@ -11716,20 +11730,6 @@
         },
         {
           "dcls_month": "202609",
-          "kor_co_nm": "주식회사 케이뱅크",
-          "fin_prdt_cd": "01012000200000000003",
-          "fin_prdt_nm": "코드K 자유적금",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "36",
-          "intr_rate": 3.0,
-          "intr_rate2": 3.0,
-          "spcl_cnd": "금리우대 코드를 입력하는 경우 우대금리 적용",
-          "join_way": "스마트폰",
-          "max_limit": 300000,
-          "rsrv_type_nm": "자유적립식"
-        },
-        {
-          "dcls_month": "202609",
           "kor_co_nm": "토스뱅크 주식회사",
           "fin_prdt_cd": "1001303001004",
           "fin_prdt_nm": "토스뱅크 자유 적금",
@@ -11737,7 +11737,7 @@
           "save_trm": "36",
           "intr_rate": 2.5,
           "intr_rate2": 3.0,
-          "spcl_cnd": "· 적금 가입 시 설정되는 월 단위 자동이체를 모두 성공하는 경우 : 연 0.50% 제공",
+          "spcl_cnd": "· 전체 계약월수 중 1/2 이상에 해당하는 개월 수 동안 자동이체를 성공한 경우 : 연 0.50% 제공",
           "join_way": "스마트폰",
           "max_limit": 3000000,
           "rsrv_type_nm": "자유적립식"
@@ -14907,7 +14907,7 @@
       "save_trm": "12",
       "intr_rate": 2.5,
       "intr_rate2": 5.0,
-      "spcl_cnd": "· 적금 가입 시 설정되는 월 단위 자동이체를 모두 성공하는 경우 : 연 2.50% 제공",
+      "spcl_cnd": "· 전체 계약월수 중 1/2 이상에 해당하는 개월 수 동안 자동이체를 성공한 경우 : 연 2.50% 제공",
       "join_way": "스마트폰",
       "max_limit": 200000,
       "rsrv_type_nm": "자유적립식"
@@ -15040,6 +15040,20 @@
     },
     {
       "dcls_month": "202609",
+      "kor_co_nm": "주식회사 케이뱅크",
+      "fin_prdt_cd": "01012000210000000000",
+      "fin_prdt_nm": "주거래우대 자유적금",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 3.7,
+      "intr_rate2": 4.3,
+      "spcl_cnd": "급여이체 또는 통신비 자동이체, 체크카드 고객에게 우대금리 제공 (최고 연 0.6%)",
+      "join_way": "스마트폰",
+      "max_limit": 3000000,
+      "rsrv_type_nm": "자유적립식"
+    },
+    {
+      "dcls_month": "202609",
       "kor_co_nm": "신한은행",
       "fin_prdt_cd": "230-0119-85",
       "fin_prdt_nm": "신한 알.쏠 적금",
@@ -15049,20 +15063,6 @@
       "intr_rate2": 4.2,
       "spcl_cnd": "※가산금리 최고 연 1.30%\n- 소득이체 : 연 0.6%\n- 카드이용 : 연 0.3%\n- 오픈뱅킹 : 연 0.6%\n- 청약보유 : 연 0.3%\n- 마케팅동의 : 연 0.1%\n※ 우대금리 항목별 자세한 적용 조건은 상품설명서 참조",
       "join_way": "영업점,스마트폰",
-      "max_limit": 3000000,
-      "rsrv_type_nm": "자유적립식"
-    },
-    {
-      "dcls_month": "202609",
-      "kor_co_nm": "주식회사 케이뱅크",
-      "fin_prdt_cd": "01012000210000000000",
-      "fin_prdt_nm": "주거래우대 자유적금",
-      "intr_rate_type_nm": "단리",
-      "save_trm": "12",
-      "intr_rate": 3.6,
-      "intr_rate2": 4.2,
-      "spcl_cnd": "급여이체 또는 통신비 자동이체, 체크카드 고객에게 우대금리 제공 (최고 연 0.6%)",
-      "join_way": "스마트폰",
       "max_limit": 3000000,
       "rsrv_type_nm": "자유적립식"
     },
@@ -15115,8 +15115,8 @@
       "fin_prdt_nm": "NH직장인월복리적금",
       "intr_rate_type_nm": "복리",
       "save_trm": "12",
-      "intr_rate": 3.24,
-      "intr_rate2": 4.04,
+      "intr_rate": 3.25,
+      "intr_rate2": 4.05,
       "spcl_cnd": "1. 급여입금실적 보유 고객 중\n - 가입기간 중 3개월 이상 급여이체시 : 0.3%p\n - 주택청약종합저축 또는 펀드가입 : 0.2%p\n - NH채움카드 결제실적 1백만원 이상 : 0.2%p\n2. 인터넷(스마트)뱅킹 또는 올원뱅크로 가입 : 0.1%p",
       "join_way": "영업점,인터넷,스마트폰",
       "max_limit": 3000000,
@@ -15250,6 +15250,20 @@
     },
     {
       "dcls_month": "202609",
+      "kor_co_nm": "주식회사 케이뱅크",
+      "fin_prdt_cd": "01012000200000000003",
+      "fin_prdt_nm": "코드K 자유적금",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 3.8,
+      "intr_rate2": 3.8,
+      "spcl_cnd": "금리우대 코드를 입력하는 경우 우대금리 적용",
+      "join_way": "스마트폰",
+      "max_limit": 300000,
+      "rsrv_type_nm": "자유적립식"
+    },
+    {
+      "dcls_month": "202609",
       "kor_co_nm": "농협은행주식회사",
       "fin_prdt_cd": "10-047-1381-0001",
       "fin_prdt_nm": "NH내가Green초록세상적금",
@@ -15289,20 +15303,6 @@
       "join_way": "인터넷,스마트폰",
       "max_limit": 5000000,
       "rsrv_type_nm": "정액적립식"
-    },
-    {
-      "dcls_month": "202609",
-      "kor_co_nm": "주식회사 케이뱅크",
-      "fin_prdt_cd": "01012000200000000003",
-      "fin_prdt_nm": "코드K 자유적금",
-      "intr_rate_type_nm": "단리",
-      "save_trm": "12",
-      "intr_rate": 3.7,
-      "intr_rate2": 3.7,
-      "spcl_cnd": "금리우대 코드를 입력하는 경우 우대금리 적용",
-      "join_way": "스마트폰",
-      "max_limit": 300000,
-      "rsrv_type_nm": "자유적립식"
     },
     {
       "dcls_month": "202609",
@@ -15481,7 +15481,7 @@
       "save_trm": "12",
       "intr_rate": 2.5,
       "intr_rate2": 3.0,
-      "spcl_cnd": "· 적금 가입 시 설정되는 월 단위 자동이체를 모두 성공하는 경우 : 연 0.50% 제공",
+      "spcl_cnd": "· 전체 계약월수 중 1/2 이상에 해당하는 개월 수 동안 자동이체를 성공한 경우 : 연 0.50% 제공",
       "join_way": "스마트폰",
       "max_limit": 3000000,
       "rsrv_type_nm": "자유적립식"
@@ -19410,5 +19410,5 @@
     }
   ],
   "save_trm": "12",
-  "content_changed_at": "2026-09-29T09:54:39+09:00"
+  "content_changed_at": "2026-09-30T09:16:07+09:00"
 }
