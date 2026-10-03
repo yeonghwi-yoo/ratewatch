@@ -1,7 +1,7 @@
 {
   "is_sample": false,
   "pending": false,
-  "generated_at": "2026-10-02T09:37:38+09:00",
+  "generated_at": "2026-10-03T09:19:48+09:00",
   "dcls_month": "202609",
   "by_term": {
     "6": {
@@ -216,26 +216,13 @@
         },
         {
           "dcls_month": "202609",
-          "kor_co_nm": "한국산업은행",
-          "fin_prdt_cd": "06492",
-          "fin_prdt_nm": "KDB 정기예금",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "6",
-          "intr_rate": 3.35,
-          "intr_rate2": 3.35,
-          "spcl_cnd": "해당없음",
-          "join_way": "영업점,인터넷,스마트폰",
-          "max_limit": null
-        },
-        {
-          "dcls_month": "202609",
           "kor_co_nm": "농협은행주식회사",
           "fin_prdt_cd": "10-003-1225-0001",
           "fin_prdt_nm": "NH왈츠회전예금 II",
           "intr_rate_type_nm": "단리",
           "save_trm": "6",
-          "intr_rate": 3.25,
-          "intr_rate2": 3.35,
+          "intr_rate": 3.26,
+          "intr_rate2": 3.36,
           "spcl_cnd": "1. 급여이체실적(50만원 이상)이 있는 경우 : 0.1%p\n2. 트리플 회전 우대이율 :  4회전기간부터 0.1%p",
           "join_way": "영업점,인터넷,스마트폰",
           "max_limit": null
@@ -247,11 +234,24 @@
           "fin_prdt_nm": "NH올원e예금",
           "intr_rate_type_nm": "단리",
           "save_trm": "6",
-          "intr_rate": 3.35,
-          "intr_rate2": 3.35,
+          "intr_rate": 3.36,
+          "intr_rate2": 3.36,
           "spcl_cnd": "없음",
           "join_way": "인터넷,스마트폰",
           "max_limit": 1000000000
+        },
+        {
+          "dcls_month": "202609",
+          "kor_co_nm": "한국산업은행",
+          "fin_prdt_cd": "06492",
+          "fin_prdt_nm": "KDB 정기예금",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "6",
+          "intr_rate": 3.35,
+          "intr_rate2": 3.35,
+          "spcl_cnd": "해당없음",
+          "join_way": "영업점,인터넷,스마트폰",
+          "max_limit": null
         },
         {
           "dcls_month": "202609",
@@ -3685,8 +3685,8 @@
           "fin_prdt_nm": "굿스타트예금",
           "intr_rate_type_nm": "단리",
           "save_trm": "12",
-          "intr_rate": 3.38,
-          "intr_rate2": 3.88,
+          "intr_rate": 3.39,
+          "intr_rate2": 3.89,
           "spcl_cnd": "▶ 최고우대금리 0.5% \n ① 첫예금거래 : 0.4% -최근1년동안 정기예금 계좌 신규 또는 해지이력이 없는경우\n ② 개인(신용)정보 수집이용동의 : 0.1% -만기일전일까지 유지시",
           "join_way": "스마트폰",
           "max_limit": 100000000
@@ -3784,6 +3784,32 @@
         },
         {
           "dcls_month": "202609",
+          "kor_co_nm": "광주은행",
+          "fin_prdt_cd": "TD11300027000",
+          "fin_prdt_nm": "미즈월복리정기예금",
+          "intr_rate_type_nm": "복리",
+          "save_trm": "12",
+          "intr_rate": 3.49,
+          "intr_rate2": 3.69,
+          "spcl_cnd": "▶ 최고우대금리 0.2% \n ① 요구불평잔 : 0.2% -300만원이상 0.1%, 500만원이상 0.2%\n ② 신용(체크)카드결제실적 : 0.1% -전월결제금 300만원이상 0.05%, 500만원이상 0.1%",
+          "join_way": "영업점,인터넷,스마트폰,기타",
+          "max_limit": 50000000
+        },
+        {
+          "dcls_month": "202609",
+          "kor_co_nm": "광주은행",
+          "fin_prdt_cd": "TD11300031000",
+          "fin_prdt_nm": "스마트모아Dream정기예금",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "12",
+          "intr_rate": 3.49,
+          "intr_rate2": 3.69,
+          "spcl_cnd": "▶ 1년미만, 1천만원이상 0.10%p\n▶ 1년이상, 1천만원이상 0.20%p",
+          "join_way": "인터넷,스마트폰",
+          "max_limit": null
+        },
+        {
+          "dcls_month": "202609",
           "kor_co_nm": "중소기업은행",
           "fin_prdt_cd": "01211310142",
           "fin_prdt_nm": "IBK굴리기통장(정기예금)",
@@ -3797,39 +3823,13 @@
         },
         {
           "dcls_month": "202609",
-          "kor_co_nm": "광주은행",
-          "fin_prdt_cd": "TD11300027000",
-          "fin_prdt_nm": "미즈월복리정기예금",
-          "intr_rate_type_nm": "복리",
-          "save_trm": "12",
-          "intr_rate": 3.48,
-          "intr_rate2": 3.68,
-          "spcl_cnd": "▶ 최고우대금리 0.2% \n ① 요구불평잔 : 0.2% -300만원이상 0.1%, 500만원이상 0.2%\n ② 신용(체크)카드결제실적 : 0.1% -전월결제금 300만원이상 0.05%, 500만원이상 0.1%",
-          "join_way": "영업점,인터넷,스마트폰,기타",
-          "max_limit": 50000000
-        },
-        {
-          "dcls_month": "202609",
-          "kor_co_nm": "광주은행",
-          "fin_prdt_cd": "TD11300031000",
-          "fin_prdt_nm": "스마트모아Dream정기예금",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "12",
-          "intr_rate": 3.48,
-          "intr_rate2": 3.68,
-          "spcl_cnd": "▶ 1년미만, 1천만원이상 0.10%p\n▶ 1년이상, 1천만원이상 0.20%p",
-          "join_way": "인터넷,스마트폰",
-          "max_limit": null
-        },
-        {
-          "dcls_month": "202609",
           "kor_co_nm": "중소기업은행",
           "fin_prdt_cd": "01211310130",
           "fin_prdt_nm": "IBK더굴리기통장(실세금리정기예금)",
           "intr_rate_type_nm": "단리",
           "save_trm": "12",
-          "intr_rate": 3.67,
-          "intr_rate2": 3.67,
+          "intr_rate": 3.66,
+          "intr_rate2": 3.66,
           "spcl_cnd": "없음",
           "join_way": "인터넷,스마트폰",
           "max_limit": null
@@ -3888,6 +3888,32 @@
         },
         {
           "dcls_month": "202609",
+          "kor_co_nm": "농협은행주식회사",
+          "fin_prdt_cd": "10-003-1225-0001",
+          "fin_prdt_nm": "NH왈츠회전예금 II",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "12",
+          "intr_rate": 3.46,
+          "intr_rate2": 3.56,
+          "spcl_cnd": "1. 급여이체실적(50만원 이상)이 있는 경우 : 0.1%p\n2. 트리플 회전 우대이율 :  4회전기간부터 0.1%p",
+          "join_way": "영업점,인터넷,스마트폰",
+          "max_limit": null
+        },
+        {
+          "dcls_month": "202609",
+          "kor_co_nm": "농협은행주식회사",
+          "fin_prdt_cd": "10-003-1384-0001",
+          "fin_prdt_nm": "NH올원e예금",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "12",
+          "intr_rate": 3.56,
+          "intr_rate2": 3.56,
+          "spcl_cnd": "없음",
+          "join_way": "인터넷,스마트폰",
+          "max_limit": 1000000000
+        },
+        {
+          "dcls_month": "202609",
           "kor_co_nm": "아이엠뱅크",
           "fin_prdt_cd": "10511008001166004",
           "fin_prdt_nm": "iM함께예금",
@@ -3911,32 +3937,6 @@
           "spcl_cnd": "* 최고우대금리 : 연0.25%p\n- 가입일(재예치일)로부터 3개월 이내 아래 1가지 이상 요건 충족시\n① 당행 주택청약종합저축 보유\n② 당행 신용(체크)카드 결제실적 보유(결제금액 출금기준)\n* 해당 상품을 인터넷/모바일뱅킹을 통해 가입 : 연0.05%p",
           "join_way": "인터넷,스마트폰",
           "max_limit": null
-        },
-        {
-          "dcls_month": "202609",
-          "kor_co_nm": "농협은행주식회사",
-          "fin_prdt_cd": "10-003-1225-0001",
-          "fin_prdt_nm": "NH왈츠회전예금 II",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "12",
-          "intr_rate": 3.45,
-          "intr_rate2": 3.55,
-          "spcl_cnd": "1. 급여이체실적(50만원 이상)이 있는 경우 : 0.1%p\n2. 트리플 회전 우대이율 :  4회전기간부터 0.1%p",
-          "join_way": "영업점,인터넷,스마트폰",
-          "max_limit": null
-        },
-        {
-          "dcls_month": "202609",
-          "kor_co_nm": "농협은행주식회사",
-          "fin_prdt_cd": "10-003-1384-0001",
-          "fin_prdt_nm": "NH올원e예금",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "12",
-          "intr_rate": 3.55,
-          "intr_rate2": 3.55,
-          "spcl_cnd": "없음",
-          "join_way": "인터넷,스마트폰",
-          "max_limit": 1000000000
         },
         {
           "dcls_month": "202609",
@@ -8306,8 +8306,8 @@
           "fin_prdt_nm": "IBK더굴리기통장(실세금리정기예금)",
           "intr_rate_type_nm": "단리",
           "save_trm": "24",
-          "intr_rate": 3.58,
-          "intr_rate2": 3.58,
+          "intr_rate": 3.56,
+          "intr_rate2": 3.56,
           "spcl_cnd": "없음",
           "join_way": "인터넷,스마트폰",
           "max_limit": null
@@ -8379,6 +8379,19 @@
         },
         {
           "dcls_month": "202609",
+          "kor_co_nm": "농협은행주식회사",
+          "fin_prdt_cd": "10-003-1384-0001",
+          "fin_prdt_nm": "NH올원e예금",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "24",
+          "intr_rate": 3.01,
+          "intr_rate2": 3.01,
+          "spcl_cnd": "없음",
+          "join_way": "인터넷,스마트폰",
+          "max_limit": 1000000000
+        },
+        {
+          "dcls_month": "202609",
           "kor_co_nm": "우리은행",
           "fin_prdt_cd": "WR0001B",
           "fin_prdt_nm": "WON플러스예금",
@@ -8428,19 +8441,6 @@
           "spcl_cnd": "※ 우대금리 최대한도 : 0.4%p(연%, 세전)\n1. 온실가스 줄이기 실천서약서 동의 : 0.1%p\n2. 통장미발급 : 0.1%p\n3. 손하나로인증 서비스 등록 : 0.1%p\n4. NH내가Green초록세상적금 동시 보유 : 0.1%p",
           "join_way": "영업점,인터넷,스마트폰",
           "max_limit": null
-        },
-        {
-          "dcls_month": "202609",
-          "kor_co_nm": "농협은행주식회사",
-          "fin_prdt_cd": "10-003-1384-0001",
-          "fin_prdt_nm": "NH올원e예금",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "24",
-          "intr_rate": 3.0,
-          "intr_rate2": 3.0,
-          "spcl_cnd": "없음",
-          "join_way": "인터넷,스마트폰",
-          "max_limit": 1000000000
         },
         {
           "dcls_month": "202609",
@@ -11329,7 +11329,7 @@
           "intr_rate_type_nm": "단리",
           "save_trm": "36",
           "intr_rate": 1.85,
-          "intr_rate2": 3.85,
+          "intr_rate2": 3.97,
           "spcl_cnd": "- 아래의 우대요건 충족시 최고 0.5%p 추가 우대 \n①비대면 채널 가입시 0.3%제공(신규시제공)  \n(단, 이벤트시 디지털 채널에 고시한 우대금리를 추가 적용할 수 있음)\n②신규일로부터 만기달 제외한 계약기간의 1/2이상 매월 Jbank로그인 시 0.2%제공(만기시제공)",
           "join_way": "영업점,인터넷,스마트폰",
           "max_limit": null
@@ -11453,6 +11453,19 @@
         },
         {
           "dcls_month": "202609",
+          "kor_co_nm": "농협은행주식회사",
+          "fin_prdt_cd": "10-003-1384-0001",
+          "fin_prdt_nm": "NH올원e예금",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "36",
+          "intr_rate": 2.71,
+          "intr_rate2": 2.71,
+          "spcl_cnd": "없음",
+          "join_way": "인터넷,스마트폰",
+          "max_limit": 1000000000
+        },
+        {
+          "dcls_month": "202609",
           "kor_co_nm": "우리은행",
           "fin_prdt_cd": "WR0001B",
           "fin_prdt_nm": "WON플러스예금",
@@ -11463,19 +11476,6 @@
           "spcl_cnd": "해당사항 없음",
           "join_way": "인터넷,스마트폰,전화(텔레뱅킹)",
           "max_limit": null
-        },
-        {
-          "dcls_month": "202609",
-          "kor_co_nm": "농협은행주식회사",
-          "fin_prdt_cd": "10-003-1384-0001",
-          "fin_prdt_nm": "NH올원e예금",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "36",
-          "intr_rate": 2.7,
-          "intr_rate2": 2.7,
-          "spcl_cnd": "없음",
-          "join_way": "인터넷,스마트폰",
-          "max_limit": 1000000000
         },
         {
           "dcls_month": "202609",
@@ -13830,8 +13830,8 @@
       "fin_prdt_nm": "굿스타트예금",
       "intr_rate_type_nm": "단리",
       "save_trm": "12",
-      "intr_rate": 3.38,
-      "intr_rate2": 3.88,
+      "intr_rate": 3.39,
+      "intr_rate2": 3.89,
       "spcl_cnd": "▶ 최고우대금리 0.5% \n ① 첫예금거래 : 0.4% -최근1년동안 정기예금 계좌 신규 또는 해지이력이 없는경우\n ② 개인(신용)정보 수집이용동의 : 0.1% -만기일전일까지 유지시",
       "join_way": "스마트폰",
       "max_limit": 100000000
@@ -13929,6 +13929,32 @@
     },
     {
       "dcls_month": "202609",
+      "kor_co_nm": "광주은행",
+      "fin_prdt_cd": "TD11300027000",
+      "fin_prdt_nm": "미즈월복리정기예금",
+      "intr_rate_type_nm": "복리",
+      "save_trm": "12",
+      "intr_rate": 3.49,
+      "intr_rate2": 3.69,
+      "spcl_cnd": "▶ 최고우대금리 0.2% \n ① 요구불평잔 : 0.2% -300만원이상 0.1%, 500만원이상 0.2%\n ② 신용(체크)카드결제실적 : 0.1% -전월결제금 300만원이상 0.05%, 500만원이상 0.1%",
+      "join_way": "영업점,인터넷,스마트폰,기타",
+      "max_limit": 50000000
+    },
+    {
+      "dcls_month": "202609",
+      "kor_co_nm": "광주은행",
+      "fin_prdt_cd": "TD11300031000",
+      "fin_prdt_nm": "스마트모아Dream정기예금",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 3.49,
+      "intr_rate2": 3.69,
+      "spcl_cnd": "▶ 1년미만, 1천만원이상 0.10%p\n▶ 1년이상, 1천만원이상 0.20%p",
+      "join_way": "인터넷,스마트폰",
+      "max_limit": null
+    },
+    {
+      "dcls_month": "202609",
       "kor_co_nm": "중소기업은행",
       "fin_prdt_cd": "01211310142",
       "fin_prdt_nm": "IBK굴리기통장(정기예금)",
@@ -13942,39 +13968,13 @@
     },
     {
       "dcls_month": "202609",
-      "kor_co_nm": "광주은행",
-      "fin_prdt_cd": "TD11300027000",
-      "fin_prdt_nm": "미즈월복리정기예금",
-      "intr_rate_type_nm": "복리",
-      "save_trm": "12",
-      "intr_rate": 3.48,
-      "intr_rate2": 3.68,
-      "spcl_cnd": "▶ 최고우대금리 0.2% \n ① 요구불평잔 : 0.2% -300만원이상 0.1%, 500만원이상 0.2%\n ② 신용(체크)카드결제실적 : 0.1% -전월결제금 300만원이상 0.05%, 500만원이상 0.1%",
-      "join_way": "영업점,인터넷,스마트폰,기타",
-      "max_limit": 50000000
-    },
-    {
-      "dcls_month": "202609",
-      "kor_co_nm": "광주은행",
-      "fin_prdt_cd": "TD11300031000",
-      "fin_prdt_nm": "스마트모아Dream정기예금",
-      "intr_rate_type_nm": "단리",
-      "save_trm": "12",
-      "intr_rate": 3.48,
-      "intr_rate2": 3.68,
-      "spcl_cnd": "▶ 1년미만, 1천만원이상 0.10%p\n▶ 1년이상, 1천만원이상 0.20%p",
-      "join_way": "인터넷,스마트폰",
-      "max_limit": null
-    },
-    {
-      "dcls_month": "202609",
       "kor_co_nm": "중소기업은행",
       "fin_prdt_cd": "01211310130",
       "fin_prdt_nm": "IBK더굴리기통장(실세금리정기예금)",
       "intr_rate_type_nm": "단리",
       "save_trm": "12",
-      "intr_rate": 3.67,
-      "intr_rate2": 3.67,
+      "intr_rate": 3.66,
+      "intr_rate2": 3.66,
       "spcl_cnd": "없음",
       "join_way": "인터넷,스마트폰",
       "max_limit": null
@@ -14033,6 +14033,32 @@
     },
     {
       "dcls_month": "202609",
+      "kor_co_nm": "농협은행주식회사",
+      "fin_prdt_cd": "10-003-1225-0001",
+      "fin_prdt_nm": "NH왈츠회전예금 II",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 3.46,
+      "intr_rate2": 3.56,
+      "spcl_cnd": "1. 급여이체실적(50만원 이상)이 있는 경우 : 0.1%p\n2. 트리플 회전 우대이율 :  4회전기간부터 0.1%p",
+      "join_way": "영업점,인터넷,스마트폰",
+      "max_limit": null
+    },
+    {
+      "dcls_month": "202609",
+      "kor_co_nm": "농협은행주식회사",
+      "fin_prdt_cd": "10-003-1384-0001",
+      "fin_prdt_nm": "NH올원e예금",
+      "intr_rate_type_nm": "단리",
+      "save_trm": "12",
+      "intr_rate": 3.56,
+      "intr_rate2": 3.56,
+      "spcl_cnd": "없음",
+      "join_way": "인터넷,스마트폰",
+      "max_limit": 1000000000
+    },
+    {
+      "dcls_month": "202609",
       "kor_co_nm": "아이엠뱅크",
       "fin_prdt_cd": "10511008001166004",
       "fin_prdt_nm": "iM함께예금",
@@ -14056,32 +14082,6 @@
       "spcl_cnd": "* 최고우대금리 : 연0.25%p\n- 가입일(재예치일)로부터 3개월 이내 아래 1가지 이상 요건 충족시\n① 당행 주택청약종합저축 보유\n② 당행 신용(체크)카드 결제실적 보유(결제금액 출금기준)\n* 해당 상품을 인터넷/모바일뱅킹을 통해 가입 : 연0.05%p",
       "join_way": "인터넷,스마트폰",
       "max_limit": null
-    },
-    {
-      "dcls_month": "202609",
-      "kor_co_nm": "농협은행주식회사",
-      "fin_prdt_cd": "10-003-1225-0001",
-      "fin_prdt_nm": "NH왈츠회전예금 II",
-      "intr_rate_type_nm": "단리",
-      "save_trm": "12",
-      "intr_rate": 3.45,
-      "intr_rate2": 3.55,
-      "spcl_cnd": "1. 급여이체실적(50만원 이상)이 있는 경우 : 0.1%p\n2. 트리플 회전 우대이율 :  4회전기간부터 0.1%p",
-      "join_way": "영업점,인터넷,스마트폰",
-      "max_limit": null
-    },
-    {
-      "dcls_month": "202609",
-      "kor_co_nm": "농협은행주식회사",
-      "fin_prdt_cd": "10-003-1384-0001",
-      "fin_prdt_nm": "NH올원e예금",
-      "intr_rate_type_nm": "단리",
-      "save_trm": "12",
-      "intr_rate": 3.55,
-      "intr_rate2": 3.55,
-      "spcl_cnd": "없음",
-      "join_way": "인터넷,스마트폰",
-      "max_limit": 1000000000
     },
     {
       "dcls_month": "202609",
@@ -18403,5 +18403,5 @@
     }
   ],
   "save_trm": "12",
-  "content_changed_at": "2026-10-02T09:37:38+09:00"
+  "content_changed_at": "2026-10-03T09:19:48+09:00"
 }
